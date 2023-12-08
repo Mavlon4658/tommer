@@ -1,6 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tommer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- add style -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <h1>Hello world</h1>
+  <div class="wrapper">
+
+    <!-- Header -->
+    <header>
+      <div class="main_container">
+        <a href="#" class="logo">
+          <img src="./images/head_logo.svg" width="133" height="92" alt="">
+        </a>
+        <div class="menues">
+          <div class="menu_top">
+            <div class="address">г. Санкт-Петербург, <br> Выборгское ш., дом 212</div>
+            <ul class="texts">
+              <li class="text text_1">
+                <a href="#">3D-тур</a>
+              </li>
+              <li class="text">
+                <a href="#">Заказать консультацию</a>
+              </li>
+            </ul>
+            <div class="menu_top_right">
+              <ul class="social_links">
+                <li>
+                  <a href="#">
+                    <span class="notification"></span>
+                    <img src="./images/whatsapp_icon.svg" width="43" height="43" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/Telegram.svg" width="43" height="43" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/Vkontakte.svg" width="43" height="43" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div class="phone">
+                <a href="#">+7 (812) 921-07-07</a>
+                <span>11.00-19.00 ежедневно</span>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <ul class="menu_bottom">
+            <li>
+              <a href="#">
+                <span>Проекты и цены</span>
+                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Услуги</span>
+                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Компания</span>
+                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Клиентам</span>
+                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Построено</span>
+                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#" class="last">
+                <img src="./images/heart_icon.svg" width="18" height="18" alt="">
+                <span>Избранное</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Home start -->
+    <section id="index_home">
+      <img src="./images/index_home_bg.webp" width="790" height="1130" alt="" class="home_bg">
+      <div class="main_container">
+        <h2 class="title">Теплые светлые дома</h2>
+        <div class="texts">
+          <div class="description">Из клеенного бруса и фахверк от известного застройщика с прозрачной историей</div>
+          <div class="title_2">с гарантией 5 лет</div>
+        </div>
+        <h2 class="title">от 10 млн рублей</h2>
+        <div class="cards">
+          <div class="card_item">
+            <img src="./images/home_card_1.svg" width="47" height="47" alt="">
+            <div class="card_description">
+              Цена <span>фиксирована</span> <br> договором
+            </div>
+          </div>
+          <div class="card_item">
+            <img src="./images/home_card_2.svg" width="47" height="47" alt="">
+            <div class="card_description">
+              Бесплатная смета <br> за <span>1 рабочий день</span>
+            </div>
+          </div>
+          <div class="card_item">
+            <img src="./images/home_card_3.svg" width="47" height="47" alt="">
+            <div class="card_description">
+              Гарантия <span>5 лет</span> без <br> лишних вопросов
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="#" class="link_1">
+            <span>Смотреть дома до 10 млн</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M11.9892 1.00595C11.9892 0.453668 11.5414 0.00595255 10.9892 0.00595297L1.98916 0.0059531C1.43688 0.00595276 0.989165 0.453668 0.989165 1.00595C0.989165 1.55824 1.43688 2.00595 1.98916 2.00595L9.98916 2.00595L9.98916 10.006C9.98916 10.5582 10.4369 11.006 10.9892 11.006C11.5414 11.006 11.9892 10.5582 11.9892 10.006L11.9892 1.00595ZM1.70711 11.7022L11.6963 1.71306L10.2821 0.298846L0.292893 10.288L1.70711 11.7022Z" fill="#242A1F"/>
+            </svg>
+          </a>
+          <a href="#" class="link_2">
+            <span>дома до 20 млн</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+              <path d="M12.4774 1.00595C12.4774 0.453668 12.0297 0.00595255 11.4774 0.00595297L2.47745 0.0059531C1.92516 0.00595276 1.47745 0.453668 1.47745 1.00595C1.47745 1.55824 1.92516 2.00595 2.47745 2.00595L10.4774 2.00595L10.4774 10.006C10.4774 10.5582 10.9252 11.006 11.4774 11.006C12.0297 11.006 12.4774 10.5582 12.4774 10.006L12.4774 1.00595ZM2.19539 11.7022L12.1846 1.71306L10.7703 0.298846L0.781174 10.288L2.19539 11.7022Z" fill="#EEEEEE"/>
+            </svg>
+          </a>
+        </div>
+        <div class="index_question_card">
+          <div class="card_left">
+            <img src="./images/question_card_bg.webp" width="644" height="1262" alt="" class="card_bg">
+            <div class="card_title">
+              Сообщите нам, <span>что вы хотите построить</span>, а мы скажем точную цену
+            </div>
+            <div class="subtitle">* Расчет стоимости в течение 1 часа в рабочее время</div>
+            <img src="./images/home_user.webp" width="184" height="183" alt="" class="user_img">
+            <div class="user_data">
+              <div class="name">Иванов Сергей</div>
+              <div class="job">отдел продаж</div>
+            </div>
+            <p>Оперативно рассчитаю смету в любых вариантах строительства дома или бани из клееного бруса либо по технологии фахверк</p>
+          </div>
+          <div class="card_right">
+            <div class="slide_count">
+              <span>Вопрос</span>
+              <div class="slider_coun_in"></div>
+            </div>
+            <div class="slider_pagination">
+              <!-- <span></span> -->
+            </div>
+            <div class="slider_title">Какой объект вы хотите построить?</div>
+            <div class="swiper card_right_slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="images">
+                    <div class="image">
+                      <img src="./images/home_card_slide_1.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_1">
+                      <label for="home_card_slide_1">Дом из клееного бруса</label>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_2.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_2">
+                      <label for="home_card_slide_2">Дом фахверк</label>
+                    </div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_3.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_3">
+                      <label for="home_card_slide_3">Баня из клееного бруса</label>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_4.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_4">
+                      <label for="home_card_slide_4">Баня фахверк</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="images">
+                    <div class="image">
+                      <img src="./images/home_card_slide_1.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_5">
+                      <label for="home_card_slide_5">Дом из клееного бруса</label>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_2.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_6">
+                      <label for="home_card_slide_6">Дом фахверк</label>
+                    </div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_3.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_7">
+                      <label for="home_card_slide_7">Баня из клееного бруса</label>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_4.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_8">
+                      <label for="home_card_slide_8">Баня фахверк</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="images">
+                    <div class="image">
+                      <img src="./images/home_card_slide_1.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_9">
+                      <label for="home_card_slide_9">Дом из клееного бруса</label>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_2.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_10">
+                      <label for="home_card_slide_10">Дом фахверк</label>
+                    </div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_3.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_11">
+                      <label for="home_card_slide_11">Баня из клееного бруса</label>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_4.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_12">
+                      <label for="home_card_slide_12">Баня фахверк</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="images">
+                    <div class="image">
+                      <img src="./images/home_card_slide_1.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_13">
+                      <label for="home_card_slide_13">Дом из клееного бруса</label>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_2.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_14">
+                      <label for="home_card_slide_14">Дом фахверк</label>
+                    </div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_3.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_15">
+                      <label for="home_card_slide_15">Баня из клееного бруса</label>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_4.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_16">
+                      <label for="home_card_slide_16">Баня фахверк</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="images">
+                    <div class="image">
+                      <img src="./images/home_card_slide_1.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_17">
+                      <label for="home_card_slide_17">Дом из клееного бруса</label>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_2.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_18">
+                      <label for="home_card_slide_18">Дом фахверк</label>
+                    </div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_3.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_19">
+                      <label for="home_card_slide_19">Баня из клееного бруса</label>
+                    </div>
+                    <div class="card_line"></div>
+                    <div class="image">
+                      <img src="./images/home_card_slide_4.webp" width="260" height="196" alt="">
+                      <input type="checkbox" id="home_card_slide_20">
+                      <label for="home_card_slide_20">Баня фахверк</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home end -->
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
+</html>
