@@ -42,6 +42,12 @@ let swiper2 = new Swiper(".project-slide", {
     },
 });
 
+let customer_slider = document.querySelector('#customers .customer_slider') 
+if (customer_slider) {
+    console.log('ishladi');
+    let custom_slide = new Swiper(customer_slider, {})
+}
+
 let swiper3 = new Swiper(".team-slide", {
     slidesPerView: 3,
     spaceBetween: 30,
