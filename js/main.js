@@ -41,3 +41,9 @@ let swiper2 = new Swiper(".project-slide", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+let customer_slider = document.querySelector('#customers .customer_slider') 
+if (customer_slider) {
+    console.log('ishladi');
+    let custom_slide = new Swiper(customer_slider, {})
+}
