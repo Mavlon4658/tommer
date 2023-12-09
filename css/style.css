@@ -106,18 +106,6 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-.sec-title {
-  color: var(--Dark-green, #242A1F);
-  font-family: "Roboto Slab", serif;
-  font-size: 2.375rem;
-  font-weight: 300;
-  line-height: 120%;
-}
-.sec-title span {
-  color: var(--Green-extra, #4C9C2E);
-  font-weight: 500;
-}
-
 header .main_container {
   display: flex;
   align-items: flex-start;
@@ -137,7 +125,7 @@ header .menues {
 header .menu_top {
   display: flex;
   align-items: center;
-  gap: 3.1rem;
+  gap: 2.9rem;
 }
 header .menu_top .address {
   color: #242A1F;
@@ -154,7 +142,6 @@ header .menu_top .texts {
 header .menu_top .text a {
   color: #242A1F;
   font-size: 1.0625rem;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   border-bottom: 0.0625rem solid #242A1F;

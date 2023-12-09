@@ -109,19 +109,6 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.sec-title{
-    color: var(--Dark-green, #242A1F);
-    font-family: "Roboto Slab", serif;
-    font-size: 2.375rem;
-    font-weight: 300;
-    line-height: 120%; 
-    
-    span{
-        color: var(--Green-extra, #4C9C2E);
-        font-weight: 500;
-    }
-}
-
 
 header {
     .main_container {
@@ -146,7 +133,7 @@ header {
     .menu_top {
         display: flex;
         align-items: center;
-        gap: 3.1rem;
+        gap: 2.9rem;
 
         .address {
             color: #242A1F;
@@ -165,7 +152,6 @@ header {
         .text a{
             color: #242A1F;
             font-size: 1.0625rem;
-            font-style: normal;
             font-weight: 700;
             line-height: normal;
             border-bottom: 0.0625rem solid #242A1F;
@@ -1071,6 +1057,8 @@ header {
         }
     }
 }
+
+// alohida
 
 #our_company {
     color: #242A1F;
