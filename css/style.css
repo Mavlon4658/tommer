@@ -99,6 +99,7 @@ body {
   line-height: 120%;
   text-transform: uppercase;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 header .main_container {
