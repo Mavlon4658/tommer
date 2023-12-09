@@ -30,3 +30,14 @@ if (slide_1) {
         },
     });
 }
+
+let swiper2 = new Swiper(".project-slide", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
