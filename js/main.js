@@ -47,3 +47,14 @@ if (customer_slider) {
     console.log('ishladi');
     let custom_slide = new Swiper(customer_slider, {})
 }
+
+let swiper3 = new Swiper(".team-slide", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
