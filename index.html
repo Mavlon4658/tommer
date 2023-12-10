@@ -595,7 +595,7 @@
                 <input type="number" name="number" placeholder="Введите телефон" class="project__catalog-inp" required>
               </div>
 
-              <button class="project__form-btn success-link" submit>Получить каталог в WhatsApp
+              <button class="project__form-btn success-link" type="submit">Получить каталог в WhatsApp
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                   <path d="M12.4945 1.79648C12.4945 1.2442 12.0468 0.79648 11.4945 0.79648L2.49454 0.79648C1.94225 0.79648 1.49454 1.2442 1.49454 1.79648C1.49454 2.34877 1.94225 2.79648 2.49454 2.79648L10.4945 2.79648L10.4945 10.7965C10.4945 11.3488 10.9423 11.7965 11.4945 11.7965C12.0468 11.7965 12.4945 11.3488 12.4945 10.7965L12.4945 1.79648ZM2.21248 12.4928L12.2016 2.50359L10.7874 1.08937L0.798264 11.0785L2.21248 12.4928Z" fill="#242A1F"/>
                 </svg>
@@ -690,10 +690,59 @@
         </div>
       </div>
     </section>
-    <!-- View end -->
-
-
+    <!-- View end -->    
     
+    <section class="production">
+      <div class="main_container">
+        <div class="production_card">
+          <div class="card_left">
+            <h2 class="sec-light-title"><span>Производство</span> клееного бруса и конструкционной балки</h2>
+            <ul>
+              <li>0% <br> формальдегида</li>
+              <li class="line"></li>
+              <li>Клеевые системы <br> Акзо Нобель</li>
+              <li>GripPro™Plus</li>
+              <li class="line"></li>
+              <li>EN 14080-2013 <br> Сертификаты</li>
+            </ul>
+            <a href="#" class="success-link">
+              <span>Подробнее о производстве</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M11.9892 1.24175C11.9892 0.689462 11.5414 0.241747 10.9892 0.241747L1.98916 0.241747C1.43688 0.241747 0.989165 0.689462 0.989165 1.24175C0.989165 1.79403 1.43688 2.24175 1.98916 2.24175L9.98916 2.24175L9.98916 10.2417C9.98916 10.794 10.4369 11.2417 10.9892 11.2417C11.5414 11.2417 11.9892 10.794 11.9892 10.2417L11.9892 1.24175ZM1.70711 11.938L11.6963 1.94885L10.2821 0.53464L0.292893 10.5238L1.70711 11.938Z" fill="#242A1F"/>
+              </svg>
+            </a>
+          </div>
+          <div class="card_right">
+            <h3>Наши партнеры</h3>
+            <div class="partners">
+              <img src="./images/partners_1.webp" width="174" height="77" alt="">
+              <div class="line"></div>
+              <img src="./images/partners_2.webp" width="128" height="112" alt="">
+            </div>
+            <ul>
+              <li>
+                <img src="images/partner_icon_1.svg" width="47" height="47" alt="">
+                <div class="description">
+                  Заготавливаем древесину <br> <span>спецтехникой John Deere</span>
+                </div>
+              </li>
+              <li>
+                <img src="images/partner_icon_1.svg" width="47" height="47" alt="">
+                <div class="description">
+                  Сажаем молодые деревья <span>на вырубленные участки</span>
+                </div>
+              </li>
+              <li>
+                <img src="images/partner_icon_1.svg" width="47" height="47" alt="">
+                <div class="description">
+                  Сушим в камерах <span>«Tekma Wood» <br> и «Muhlbock»</span> до 8-12% влажности
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Several cards strat -->
     <section class="several">
@@ -784,6 +833,20 @@
                   <h4 class="team__slider-title">Шепырев Александр Сергеевич</h4>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <a href="#!" class="team__slider-img"><img src="images/team-img.webp" alt=""></a>
+                <div class="team__slider-info">
+                  <p class="team__slider-text">Рукводитель и владелец компании</p>
+                  <h4 class="team__slider-title">Шепырев Александр Сергеевич</h4>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!" class="team__slider-img"><img src="images/team-img.webp" alt=""></a>
+                <div class="team__slider-info">
+                  <p class="team__slider-text">Рукводитель и владелец компании</p>
+                  <h4 class="team__slider-title">Шепырев Александр Сергеевич</h4>
+                </div>
+              </div>
             </div>
             <div class="swiper-button-next"><img src="images/slider-right-arrow.svg" alt=""></div>
             <div class="swiper-button-prev"><img src="images/slider-left-arrow.svg" alt=""></div>
@@ -793,19 +856,176 @@
     </section>
     <!-- Team end -->
 
+    <!-- Consultation -->
+    <section class="consultation">
+      <div class="main_container">
+        <div class="consultation_card">
+          <img src="./images/consultation_card_bg.webp" alt="" class="card_bg">
+          <h2 class="sec-title">Проведем для вас <br> <span>индивидуальную <br> видеоконсультацию</span></h2>
+          <ul>
+            <li>
+              <img src="./images/consultation_icon_1.svg" width="47" height="47" alt="">
+              <div class="description">
+                <span>Поможем выбрать</span> подходящий для <br> ваших целей объект строительства
+              </div>
+            </li>
+            <li>
+              <img src="./images/consultation_icon_2.svg" width="47" height="47" alt="">
+              <div class="description">
+                <span>Определим</span> ваши <br> потребности и пожелания
+              </div>
+            </li>
+            <li>
+              <img src="./images/consultation_icon_3.svg" width="47" height="47" alt="">
+              <div class="description">
+                <span>Ответим</span> на все вопросы и <br> дадим рекомендации
+              </div>
+            </li>
+          </ul>
+          <form>
+            <label>
+              Оставьте заявку на консультацию, которую мы проведем для вас через <span>Telegram, WhatsApp или Zoom.</span>
+            </label>
+            <div class="inputs">
+              <input type="text" placeholder="Введите имя">
+              <input type="tel" placeholder="Введите телефон">
+              <button type="submit" class="success-link">
+                <span>Записаться на консультацию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M11.9892 1.1666C11.9892 0.614312 11.5414 0.166597 10.9892 0.166598L1.98916 0.166598C1.43688 0.166597 0.989165 0.614312 0.989165 1.1666C0.989165 1.71888 1.43688 2.1666 1.98916 2.1666L9.98916 2.1666L9.98916 10.1666C9.98916 10.7189 10.4369 11.1666 10.9892 11.1666C11.5414 11.1666 11.9892 10.7189 11.9892 10.1666L11.9892 1.1666ZM1.70711 11.8629L11.6963 1.8737L10.2821 0.459491L0.292893 10.4487L1.70711 11.8629Z" fill="#242A1F"/>
+                </svg>
+              </button>
+            </div>
+            <div class="links">
+              Нажимая на кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Consultation end -->
 
+    <!-- Visit facilities -->
+    <section class="visit">
+      <div class="main_container">
+        <div class="visit_head">
+          <h2 class="sec-title"><span>Посетите наши объекты</span> <br> на разных стадиях строительства</h2>
+          <a href="#">Посетить объекты</a>
+        </div>
+        <div class="visit_card">
+          <div class="card_top">
+            <div class="dark-alert">Строится</div>
+            <div class="name">Симагино</div>
+            <div class="amount">250 кв. м</div>
+            <div class="price">10 000 000 ₽</div>
+          </div>
 
-
-    <!-- alohida -->
+          <div class="card_bottom">
+            <div class="data">
+              <img src="./images/visit_icon_1.svg" width="47" height="47" alt="">
+              <div class="description">
+                Сможете <span>увидеть процесс создания домов, ознакомиться с используемыми материалами</span> и технологиями фахверк, клееный брус, clt
+              </div>
+            </div>
+            <div class="data">
+              <img src="./images/visit_icon_2.svg" width="47" height="47" alt="">
+              <div class="description">
+                Получите <span>расширенные ответы на вопросы</span> от инженеров компании
+              </div>
+            </div>
+            <div class="data">
+              <img src="./images/visit_icon_3.svg" width="47" height="47" alt="">
+              <div class="description">
+                <span>Познакомитесь с культурой Tommer, увидите как мы работаем,</span> и обретете полное представление о том, каким будет ваш будущий дом
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Visit facilities end -->
 
     <!-- Customers -->
     <section class="customers">
       <div class="main_container">
-        <div class="swiper customer_slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">1</div>
-            <div class="swiper-slide">2</div>
-            <div class="swiper-slide">3</div>
+        <h2 class="sec-title">Результат нашей работы — <br> <span>довольные заказчики</span></h2>
+        <div class="customer_slider_wrapper">
+          <button class="customer_slider_btn customer_slide_prev_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.08273 10.5776C0.761548 10.1789 0.782273 9.58624 1.14491 9.21255C1.17227 9.18435 1.20085 9.15815 1.23046 9.13396L9.46209 0.651188C9.8467 0.254839 10.4703 0.254841 10.8549 0.651188C11.2395 1.04753 11.2395 1.69014 10.8549 2.08649L3.23876 9.93499L10.8507 17.7792C11.2353 18.1755 11.2353 18.8181 10.8507 19.2145C10.4661 19.6108 9.8425 19.6108 9.45788 19.2145L1.17475 10.6786C1.16609 10.6703 1.15754 10.6618 1.14911 10.6531C1.12554 10.6288 1.10341 10.6036 1.08273 10.5776Z" fill="#242A1F"/>
+            </svg>
+          </button>
+          <button class="customer_slider_btn customer_slide_next_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9171 10.5776C11.2383 10.1789 11.2176 9.58624 10.855 9.21255C10.8276 9.18435 10.799 9.15815 10.7694 9.13396L2.53779 0.651188C2.15318 0.254839 1.5296 0.254841 1.14498 0.651188C0.760371 1.04753 0.760371 1.69014 1.14498 2.08649L8.76111 9.93499L1.14919 17.7792C0.764573 18.1755 0.764573 18.8181 1.14919 19.2145C1.5338 19.6108 2.15738 19.6108 2.54199 19.2145L10.8251 10.6786C10.8338 10.6703 10.8423 10.6618 10.8508 10.6531C10.8743 10.6288 10.8965 10.6036 10.9171 10.5776Z" fill="#242A1F"/>
+            </svg>
+          </button>
+          <div class="swiper customer_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide_head">
+                  <div class="customer">
+                    <img src="./images/customer_1.webp" width="100" height="100" alt="">
+                    <div class="customer_data">
+                      <div class="name">Алексей С.</div>
+                      <div class="date">29 августа 2019</div>
+                    </div>
+                  </div>
+                  <img src="./images/yandex_icon.svg" alt="">
+                </div>
+                <div class="description hide">
+                  Сотрудники знают свое дело и имеют чуткий подход к каждому клиенту! Показали строющиеся дома, разъяснили технологию и вообщим помогли сделать правильный выбор уже строящегося дома. Всем рекомендую сотрудничать только с ними! Молодцы!!!! Отдельная благодарность коммерческом директору Денису и менеджеру Геннадию!
+                </div>
+                <button class="show__btn">
+                  <span>Читать дальше</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.14462 7.71933C6.74591 8.03969 6.15396 8.0187 5.78057 7.65636C5.75821 7.63467 5.73711 7.61221 5.71728 7.58908L0.578024 2.60198C0.181676 2.21737 0.181676 1.59379 0.578023 1.20917C0.974371 0.824562 1.61698 0.824562 2.01332 1.20918L6.50124 5.56422L10.9864 1.21183C11.3828 0.827213 12.0254 0.827213 12.4217 1.21183C12.8181 1.59644 12.8181 2.22002 12.4217 2.60463L7.23953 7.63341C7.23287 7.64025 7.22609 7.64702 7.21919 7.65371C7.1952 7.67699 7.1703 7.69887 7.14462 7.71933Z" fill="#242A1F"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_head">
+                  <div class="customer">
+                    <img src="./images/customer_1.webp" width="100" height="100" alt="">
+                    <div class="customer_data">
+                      <div class="name">Алексей С.</div>
+                      <div class="date">29 августа 2019</div>
+                    </div>
+                  </div>
+                  <img src="./images/yandex_icon.svg" alt="">
+                </div>
+                <div class="description hide">
+                  Сотрудники знают свое дело и имеют чуткий подход к каждому клиенту! Показали строющиеся дома, разъяснили технологию и вообщим помогли сделать правильный выбор уже строящегося дома. Всем рекомендую сотрудничать только с ними! Молодцы!!!! Отдельная благодарность коммерческом директору Денису и менеджеру Геннадию!
+                </div>
+                <button class="show__btn">
+                  <span>Читать дальше</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.14462 7.71933C6.74591 8.03969 6.15396 8.0187 5.78057 7.65636C5.75821 7.63467 5.73711 7.61221 5.71728 7.58908L0.578024 2.60198C0.181676 2.21737 0.181676 1.59379 0.578023 1.20917C0.974371 0.824562 1.61698 0.824562 2.01332 1.20918L6.50124 5.56422L10.9864 1.21183C11.3828 0.827213 12.0254 0.827213 12.4217 1.21183C12.8181 1.59644 12.8181 2.22002 12.4217 2.60463L7.23953 7.63341C7.23287 7.64025 7.22609 7.64702 7.21919 7.65371C7.1952 7.67699 7.1703 7.69887 7.14462 7.71933Z" fill="#242A1F"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_head">
+                  <div class="customer">
+                    <img src="./images/customer_1.webp" width="100" height="100" alt="">
+                    <div class="customer_data">
+                      <div class="name">Алексей С.</div>
+                      <div class="date">29 августа 2019</div>
+                    </div>
+                  </div>
+                  <img src="./images/yandex_icon.svg" alt="">
+                </div>
+                <div class="description hide">
+                  Сотрудники знают свое дело и имеют чуткий подход к каждому клиенту! Показали строющиеся дома, разъяснили технологию и вообщим помогли сделать правильный выбор уже строящегося дома. Всем рекомендую сотрудничать только с ними! Молодцы!!!! Отдельная благодарность коммерческом директору Денису и менеджеру Геннадию!
+                </div>
+                <button class="show__btn">
+                  <span>Читать дальше</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.14462 7.71933C6.74591 8.03969 6.15396 8.0187 5.78057 7.65636C5.75821 7.63467 5.73711 7.61221 5.71728 7.58908L0.578024 2.60198C0.181676 2.21737 0.181676 1.59379 0.578023 1.20917C0.974371 0.824562 1.61698 0.824562 2.01332 1.20918L6.50124 5.56422L10.9864 1.21183C11.3828 0.827213 12.0254 0.827213 12.4217 1.21183C12.8181 1.59644 12.8181 2.22002 12.4217 2.60463L7.23953 7.63341C7.23287 7.64025 7.22609 7.64702 7.21919 7.65371C7.1952 7.67699 7.1703 7.69887 7.14462 7.71933Z" fill="#242A1F"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -816,7 +1036,7 @@
     <section id="our_company">
       <div class="main_container">
         <img src="./images/company_bg.webp" alt="" class="bg_img">
-        <div class="sec-title">Что <span>отличает нашу компанию</span> и помогает занимать лидирующие позиции?</div>
+        <h2 class="sec-title">Что <span>отличает нашу компанию</span> и помогает занимать лидирующие позиции?</h2>
         <div class="cards">
           <div class="card_item">
             <div class="card_title">Внимание к деталям</div>
@@ -898,9 +1118,9 @@
       <div class="main_container">
         <div class="map_content">
           <div class="map_left">
-            <div class="sec-title">
+            <h2 class="sec-title">
               Построим дом <span>вместе</span>?
-            </div>
+            </h2>
             <div class="dark-alert">Адрес</div>
             <div class="address">
               <div class="map_subtitle">г. Санкт-Петербург, Выборгское ш., дом 212, строение 5</div>
@@ -945,7 +1165,7 @@
               </svg>
             </a>
           </div>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7b8dafa566a4abdcf279e396acba8fcd3e3ba4075c6db2cbec3ed6035259a53&amp;source=constructor" width="595" height="816" frameborder="0"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7b8dafa566a4abdcf279e396acba8fcd3e3ba4075c6db2cbec3ed6035259a53&amp;source=constructor" width="595" height="816"></iframe>
         </div>
       </div>
     </section>
