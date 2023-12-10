@@ -434,9 +434,6 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
   align-items: center;
   justify-content: center;
 }
-#index_home .index_question_card .card_right .slide_count .slider_coun_in {
-  width: auto;
-}
 #index_home .index_question_card .card_right .slider_pagination {
   height: 1px;
   background: #EEE;
@@ -645,6 +642,27 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
 }
 #index_home .index_question_card .card_right .image #home_card_slide_20:checked + label[for=home_card_slide_20]::after {
   display: block;
+}
+#index_home .index_question_card .card_right .card_right_slider {
+  padding-bottom: 1px;
+}
+#index_home .index_question_card .card_right .link_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.52rem;
+}
+#index_home .index_question_card .card_right .dark-link {
+  padding: 0.625rem 2.5625rem;
+  background: var(--Dark-green, #242A1F);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.88rem;
+  color: var(--White, #FFF);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .main__cards {

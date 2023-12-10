@@ -485,10 +485,6 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
-                .slider_coun_in  {
-                    width: auto;
-                }
             }
 
             .slider_pagination {
@@ -603,6 +599,30 @@ header {
                         }
                     }
                 }
+            }
+
+            .card_right_slider {
+                padding-bottom: 1px;
+            }
+
+            .link_wrapper {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 2.52rem;
+            }
+
+            .dark-link {
+                padding: 0.625rem 2.5625rem;
+                background: var(--Dark-green, #242A1F);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.88rem;
+                color: var(--White, #FFF);
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: uppercase;
             }
         }
     }
