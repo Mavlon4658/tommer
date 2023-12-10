@@ -34,8 +34,6 @@ if (slide_1) {
 let swiper2 = new Swiper(".project-slide", {
     slidesPerView: 3,
     spaceBetween: 30,
-    freeMode: true,
-    loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -76,4 +74,18 @@ if (customer_sliders.length) {
             btn.classList.toggle('active')
         }
     })
+}
+
+const accordions = document.querySelectorAll('.accordion');
+
+if (accordions.length) {
+    accordions.forEach((item) => {
+        const header = item.querySelector('.accordion_head');
+        const content = item.querySelector('.accordion_body');
+        
+        header.addEventListener('click', () => {
+            header.classList.toggle('active')
+            content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+        });
+    });
 }

@@ -116,6 +116,7 @@ header .main_container {
   display: flex;
   align-items: flex-start;
   gap: 1.44rem;
+  max-width: 78.12rem;
 }
 header .logo {
   width: 10rem;
@@ -221,6 +222,40 @@ header .menu_bottom a {
 }
 header .menu_bottom a.last {
   gap: 0.62rem;
+}
+header .menu_bottom .nav_dropdown {
+  position: relative;
+}
+header .menu_bottom .nav_dropdown__head {
+  display: flex;
+  align-items: center;
+  gap: 0.31rem;
+  color: #242A1F;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+header .menu_bottom .nav_dropdown__body {
+  background: #EEE;
+  position: absolute;
+  padding-top: 10px;
+  display: none;
+  flex-direction: column;
+  transform: translateX(-10px);
+}
+header .menu_bottom .nav_dropdown__body a {
+  color: #242A1F;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: none;
+  white-space: nowrap;
+  padding: 5px 10px;
+}
+header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
+  display: flex;
 }
 
 #index_home {
@@ -875,6 +910,9 @@ header .menu_bottom a.last {
   font-weight: 700;
   border-bottom: 0.125rem solid #242A1F;
 }
+.project .project__slider .project-slide {
+  overflow: visible;
+}
 .project .project__slider .swiper-slide {
   width: 23.125rem;
   display: flex;
@@ -1275,6 +1313,74 @@ header .menu_bottom a.last {
 .production .card_right ul .description span {
   display: inline;
   font-weight: 600;
+}
+
+#question .main_container {
+  overflow: hidden;
+  position: relative;
+}
+#question .main_container .question_bg {
+  position: absolute;
+  top: 3rem;
+  right: 6rem;
+}
+#question .sec-title {
+  position: relative;
+}
+#question p {
+  color: var(--Dark-green, #242A1F);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 1.31rem 0 3.12rem;
+  position: relative;
+}
+#question p a {
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+#question .accordion .accordion_head {
+  border-radius: 0.3125rem;
+  border-bottom: 1px solid var(--Gray, #5B5B59);
+  background: var(--Dark-green, #242A1F);
+  padding: 1rem 1.88rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 6.875rem;
+  cursor: pointer;
+}
+#question .accordion .accordion_head span {
+  color: var(--White, #FFF);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+  position: relative;
+}
+#question .accordion .accordion_head svg {
+  flex-shrink: 0;
+  transition: 0.3s ease-in-out all;
+  position: relative;
+}
+#question .accordion .accordion_head.active svg {
+  transform: rotateZ(180deg);
+}
+#question .accordion .accordion_body {
+  border-radius: 0.125rem;
+  background: var(--White, #FFF);
+  color: var(--Dark-green, #242A1F);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 120%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+#question .accordion .accordion_body span {
+  padding: 1.88rem;
+  position: relative;
 }
 
 .several {
