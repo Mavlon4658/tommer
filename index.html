@@ -22,6 +22,7 @@
       <div class="main_container">
         <a href="#" class="logo">
           <img src="./images/head_logo.svg" width="133" height="92" alt="">
+          <!-- <img src="./images/head_logo_mobile.svg" class="mobile" width="129" height="129" alt=""> -->
         </a>
         <div class="menues">
           <div class="menu_top">
@@ -58,6 +59,9 @@
                 <span>11.00-19.00 ежедневно</span>
               </div>
             </div>
+            <button class="bars">
+              <img src="./images/bars.svg" width="25" height="20" alt="">
+            </button>
           </div>
           <div class="line"></div>
           <ul class="menu_bottom">
@@ -171,6 +175,128 @@
         </div>
       </div>
     </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile_menu_wrapper">
+      <div class="mobile_menu_bg"></div>
+      <div class="mobile_menu">
+        <div class="mobile_menu_top">
+          <a href="#" class="logo">
+            <img src="./images/head_logo_mobile.svg" alt="">
+          </a>
+          <button class="close">&times;</button>
+        </div>
+        <ul class="mobile_menu_bottom">
+          <li class="nav_dropdown">
+            <div class="nav_dropdown__head">
+              <span>Проекты и цены</span>
+              <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+            </div>
+            <ul class="nav_dropdown__body">
+              <li>
+                <a href="#">Дома из клееного бруса</a>
+              </li>
+              <li>
+                <a href="#">Бани из клееного бруса</a>
+              </li>
+              <li>
+                <a href="#">Фахверк дома</a>
+              </li>
+              <li>
+                <a href="#">Фахверк бани</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_dropdown">
+            <div class="nav_dropdown__head">
+              <span>Услуги</span>
+              <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+            </div>
+            <ul class="nav_dropdown__body">
+              <li>
+                <a href="#">Проектирования</a>
+              </li>
+              <li>
+                <a href="#">Инженерные коммуникации</a>
+              </li>
+              <li>
+                <a href="#">Ландшафт</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_dropdown">
+            <div class="nav_dropdown__head">
+              <span>Компания</span>
+              <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+            </div>
+            <ul class="nav_dropdown__body">
+              <li>
+                <a href="#">О компании</a>
+              </li>
+              <li>
+                <a href="#">Отзывы</a>
+              </li>
+              <li>
+                <a href="#">Сертификаты</a>
+              </li>
+              <li>
+                <a href="#">Вакансии</a>
+              </li>
+              <li>
+                <a href="#">Производство</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_dropdown">
+            <div class="nav_dropdown__head">
+              <span>Клиентам</span>
+              <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+            </div>
+            <ul class="nav_dropdown__body">
+              <li>
+                <a href="#">Расчет ипотеки</a>
+              </li>
+              <li>
+                <a href="#">Калькулятор строительства</a>
+              </li>
+              <li>
+                <a href="#">Технологии</a>
+              </li>
+              <li>
+                <a href="#">Гарантии</a>
+              </li>
+              <li>
+                <a href="#">Частые-вопросы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_dropdown">
+            <div class="nav_dropdown__head">
+              <span>Построено</span>
+              <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+            </div>
+            <ul class="nav_dropdown__body">
+              <li>
+                <a href="#">Все объекты</a>
+              </li>
+              <li>
+                <a href="#">Поселок МОХ</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+          <li>
+            <a href="#" class="last">
+              <img src="./images/heart_icon.svg" width="18" height="18" alt="">
+              <span>Избранное</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Mobile menu end -->
     <!-- Header end -->
 
     <!-- Home start -->
@@ -183,6 +309,7 @@
           <div class="title_2">с гарантией 5 лет</div>
         </div>
         <h2 class="title">от 10 млн рублей</h2>
+        <h3 class="mobile">Из клеенного бруса и фахверк от известного <br> застройщика с прозрачной историей</h3>
         <div class="cards">
           <div class="card_item">
             <img src="./images/home_card_1.svg" width="47" height="47" alt="">
@@ -432,30 +559,51 @@
           <div class="selections__items">
             <div class="selections__item">
               <span class="selections__item-title">Тип проекта</span>
-              <a href="#!">
+              <button class="selections__item__head">
                 <span>Любая</span>
                 <img src="images/chevron_bottom.svg" alt="">
-              </a>
+              </button>
+              <div class="selections__item__body">
+                <button class="active">Любая</button>
+                <button>Любая 1</button>
+                <button>Любая 2</button>
+                <button>Любая 3</button>
+                <button>Любая 4</button>
+              </div>
             </div>
 
             <div class="select-border"></div>
 
             <div class="selections__item">
               <span class="selections__item-title">Стоимость</span>
-              <a href="#!">
+              <button class="selections__item__head">
                 <span>Любая</span>
                 <img src="images/chevron_bottom.svg" alt="">
-              </a>
+              </button>
+              <div class="selections__item__body">
+                <button class="active">Любая</button>
+                <button>Любая 1</button>
+                <button>Любая 2</button>
+                <button>Любая 3</button>
+                <button>Любая 4</button>
+              </div>
             </div>
 
             <div class="select-border"></div>
 
             <div class="selections__item">
               <span class="selections__item-title">Площадь</span>
-              <a href="#!">
+              <button class="selections__item__head">
                 <span>Любая</span>
                 <img src="images/chevron_bottom.svg" alt="">
-              </a>
+              </button>
+              <div class="selections__item__body">
+                <button class="active">Любая</button>
+                <button>Любая 1</button>
+                <button>Любая 2</button>
+                <button>Любая 3</button>
+                <button>Любая 4</button>
+              </div>
             </div>
           </div>
 
@@ -607,7 +755,7 @@
           <div class="swiper project-slide">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="#!" class="project__slider-img"><img src="images/project-slider-img1.webp" alt=""></a>
+                <a href="#" class="project__slider-img"><img src="images/project-slider-img1.webp" alt=""></a>
                 <div class="project__slider-info">
                   <h4 class="project__slider-title">Дом из клееного бруса "Рохминские дачи"</h4>
                   <div class="project__slider-price">
@@ -668,7 +816,8 @@
                 <input type="number" name="number" placeholder="Введите телефон" class="project__catalog-inp" required>
               </div>
 
-              <button class="project__form-btn success-link" type="submit">Получить каталог в WhatsApp
+              <button class="project__form-btn success-link" type="submit">
+                Получить каталог в WhatsApp
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                   <path d="M12.4945 1.79648C12.4945 1.2442 12.0468 0.79648 11.4945 0.79648L2.49454 0.79648C1.94225 0.79648 1.49454 1.2442 1.49454 1.79648C1.49454 2.34877 1.94225 2.79648 2.49454 2.79648L10.4945 2.79648L10.4945 10.7965C10.4945 11.3488 10.9423 11.7965 11.4945 11.7965C12.0468 11.7965 12.4945 11.3488 12.4945 10.7965L12.4945 1.79648ZM2.21248 12.4928L12.2016 2.50359L10.7874 1.08937L0.798264 11.0785L2.21248 12.4928Z" fill="#242A1F"/>
                 </svg>
@@ -716,7 +865,7 @@
     <section class="house-video">
       <div class="main_container">
         <div class="house__video-content">
-          <a href="#!" class="house__video-play"><img src="images/play.svg" alt=""></a>
+          <a href="#" class="house__video-play"><img src="images/play.svg" alt=""></a>
         </div>
       </div>
     </section>
@@ -740,7 +889,7 @@
             <div class="view__location-info">
               <a href="#!" class="view__location-name">Санкт-Петербург, Выборгское ш., дом 212, строение 5</a>
               <p>Добро пожаловать с 11-19 ежедневно</p>
-              <a href="#!" class="view__location-link">Открыть в Яндекс Картах</a>
+              <a href="#" class="view__location-link">Открыть в Яндекс Картах</a>
             </div>
           </div>
         </div>
@@ -1305,7 +1454,9 @@
               </svg>
             </a>
           </div>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7b8dafa566a4abdcf279e396acba8fcd3e3ba4075c6db2cbec3ed6035259a53&amp;source=constructor" width="595" height="816"></iframe>
+          <div class="map_wrapper">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7b8dafa566a4abdcf279e396acba8fcd3e3ba4075c6db2cbec3ed6035259a53&amp;source=constructor" width="595" height="816"></iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -1319,18 +1470,18 @@
             <a href="#" class="logo">
               <img src="./images/footer_logo.svg" width="260" height="73" alt="">
             </a>
-            <ul>
-              <li>
-                <a class="link" href="#">+7 (812) 921-07-07</a>
+            <ul class="socials_wrapper">
+              <li class="link">
+                <a href="#">+7 (812) 921-07-07</a>
               </li>
-              <li>
-                <a class="link email" href="#">spb@domtommer.ru</a>
+              <li class="link email">
+                <a href="#">spb@domtommer.ru</a>
               </li>
-              <li>
-                <a class="answer" href="#">Пишите, звоните и задавайте вопросы</a>
+              <li class="answer">
+                <a href="#">Пишите, звоните и задавайте вопросы</a>
               </li>
-              <li>
-                <div class="socials">
+              <li class="socials">
+                <div>
                   <a href="#">
                     <img src="./images/whatsapp_icon.svg" width="44" height="44" alt="">
                   </a>
@@ -1342,8 +1493,8 @@
                   </a>
                 </div>
               </li>
-              <li>
-                <a class="address" href="#">г. Санкт-Петербург, Выборгское ш., дом 212, строение 5</a>
+              <li class="address">
+                <a href="#">г. Санкт-Петербург, Выборгское ш., дом 212, строение 5</a>
               </li>
             </ul>
           </div>

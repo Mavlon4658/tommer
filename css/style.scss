@@ -131,6 +131,10 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        .mobile {
+            display: none;
+        }
     }
 
     .menues {
@@ -217,6 +221,10 @@ header {
                 line-height: normal;
             }
         }
+
+        .bars {
+            display: none;
+        }
     }
 
     .line {
@@ -289,6 +297,10 @@ header {
     }
 }
 
+.mobile_menu_wrapper {
+    display: none;
+}
+
 #index_home {
     padding-top: 4.94rem;
 
@@ -333,6 +345,10 @@ header {
             line-height: 120%;
             text-transform: uppercase;
         }
+    }
+
+    h3.mobile {
+        display: none;
     }
 
     .cards {
@@ -708,6 +724,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 gap: 0.94rem;
+                position: relative;
 
                 .selections__item-title{
                     color: var(--Dark-green, #242A1F);
@@ -716,13 +733,14 @@ header {
                     line-height: 120%;
                 }
 
-                a{
+                &__head{
                     display: flex;
                     align-items: center;
                     gap: 1.88rem;
                     padding: 0.625rem 1.25rem;
                     border-radius: 0.3125rem;
                     background: var(--Light-gray, #EEE);
+                    cursor: pointer;
 
                     span{
                         color: var(--Dark-green, #242A1F);
@@ -730,6 +748,47 @@ header {
                         font-weight: 600;
                         line-height: 120%; 
                     }
+                }
+
+                &__body {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    bottom: -4rem;
+                    border-radius: 0.3125rem;
+                    background: var(--primary-white, #eee);
+                    width: 100%;
+                    top: 5.2rem;
+                    display: none;
+                    z-index: 2;
+                    height: 155px;
+                    overflow: hidden;
+
+                    button {
+                        color: var(--secondary-gray, #3C3C3B);
+                        font-size: 1rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%;
+                        width: 100%;
+                        text-align: left;
+                        padding: 5px 10px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background: white;
+                        }
+                    }
+
+                    button.active {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .selections__item.active {
+                .selections__item__body {
+                    display: flex;
                 }
             }
 
@@ -2015,7 +2074,7 @@ header {
         .form_head {
             display: flex;
             align-items: center;
-            gap: 1.88rem;
+            gap: 3.56rem;
             margin-bottom: 1.56rem;
 
             .head_item {
@@ -2169,6 +2228,10 @@ header {
         gap: 1rem;
         margin-bottom: 3.06rem;
     }
+
+    iframe {
+        border: 0;
+    }
 }
 
 footer {
@@ -2183,15 +2246,26 @@ footer {
     }
 
     .social_links {
+
+        .socials_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         ul {
             margin-top: 2.1rem;
         }
 
         .link {
-            font-size: 1.375rem;
-            font-weight: 600;
-            line-height: 120%;
+            order: 1;
             margin-bottom: 1.21rem;
+
+            a {
+                font-size: 1.375rem;
+                font-weight: 600;
+                line-height: 120%;
+            }
         }
 
         .email {
@@ -2199,24 +2273,36 @@ footer {
         }
 
         .answer {
-            font-size: 1rem;
-            font-weight: 500;
-            line-height: 140%;
             margin-bottom: 3.44rem;
+            order: 2;
+            
+            a {
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 140%;
+            }
         }
 
         .socials {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
             margin-bottom: 1.21rem;
+            order: 3;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
         }
 
         .address {
-            font-size: 1rem;
-            font-weight: 500;
-            line-height: 140%;
             max-width: 16.28581rem;
+            order: 4;
+
+            a {
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 140%;
+            }
         }
     }
 
@@ -2310,3 +2396,5 @@ footer {
         margin-top: 3.52rem;
     }
 }
+
+@import "_responsive.scss";
