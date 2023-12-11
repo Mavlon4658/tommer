@@ -48,8 +48,8 @@ if (slide_1) {
 }
 
 let swiper2 = new Swiper(".project-slide", {
-    slidesPerView: 2.3,
-    spaceBetween: 20,
+    slidesPerView: 1.1,
+    spaceBetween: 15,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -62,6 +62,14 @@ let swiper2 = new Swiper(".project-slide", {
         992: {
             slidesPerView: 2.5,
             spaceBetween: 20,
+        },
+        750: {
+            slidesPerView: 2.3,
+            spaceBetween: 20,
+        },
+        470: {
+            slidesPerView: 1.4,
+            spaceBetween: 15,
         }
     }
 });
@@ -69,22 +77,32 @@ let swiper2 = new Swiper(".project-slide", {
 let customer_slider = document.querySelector('.customers .customer_slider') 
 if (customer_slider) {
     let custom_slide = new Swiper(customer_slider, {
-        slidesPerView: 1.7,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 15,
         navigation: {
             nextEl: ".customer_slide_next_btn",
             prevEl: ".customer_slide_prev_btn",
         },
         breakpoints: {
-            slidesPerView: 2,
-            spaceBetween: 30,
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 1.7,
+                spaceBetween: 20,
+            },
+            750: {
+                slidesPerView: 1.4,
+                spaceBetween: 20,
+            }
         }
     })
 }
 
 let swiper3 = new Swiper(".team-slide", {
-    slidesPerView: 2.5,
-    spaceBetween: 20,
+    slidesPerView: 1.15,
+    spaceBetween: 15,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -93,6 +111,18 @@ let swiper3 = new Swiper(".team-slide", {
         1200: {
             slidesPerView: 3,
             spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+        },
+        750: {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+        },
+        470: {
+            slidesPerView: 1.4,
+            spaceBetween: 15,
         }
     }
 });

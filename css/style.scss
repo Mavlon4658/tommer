@@ -321,6 +321,10 @@ header {
         text-transform: uppercase;
     }
 
+    .title.mobile {
+        display: none;
+    }
+
     .texts {
         display: flex;
         align-items: center;
@@ -1071,6 +1075,10 @@ header {
                 }
             }
 
+            ul {
+                display: none;
+            }
+
             form{
                 max-width: 26.5625rem;
 
@@ -1167,7 +1175,8 @@ header {
 .house-video{
     background-image: url(../images/house-video-img.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     height: 40.625rem;
 
     .main_container{
@@ -1263,7 +1272,8 @@ header {
     .view__content{
         background-image: url(../images/view-img.webp);
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
         height: 46.875rem;
         padding: 1.87rem;
         display: flex;
@@ -1549,38 +1559,32 @@ header {
         background: var(--White, #FFF);
         display: flex;
         padding: 2.5rem;
-        flex-direction: column;
         align-items: flex-start;
-        gap: 4.375rem;
+        gap: 4.375rem 3.75rem;
+        flex-wrap: wrap;
 
-        .several__cards-item{
-            display: flex;
-            align-items: flex-start;
-            gap: 3.75rem;
+        .several__card{
+            width: 20rem;
 
-            .several__card{
-                width: 20rem;
+            span{
+                height: 2.75rem;
+                padding: 0.625rem;
+                border-radius: 0.3125rem;
+                background: var(--Dark-green, #242A1F);
+                color: var(--White, #FFF);
+                font-size: 1.25rem;
+                font-weight: 600;
+                line-height: 120%; /* 1.5rem */
+                text-transform: uppercase;
+                margin-bottom: 1.6875rem;
+            }
 
-                span{
-                    height: 2.75rem;
-                    padding: 0.625rem;
-                    border-radius: 0.3125rem;
-                    background: var(--Dark-green, #242A1F);
-                    color: var(--White, #FFF);
-                    font-size: 1.25rem;
-                    font-weight: 600;
-                    line-height: 120%; /* 1.5rem */
-                    text-transform: uppercase;
-                    margin-bottom: 1.6875rem;
-                }
-
-                h4{
-                    color: var(--Dark-green, #242A1F);
-                    font-size: 1.25rem;
-                    font-weight: 600;
-                    line-height: 120%; /* 1.5rem */
-                    text-transform: uppercase;
-                }
+            h4{
+                color: var(--Dark-green, #242A1F);
+                font-size: 1.25rem;
+                font-weight: 600;
+                line-height: 120%; /* 1.5rem */
+                text-transform: uppercase;
             }
         }
     }
@@ -2350,6 +2354,10 @@ footer {
             li {
                 max-width: 9.73927rem;
             }
+        }
+
+        .client.mobile {
+            display: none;
         }
 
         .services {
