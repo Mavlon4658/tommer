@@ -30,6 +30,8 @@ if (slide_1) {
     let swiper = new Swiper('#index_home .card_right_slider', {
         slidesPerView: 1,
         centeredSlides: false,
+        spaceBetween: 15,
+        speed: 1400,
         scrollbar: {
             el: "#index_home .index_question_card .slider_pagination",
         },
@@ -51,6 +53,7 @@ let swiper2 = new Swiper(".project-slide", {
     slidesPerView: 1.1,
     spaceBetween: 15,
     simulateTouch: true,
+    speed: 1400,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -80,6 +83,7 @@ if (customer_slider) {
     let custom_slide = new Swiper(customer_slider, {
         slidesPerView: 1,
         spaceBetween: 15,
+        speed: 1400,
         navigation: {
             nextEl: ".customer_slide_next_btn",
             prevEl: ".customer_slide_prev_btn",
@@ -104,6 +108,7 @@ if (customer_slider) {
 let swiper3 = new Swiper(".team-slide", {
     slidesPerView: 1.15,
     spaceBetween: 15,
+    speed: 1400,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
