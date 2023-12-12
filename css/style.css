@@ -2200,6 +2200,23 @@ footer .foot_bottom {
     width: 500px;
   }
 }
+@media only screen and (min-width: 1250px) {
+  #index_home .home_bg {
+    display: none;
+  }
+  #index_home .main_container {
+    position: relative;
+  }
+  #index_home .main_container .home_bg {
+    display: block;
+    position: absolute;
+    top: -237px;
+    right: -342px;
+    z-index: -1;
+    width: 790px;
+    height: 1130px;
+  }
+}
 @media only screen and (max-width: 1250px) {
   .success-link {
     padding: 1.25rem 1.88rem;

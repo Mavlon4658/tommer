@@ -35,10 +35,10 @@ if (slide_1) {
         },
     });
 
-    function makeFraction () {
-        let real_idx = swiper.realIndex + 1;
-        let slid_length = swiper.slides.length;
-        let home_slide_count = document.querySelector('#index_home .index_question_card .slide_count');
+    const makeFraction = async () => {
+        let real_idx = await swiper.realIndex + 1;
+        let slid_length = await swiper.slides.length;
+        let home_slide_count = await document.querySelector('#index_home .index_question_card .slide_count');
         home_slide_count.textContent = `Вопрос ${real_idx} из ${slid_length} `;
     }
 
@@ -50,6 +50,7 @@ if (slide_1) {
 let swiper2 = new Swiper(".project-slide", {
     slidesPerView: 1.1,
     spaceBetween: 15,
+    simulateTouch: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
