@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- add style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header>
+            <div class="main_container">
+                <a href="#" class="logo">
+                    <img src="./images/head_logo.svg" width="133" height="92" alt="">
+                    <!-- <img src="./images/head_logo_mobile.svg" class="mobile" width="129" height="129" alt=""> -->
+                </a>
+                <div class="menues">
+                    <div class="menu_top">
+                        <div class="address">г. Санкт-Петербург, <br> Выборгское ш., дом 212</div>
+                        <ul class="texts">
+                            <li class="text text_1">
+                                <a href="#">3D-тур</a>
+                            </li>
+                            <li class="text">
+                                <a href="#">Заказать консультацию</a>
+                            </li>
+                        </ul>
+                        <div class="menu_top_right">
+                            <ul class="social_links">
+                                <li>
+                                    <a href="#">
+                                        <span class="notification"></span>
+                                        <img src="./images/whatsapp_icon.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/Telegram.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/Vkontakte.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="phone">
+                                <a href="#">+7 (812) 921-07-07</a>
+                                <span>11.00-19.00 ежедневно</span>
+                            </div>
+                        </div>
+                        <button class="bars">
+                            <img src="./images/bars.svg" width="25" height="20" alt="">
+                        </button>
+                    </div>
+                    <div class="line"></div>
+                    <ul class="menu_bottom">
+                        <li class="nav_dropdown">
+                            <div class="nav_dropdown__head">
+                                <span>Проекты и цены</span>
+                                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                            </div>
+                            <ul class="nav_dropdown__body">
+                                <li>
+                                    <a href="#">Дома из клееного бруса</a>
+                                </li>
+                                <li>
+                                    <a href="#">Бани из клееного бруса</a>
+                                </li>
+                                <li>
+                                    <a href="#">Фахверк дома</a>
+                                </li>
+                                <li>
+                                    <a href="#">Фахверк бани</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_dropdown">
+                            <div class="nav_dropdown__head">
+                                <span>Услуги</span>
+                                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                            </div>
+                            <ul class="nav_dropdown__body">
+                                <li>
+                                    <a href="#">Проектирования</a>
+                                </li>
+                                <li>
+                                    <a href="#">Инженерные коммуникации</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ландшафт</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_dropdown">
+                            <div class="nav_dropdown__head">
+                                <span>Компания</span>
+                                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                            </div>
+                            <ul class="nav_dropdown__body">
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сертификаты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вакансии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Производство</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_dropdown">
+                            <div class="nav_dropdown__head">
+                                <span>Клиентам</span>
+                                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                            </div>
+                            <ul class="nav_dropdown__body">
+                                <li>
+                                    <a href="#">Расчет ипотеки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Калькулятор строительства</a>
+                                </li>
+                                <li>
+                                    <a href="#">Технологии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Гарантии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Частые-вопросы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_dropdown">
+                            <div class="nav_dropdown__head">
+                                <span>Построено</span>
+                                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                            </div>
+                            <ul class="nav_dropdown__body">
+                                <li>
+                                    <a href="#">Все объекты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Поселок МОХ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="last">
+                                <img src="./images/heart_icon.svg" width="18" height="18" alt="">
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile menu -->
+        <div class="mobile_menu_wrapper">
+            <div class="mobile_menu_bg"></div>
+            <div class="mobile_menu">
+                <div class="mobile_menu_top">
+                    <a href="#" class="logo">
+                        <img src="./images/head_logo_mobile.svg" alt="">
+                    </a>
+                    <button class="close">&times;</button>
+                </div>
+                <ul class="mobile_menu_bottom">
+                    <li class="nav_dropdown">
+                        <div class="nav_dropdown__head">
+                            <span>Проекты и цены</span>
+                            <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                        </div>
+                        <ul class="nav_dropdown__body">
+                            <li>
+                                <a href="#">Дома из клееного бруса</a>
+                            </li>
+                            <li>
+                                <a href="#">Бани из клееного бруса</a>
+                            </li>
+                            <li>
+                                <a href="#">Фахверк дома</a>
+                            </li>
+                            <li>
+                                <a href="#">Фахверк бани</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_dropdown">
+                        <div class="nav_dropdown__head">
+                            <span>Услуги</span>
+                            <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                        </div>
+                        <ul class="nav_dropdown__body">
+                            <li>
+                                <a href="#">Проектирования</a>
+                            </li>
+                            <li>
+                                <a href="#">Инженерные коммуникации</a>
+                            </li>
+                            <li>
+                                <a href="#">Ландшафт</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_dropdown">
+                        <div class="nav_dropdown__head">
+                            <span>Компания</span>
+                            <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                        </div>
+                        <ul class="nav_dropdown__body">
+                            <li>
+                                <a href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">Сертификаты</a>
+                            </li>
+                            <li>
+                                <a href="#">Вакансии</a>
+                            </li>
+                            <li>
+                                <a href="#">Производство</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_dropdown">
+                        <div class="nav_dropdown__head">
+                            <span>Клиентам</span>
+                            <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                        </div>
+                        <ul class="nav_dropdown__body">
+                            <li>
+                                <a href="#">Расчет ипотеки</a>
+                            </li>
+                            <li>
+                                <a href="#">Калькулятор строительства</a>
+                            </li>
+                            <li>
+                                <a href="#">Технологии</a>
+                            </li>
+                            <li>
+                                <a href="#">Гарантии</a>
+                            </li>
+                            <li>
+                                <a href="#">Частые-вопросы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_dropdown">
+                        <div class="nav_dropdown__head">
+                            <span>Построено</span>
+                            <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                        </div>
+                        <ul class="nav_dropdown__body">
+                            <li>
+                                <a href="#">Все объекты</a>
+                            </li>
+                            <li>
+                                <a href="#">Поселок МОХ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="last">
+                            <img src="./images/heart_icon.svg" width="18" height="18" alt="">
+                            <span>Избранное</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Mobile menu end -->
+        <!-- Header end -->
+
+        <!-- Breadcrumb -->
+        <div class="main_container">
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="/">Главная</a>
+                </li>
+                <li>/</li>
+                <li>
+                    <span>Проекты</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Breadcrumb end -->
+
+        <!-- Project home -->
+        <section id="projects_home">
+            <div class="main_container">
+                <div class="project_home_card">
+                    <div class="project_home_card__top">
+                        <h1 class="main_title">проекты домов</h1>
+                        <h3>Строительство домов под ключ из фахверка и клееного бруса</h3>
+                        <div class="texts">
+                            <h2>Возможна разработка проекта дома с подробным расчетом <span>по любой фотографии из
+                                    интернета</span></h2>
+                            <a href="#">Загрузить</a>
+                        </div>
+                    </div>
+                    <div class="project_home_card__bottom">
+                        <div class="filter_left">
+                            <div class="filter_item">
+                                <div class="selections__item">
+                                    <button class="selections__item__head">
+                                        <span>Цена, млн.руб</span>
+                                        <span class="icon">
+                                            <img src="images/chevron_bottom.svg" alt="">
+                                        </span>
+                                    </button>
+                                    <div class="selections__item__body">
+                                        <button class="active">Любая</button>
+                                        <button>Любая 1</button>
+                                        <button>Любая 2</button>
+                                        <button>Любая 3</button>
+                                        <button>Любая 4</button>
+                                    </div>
+                                </div>
+                                <div class="selections__item">
+                                    <button class="selections__item__head">
+                                        <span>Площадь, м2</span>
+                                        <span class="icon">
+                                            <img src="images/chevron_bottom.svg" alt="">
+                                        </span>
+                                    </button>
+                                    <div class="selections__item__body">
+                                        <button class="active">Любая</button>
+                                        <button>Любая 1</button>
+                                        <button>Любая 2</button>
+                                        <button>Любая 3</button>
+                                        <button>Любая 4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter_line"></div>
+                            <div class="filter_item">
+                                <div class="selections__item">
+                                    <button class="selections__item__head">
+                                        <span>Этажность</span>
+                                        <span class="icon">
+                                            <img src="images/chevron_bottom.svg" alt="">
+                                        </span>
+                                    </button>
+                                    <div class="selections__item__body">
+                                        <button class="active">Любая</button>
+                                        <button>Любая 1</button>
+                                        <button>Любая 2</button>
+                                        <button>Любая 3</button>
+                                        <button>Любая 4</button>
+                                    </div>
+                                </div>
+                                <div class="selections__item">
+                                    <button class="selections__item__head">
+                                        <span>Размер дома</span>
+                                        <span class="icon">
+                                            <img src="images/chevron_bottom.svg" alt="">
+                                        </span>
+                                    </button>
+                                    <div class="selections__item__body">
+                                        <button class="active">Любая</button>
+                                        <button>Любая 1</button>
+                                        <button>Любая 2</button>
+                                        <button>Любая 3</button>
+                                        <button>Любая 4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter_line"></div>
+                            <div class="filter_item">
+                                <div class="selections__item">
+                                    <button class="selections__item__head">
+                                        <span>Комнаты</span>
+                                        <span class="icon">
+                                            <img src="images/chevron_bottom.svg" alt="">
+                                        </span>
+                                    </button>
+                                    <div class="selections__item__body">
+                                        <button class="active">Любая</button>
+                                        <button>Любая 1</button>
+                                        <button>Любая 2</button>
+                                        <button>Любая 3</button>
+                                        <button>Любая 4</button>
+                                    </div>
+                                </div>
+                                <div class="selections__item">
+                                    <button class="selections__item__head">
+                                        <span>Крыша</span>
+                                        <span class="icon">
+                                            <img src="images/chevron_bottom.svg" alt="">
+                                        </span>
+                                    </button>
+                                    <div class="selections__item__body">
+                                        <button class="active">Любая</button>
+                                        <button>Любая 1</button>
+                                        <button>Любая 2</button>
+                                        <button>Любая 3</button>
+                                        <button>Любая 4</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter_line"></div>
+                        </div>
+                        <div class="filter_right">
+                            <div class="selections__item">
+                                <button class="selections__item__head">
+                                    <span>Особенности</span>
+                                    <span class="icon">
+                                        <img src="images/chevron_bottom.svg" alt="">
+                                    </span>
+                                </button>
+                                <div class="selections__item__body">
+                                    <button class="active">Любая</button>
+                                    <button>Любая 1</button>
+                                    <button>Любая 2</button>
+                                    <button>Любая 3</button>
+                                    <button>Любая 4</button>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="success-link">
+                                    <span>Показать проекты</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+                                        <path d="M8.25422 1.01474C8.25422 0.660712 7.96722 0.373713 7.61319 0.373713L1.8439 0.373713C1.48987 0.373713 1.20287 0.660712 1.20287 1.01474C1.20287 1.36878 1.48987 1.65578 1.8439 1.65578L6.97215 1.65578L6.97215 6.78403C6.97215 7.13806 7.25915 7.42506 7.61319 7.42506C7.96722 7.42506 8.25422 7.13806 8.25422 6.78403L8.25422 1.01474ZM1.57144 7.96304L8.06646 1.46802L7.15991 0.561467L0.664886 7.05649L1.57144 7.96304Z" fill="#242A1F"/>
+                                    </svg>
+                                </a>
+                                <button class="dark-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8276 11.6265C1.51473 11.9394 1.00748 11.9394 0.69461 11.6265C0.381744 11.3136 0.381744 10.8064 0.69461 10.4935L4.95565 6.23246L0.696301 1.97311C0.383435 1.66024 0.383435 1.15299 0.696301 0.84012C1.00917 0.527254 1.51642 0.527254 1.82929 0.840119L6.08864 5.09947L10.348 0.840119C10.6609 0.527253 11.1681 0.527252 11.481 0.840118C11.7939 1.15298 11.7939 1.66024 11.481 1.97311L7.22163 6.23246L11.5418 10.5526C11.8546 10.8655 11.8546 11.3727 11.5418 11.6856C11.2289 11.9985 10.7216 11.9985 10.4088 11.6856L6.08864 7.36545L1.8276 11.6265Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Project home end -->
+
+        <!-- Sort card -->
+        <section id="sort_card">
+            <div class="main_container">
+                <div class="sort_card_head">
+                    <label>Сортировать по</label>
+                    <div class="selections__item">
+                        <button class="selections__item__head">
+                            <span>Цена, млн.руб</span>
+                            <span class="icon">
+                                <img src="images/chevron_bottom.svg" alt="">
+                            </span>
+                        </button>
+                        <div class="selections__item__body">
+                            <button class="active">Любая</button>
+                            <button>Любая 1</button>
+                            <button>Любая 2</button>
+                            <button>Любая 3</button>
+                            <button>Любая 4</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sort card end -->
+
+        <!-- Consultation -->
+        <section class="consultation">
+            <div class="main_container">
+                <div class="consultation_card">
+                    <img src="./images/consultation_card_bg.webp" alt="" class="card_bg">
+                    <h2 class="sec-title">Проведем для вас <br> <span>индивидуальную <br> видеоконсультацию</span></h2>
+                    <ul>
+                        <li>
+                            <img src="./images/consultation_icon_1.svg" width="47" height="47" alt="">
+                            <div class="description">
+                                <span>Поможем выбрать</span> подходящий для <br> ваших целей объект строительства
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/consultation_icon_2.svg" width="47" height="47" alt="">
+                            <div class="description">
+                                <span>Определим</span> ваши <br> потребности и пожелания
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/consultation_icon_3.svg" width="47" height="47" alt="">
+                            <div class="description">
+                                <span>Ответим</span> на все вопросы и <br> дадим рекомендации
+                            </div>
+                        </li>
+                    </ul>
+                    <form>
+                        <label>
+                            Оставьте заявку на консультацию, которую мы проведем для вас через <span>Telegram, WhatsApp
+                                или Zoom.</span>
+                        </label>
+                        <div class="inputs">
+                            <input type="text" placeholder="Введите имя">
+                            <input type="tel" placeholder="Введите телефон">
+                            <button type="submit" class="success-link">
+                                <span>Записаться на консультацию</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none">
+                                    <path
+                                        d="M11.9892 1.1666C11.9892 0.614312 11.5414 0.166597 10.9892 0.166598L1.98916 0.166598C1.43688 0.166597 0.989165 0.614312 0.989165 1.1666C0.989165 1.71888 1.43688 2.1666 1.98916 2.1666L9.98916 2.1666L9.98916 10.1666C9.98916 10.7189 10.4369 11.1666 10.9892 11.1666C11.5414 11.1666 11.9892 10.7189 11.9892 10.1666L11.9892 1.1666ZM1.70711 11.8629L11.6963 1.8737L10.2821 0.459491L0.292893 10.4487L1.70711 11.8629Z"
+                                        fill="#242A1F" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="links">
+                            Нажимая на кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Consultation end -->
+
+        <!-- Map -->
+        <section id="map">
+            <div class="main_container">
+                <div class="map_content">
+                    <div class="map_left">
+                        <h2 class="sec-title">
+                            Построим дом <span>вместе</span>?
+                        </h2>
+                        <div class="address_wrapper">
+                            <div class="address_wrapper__item_top">
+                                <div class="dark-alert">Адрес</div>
+                                <div class="address">
+                                    <div class="map_subtitle">г. Санкт-Петербург, Выборгское ш., дом 212, строение 5
+                                    </div>
+                                    <span>11.00-19.00 ежедневно</span>
+                                    <a href="https://yandex.uz/maps/-/CDq55Ii6" target="_blank">Открыть в Картах</a>
+                                </div>
+                            </div>
+                            <div class="address_wrapper__item_bottom">
+                                <div class="address_wrapper__phone">
+                                    <div class="dark-alert">Телефон</div>
+                                    <a href="#" class="map_subtitle phone">+7 (812) 921-07-07</a>
+                                </div>
+                                <div class="address_wrapper__email">
+                                    <div class="dark-alert">Почта</div>
+                                    <a href="#" class="map_subtitle email">spb@domtommer.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map_left_foot">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/dark_icon_1.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/dark_icon_2.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/dark_icon_3.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/dark_icon_4.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/dark_icon_5.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="success-link">
+                                <span>Отправить визитку в Whatsapp </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none">
+                                    <path
+                                        d="M11.9892 1.20615C11.9892 0.653863 11.5414 0.206148 10.9892 0.206148L1.98916 0.206148C1.43688 0.206148 0.989165 0.653863 0.989165 1.20615C0.989165 1.75843 1.43688 2.20615 1.98916 2.20615L9.98916 2.20615L9.98916 10.2061C9.98916 10.7584 10.4369 11.2061 10.9892 11.2061C11.5414 11.2061 11.9892 10.7584 11.9892 10.2061L11.9892 1.20615ZM1.70711 11.9024L11.6963 1.91325L10.2821 0.499041L0.292893 10.4882L1.70711 11.9024Z"
+                                        fill="#242A1F" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="map_wrapper">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7b8dafa566a4abdcf279e396acba8fcd3e3ba4075c6db2cbec3ed6035259a53&amp;source=constructor"
+                            width="595" height="816"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Map end -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="main_container">
+                <div class="foot_top">
+                    <div class="social_links">
+                        <a href="#" class="logo">
+                            <img src="./images/footer_logo.svg" width="260" height="73" alt="">
+                        </a>
+                        <div class="location_wrapper">
+                            <ul class="socials_wrapper">
+                                <li class="link">
+                                    <a href="#">+7 (812) 921-07-07</a>
+                                </li>
+                                <li class="link email">
+                                    <a href="#">spb@domtommer.ru</a>
+                                </li>
+                                <li class="answer">
+                                    <a href="#">Пишите, звоните и задавайте вопросы</a>
+                                </li>
+                                <li class="socials">
+                                    <div>
+                                        <a href="#">
+                                            <img src="./images/whatsapp_icon.svg" width="44" height="44" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/Telegram.svg" width="44" height="44" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/Vkontakte.svg" width="44" height="44" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="address">
+                                    <a href="#">г. Санкт-Петербург, Выборгское ш., дом 212, строение 5</a>
+                                </li>
+                            </ul>
+                            <div class="location">
+                                <a href="#">г. Санкт-Петербург, Выборгское ш., дом 212, строение 5</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="nav_links">
+                        <div class="nav_links_top">
+                            <ul class="company">
+                                <li class="nav_link_title">Компания</li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Реквизиты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Лицензии и свидетельства</a>
+                                </li>
+                                <li>
+                                    <a href="#">Партнеры</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вакансии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <ul class="services">
+                                <li class="nav_link_title">Услуги</li>
+                                <li>
+                                    <a href="#">Проектирование</a>
+                                </li>
+                                <li>
+                                    <a href="#">Производство домокомплектов</a>
+                                </li>
+                                <li>
+                                    <a href="#">Инженерия</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ландшафт</a>
+                                </li>
+                            </ul>
+                            <ul class="client mobile">
+                                <li class="nav_link_title">Клиентам</li>
+                                <li>
+                                    <a href="#">Ипотека</a>
+                                </li>
+                                <li>
+                                    <a href="#">Технологии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Гарантии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вопросы и ответы</a>
+                                </li>
+                            </ul>
+                            <ul class="prices">
+                                <li class="nav_link_title">Проекты и цены</li>
+                                <li>
+                                    <a href="#">Фахверк</a>
+                                </li>
+                                <li>
+                                    <a href="#">Клееный брус</a>
+                                </li>
+                                <li>
+                                    <a href="#">Домокомплекты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Индивидуальные проекты</a>
+                                </li>
+                                <li>
+                                    <a class="politika" href="#">Политика конфиденциальности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Карта сайта</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav_links_bottom">
+                            <ul class="client">
+                                <li class="nav_link_title">Клиентам</li>
+                                <li>
+                                    <a href="#">Ипотека</a>
+                                </li>
+                                <li>
+                                    <a href="#">Технологии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Гарантии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вопросы и ответы</a>
+                                </li>
+                            </ul>
+                            <ul class="portfolio">
+                                <li class="nav_link_title">Портфолио</li>
+                                <li>
+                                    <a href="#">Фото </a>
+                                </li>
+                                <li>
+                                    <a href="#">Видео</a>
+                                </li>
+                                <li>
+                                    <a href="#">Поселок МОХ</a>
+                                </li>
+                            </ul>
+                            <div class="qr_code">
+                                <img src="./images/qr_code.svg" width="160" height="161" alt="">
+                                <span>Наведите на QR-код для перехода в WhatsApp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot_bottom">
+                    Все права защищены. ООО "Томмер" 2023
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

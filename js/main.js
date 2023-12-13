@@ -49,34 +49,38 @@ if (slide_1) {
     makeFraction();
 }
 
-let swiper2 = new Swiper(".project-slide", {
-    slidesPerView: 1.1,
-    spaceBetween: 15,
-    simulateTouch: true,
-    speed: 1400,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        1200: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+try {
+    let swiper2 = new Swiper(".project-slide", {
+        slidesPerView: 1.1,
+        spaceBetween: 15,
+        simulateTouch: true,
+        speed: 1400,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
-        992: {
-            slidesPerView: 2.5,
-            spaceBetween: 20,
-        },
-        750: {
-            slidesPerView: 2.3,
-            spaceBetween: 20,
-        },
-        470: {
-            slidesPerView: 1.4,
-            spaceBetween: 15,
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+            750: {
+                slidesPerView: 2.3,
+                spaceBetween: 20,
+            },
+            470: {
+                slidesPerView: 1.4,
+                spaceBetween: 15,
+            }
         }
-    }
-});
+    });
+} catch (err) {
+    console.log(err);
+}
 
 let customer_slider = document.querySelector('.customers .customer_slider') 
 if (customer_slider) {
@@ -105,33 +109,37 @@ if (customer_slider) {
     })
 }
 
-let swiper3 = new Swiper(".team-slide", {
-    slidesPerView: 1.15,
-    spaceBetween: 15,
-    speed: 1400,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        1200: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+try {
+    let swiper3 = new Swiper(".team-slide", {
+        slidesPerView: 1.15,
+        spaceBetween: 15,
+        speed: 1400,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
-        992: {
-            slidesPerView: 2.5,
-            spaceBetween: 20,
-        },
-        750: {
-            slidesPerView: 2.2,
-            spaceBetween: 20,
-        },
-        470: {
-            slidesPerView: 1.4,
-            spaceBetween: 15,
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            },
+            750: {
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+            },
+            470: {
+                slidesPerView: 1.4,
+                spaceBetween: 15,
+            }
         }
-    }
-});
+    });
+} catch (err) {
+    console.log(err);
+}
 
 let customer_sliders = document.querySelectorAll('.customers .customer_slider .swiper-slide')
 if (customer_sliders.length) {
