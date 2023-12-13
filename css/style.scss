@@ -852,15 +852,26 @@ header {
                 height: 3.125rem;
                 font-size: 1rem;
             }
+
+            .dark-button {
+                svg {
+                    transform: translateY(2px);
+                }
+            }
         }
     }
 }
 
 #sort_card {
+    .filter_btn {
+        display: none;
+    }
+
     .sort_card_head {
         display: flex;
         align-items: center;
         gap: 0.875rem;
+        margin-bottom: 1.25rem;
 
         label {
             color: var(--Gray, #5B5B59);
@@ -872,6 +883,27 @@ header {
         .selections__item {
             position: relative;
 
+            &__head {
+                display: flex;
+                align-items: center;
+                gap: 0.4375rem;
+
+                span {
+                    color: var(--Dark-green, #242A1F);
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 140%;
+                }
+
+                span.icon {
+                    width: 30.5px;
+                    height: 30.5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
             &__body {
                 display: none;
                 flex-direction: column;
@@ -880,7 +912,7 @@ header {
                 width: calc(100% + 20px);
                 align-items: flex-start;
                 transform: translateX(-10px);
-                padding: 10px 0;
+                padding: 5px 0;
                 border-radius: 10px;
                 z-index: 1;
 
@@ -893,9 +925,15 @@ header {
                     font-weight: 500;
                     line-height: 140%;
                     cursor: pointer;
+
+                    &:hover {
+                    background: rgba(255, 255, 255, 0.552);
+                    }
                 }
 
-
+                button.active {
+                    background: rgba(255, 255, 255, 0.552);
+                }
             }
         }
 
@@ -903,6 +941,98 @@ header {
             .selections__item__body {
                 display: flex;
             }
+        }
+    }
+
+    .sort_cards {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.99rem 1.875rem;
+        flex-wrap: wrap;
+
+        .card_item {
+            width: calc(50% - 1.875rem / 2);
+
+            &__head {
+                margin-bottom: -5px;
+
+                img {
+                    width: 100%;
+                    border-radius: 0.625rem 0.625rem 0rem 0rem;
+                    height: 28.125rem;
+                    object-fit: cover;
+                }
+            }
+
+            &__body {
+                border-radius: 0rem 0rem 2.5rem 0.625rem;
+                background: var(--White, #FFF);
+                padding: 1.6rem 1.875rem 2.09rem;
+
+                .amount {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    padding-bottom: 0.6rem;
+                    margin-bottom: 0.36rem;
+                    border-bottom: 1px solid #CDDDC3;
+                    gap: 50px;
+                }
+
+                .card_title {
+                    color: var(--Dark-green, #242A1F);
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    min-height: 3.125rem;
+                }
+
+                .value {
+                    color: var(--Dark-green, #242A1F);
+                    font-size: 1.375rem;
+                    font-weight: 600;
+                    line-height: 120%;
+                    white-space: nowrap;
+                }
+
+                .price {
+                    font-weight: 700;
+                }
+
+                .data {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .line {
+                    background: #CDDDC3;
+                    width: 0.0625rem;
+                    height: 1.875rem;
+                }
+            }
+        }
+    }
+
+    .mobile_filter_cards_wrapper {
+        display: none;
+    }
+
+    .show_more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.5rem;
+
+        a {
+            color: var(--Dark-green, #242A1F);
+            font-size: 1.0625rem;
+            font-weight: 700;
+            line-height: normal;
+            padding-bottom: 3px;
+            display: block;
+            border-bottom: 0.125rem solid #242A1F;
         }
     }
 }
@@ -2011,6 +2141,10 @@ header {
     }
 }
 
+.projects_consultation {
+    margin: 9.38rem 0 9.37rem;
+}
+
 .visit {
     margin-top: 9.38rem;
 
@@ -2509,6 +2643,11 @@ footer {
     }
 
     .social_links {
+
+                
+        .location {
+            display: none;
+        }
 
         .socials_wrapper {
             display: flex;

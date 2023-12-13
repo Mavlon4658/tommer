@@ -189,3 +189,11 @@ if (selections__items.length) {
         })
     })
 }
+
+const project_filter_btn = document.querySelector('#sort_card .filter_btn')
+const filter_card = document.querySelector('#sort_card .mobile_filter_cards_wrapper');
+if (project_filter_btn) {
+    project_filter_btn.onclick = () => {
+        filter_card.style.maxHeight = filter_card.style.maxHeight ? null : filter_card.scrollHeight + 'px';
+    }
+}

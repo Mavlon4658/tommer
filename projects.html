@@ -471,30 +471,366 @@
         <!-- Sort card -->
         <section id="sort_card">
             <div class="main_container">
-                <div class="sort_card_head">
-                    <label>Сортировать по</label>
-                    <div class="selections__item">
-                        <button class="selections__item__head">
-                            <span>Цена, млн.руб</span>
-                            <span class="icon">
-                                <img src="images/chevron_bottom.svg" alt="">
-                            </span>
-                        </button>
-                        <div class="selections__item__body">
-                            <button class="active">Любая</button>
-                            <button>Любая 1</button>
-                            <button>Любая 2</button>
-                            <button>Любая 3</button>
-                            <button>Любая 4</button>
+                <div class="sort_card_head_wrapper">
+                    <button class="filter_btn">
+                        <span>Фильтр</span>
+                        <img src="./images/filter_icon.svg" alt="">
+                    </button>
+                    <div class="sort_card_head">
+                        <label>Сортировать по</label>
+                        <div class="selections__item">
+                            <button class="selections__item__head">
+                                <span>популярности</span>
+                                <span class="icon">
+                                    <img src="images/chevron_bottom.svg" alt="">
+                                </span>
+                            </button>
+                            <div class="selections__item__body">
+                                <button class="active">Любая</button>
+                                <button>Любая 1</button>
+                                <button>Любая 2</button>
+                                <button>Любая 3</button>
+                                <button>Любая 4</button>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="mobile_filter_cards_wrapper">
+                    <div class="mobile_filter_cards">
+                        <div class="selections__item">
+                            <button class="selections__item__head">
+                                <span>Цена, млн.руб</span>
+                                <span class="icon">
+                                    <img src="images/chevron_bottom.svg" alt="">
+                                </span>
+                            </button>
+                            <div class="selections__item__body">
+                                <button class="active">Любая</button>
+                                <button>Любая 1</button>
+                                <button>Любая 2</button>
+                                <button>Любая 3</button>
+                                <button>Любая 4</button>
+                            </div>
+                        </div>
+                        <div class="selections__item">
+                            <button class="selections__item__head">
+                                <span>Площадь, м2</span>
+                                <span class="icon">
+                                    <img src="images/chevron_bottom.svg" alt="">
+                                </span>
+                            </button>
+                            <div class="selections__item__body">
+                                <button class="active">Любая</button>
+                                <button>Любая 1</button>
+                                <button>Любая 2</button>
+                                <button>Любая 3</button>
+                                <button>Любая 4</button>
+                            </div>
+                        </div>
+                        <div class="selections__item">
+                            <button class="selections__item__head">
+                                <span>Этажность</span>
+                                <span class="icon">
+                                    <img src="images/chevron_bottom.svg" alt="">
+                                </span>
+                            </button>
+                            <div class="selections__item__body">
+                                <button class="active">Любая</button>
+                                <button>Любая 1</button>
+                                <button>Любая 2</button>
+                                <button>Любая 3</button>
+                                <button>Любая 4</button>
+                            </div>
+                        </div>
+                        <div class="selections__item">
+                            <button class="selections__item__head">
+                                <span>Размер дома</span>
+                                <span class="icon">
+                                    <img src="images/chevron_bottom.svg" alt="">
+                                </span>
+                            </button>
+                            <div class="selections__item__body">
+                                <button class="active">Любая</button>
+                                <button>Любая 1</button>
+                                <button>Любая 2</button>
+                                <button>Любая 3</button>
+                                <button>Любая 4</button>
+                            </div>
+                        </div>
+                        <div class="selections__item">
+                            <button class="selections__item__head">
+                                <span>Комнаты</span>
+                                <span class="icon">
+                                    <img src="images/chevron_bottom.svg" alt="">
+                                </span>
+                            </button>
+                            <div class="selections__item__body">
+                                <button class="active">Любая</button>
+                                <button>Любая 1</button>
+                                <button>Любая 2</button>
+                                <button>Любая 3</button>
+                                <button>Любая 4</button>
+                            </div>
+                        </div>
+                        <div class="selections__item">
+                            <button class="selections__item__head">
+                                <span>Крыша</span>
+                                <span class="icon">
+                                    <img src="images/chevron_bottom.svg" alt="">
+                                </span>
+                            </button>
+                            <div class="selections__item__body">
+                                <button class="active">Любая</button>
+                                <button>Любая 1</button>
+                                <button>Любая 2</button>
+                                <button>Любая 3</button>
+                                <button>Любая 4</button>
+                            </div>
+                        </div>
+                        <div class="selections__item">
+                            <button class="selections__item__head">
+                                <span>Особенности</span>
+                                <span class="icon">
+                                    <img src="images/chevron_bottom.svg" alt="">
+                                </span>
+                            </button>
+                            <div class="selections__item__body">
+                                <button class="active">Любая</button>
+                                <button>Любая 1</button>
+                                <button>Любая 2</button>
+                                <button>Любая 3</button>
+                                <button>Любая 4</button>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <a href="#" class="success-link">
+                                <span>Показать проекты</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M13.7509 1.12412C13.7509 0.571834 13.3032 0.124119 12.7509 0.124118L3.75088 0.124119C3.1986 0.124119 2.75088 0.571834 2.75088 1.12412C2.75088 1.6764 3.1986 2.12412 3.75088 2.12412L11.7509 2.12412L11.7509 10.1241C11.7509 10.6764 12.1986 11.1241 12.7509 11.1241C13.3032 11.1241 13.7509 10.6764 13.7509 10.1241L13.7509 1.12412ZM1.70711 13.5821L13.458 1.83123L12.0438 0.417012L0.292893 12.1679L1.70711 13.5821Z" fill="#242A1F"/>
+                                </svg>
+                            </a>
+                            <button class="dark-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.70943 11.3638C1.39657 11.6767 0.889312 11.6767 0.576446 11.3638C0.26358 11.0509 0.26358 10.5437 0.576446 10.2308L4.83749 5.96977L0.578136 1.71041C0.265271 1.39755 0.265271 0.89029 0.578137 0.577424C0.891003 0.264559 1.39826 0.264558 1.71112 0.577424L5.97048 4.83678L10.2298 0.577423C10.5427 0.264557 11.05 0.264557 11.3628 0.577423C11.6757 0.890289 11.6757 1.39755 11.3628 1.71041L7.10347 5.96977L11.4236 10.2899C11.7365 10.6028 11.7365 11.11 11.4236 11.4229C11.1107 11.7358 10.6035 11.7358 10.2906 11.4229L5.97048 7.10275L1.70943 11.3638Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sort_cards">
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <img src="./images/sort_card_1.webp" width="565" height="450" alt="">
+                        </div>
+                        <div class="card_item__body">
+                            <div class="amount">
+                                <div class="card_title">Дом из клееного бруса "Репинская усадьба"</div>
+                                <div class="value price">12 853 785 ₽</div>
+                            </div>
+                            <div class="data">
+                                <div class="value">379 м²</div>
+                                <div class="line"></div>
+                                <div class="value">2 этажа</div>
+                                <div class="line"></div>
+                                <div class="value">4 спальни</div>
+                                <div class="line"></div>
+                                <div class="value">6 с/у</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <img src="./images/sort_card_2.webp" width="565" height="450" alt="">
+                        </div>
+                        <div class="card_item__body">
+                            <div class="amount">
+                                <div class="card_title">Дом из клееного бруса "Северная Жемчужина"</div>
+                                <div class="value price">16 482 690 ₽</div>
+                            </div>
+                            <div class="data">
+                                <div class="value">486 м²</div>
+                                <div class="line"></div>
+                                <div class="value">2 этажа</div>
+                                <div class="line"></div>
+                                <div class="value">5 спален</div>
+                                <div class="line"></div>
+                                <div class="value">3 с/у</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <img src="./images/sort_card_3.webp" width="565" height="450" alt="">
+                        </div>
+                        <div class="card_item__body">
+                            <div class="amount">
+                                <div class="card_title">Дом из клееного бруса "Репино Парк"</div>
+                                <div class="value price">12 378 975 ₽</div>
+                            </div>
+                            <div class="data">
+                                <div class="value">365 м²</div>
+                                <div class="line"></div>
+                                <div class="value">2 этажа</div>
+                                <div class="line"></div>
+                                <div class="value">4 спальни</div>
+                                <div class="line"></div>
+                                <div class="value">2 с/у</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <img src="./images/sort_card_4.webp" width="565" height="450" alt="">
+                        </div>
+                        <div class="card_item__body">
+                            <div class="amount">
+                                <div class="card_title">Фахверковый дом "Дунай"</div>
+                                <div class="value price">3 065 000 ₽</div>
+                            </div>
+                            <div class="data">
+                                <div class="value">330 м²</div>
+                                <div class="line"></div>
+                                <div class="value">2 этажа</div>
+                                <div class="line"></div>
+                                <div class="value">4 спальни</div>
+                                <div class="line"></div>
+                                <div class="value">4 с/у</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <img src="./images/sort_card_5.webp" width="565" height="450" alt="">
+                        </div>
+                        <div class="card_item__body">
+                            <div class="amount">
+                                <div class="card_title">Фахверковый дом "Мечта"</div>
+                                <div class="value price">2 537 000 ₽</div>
+                            </div>
+                            <div class="data">
+                                <div class="value">145 м²</div>
+                                <div class="line"></div>
+                                <div class="value">1 этажа</div>
+                                <div class="line"></div>
+                                <div class="value">3 спальни</div>
+                                <div class="line"></div>
+                                <div class="value">2 с/у</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <img src="./images/sort_card_6.webp" width="565" height="450" alt="">
+                        </div>
+                        <div class="card_item__body">
+                            <div class="amount">
+                                <div class="card_title">Фахверковый дом "Пески"</div>
+                                <div class="value price">4 427 000 ₽</div>
+                            </div>
+                            <div class="data">
+                                <div class="value">454 м²</div>
+                                <div class="line"></div>
+                                <div class="value">2 этажа</div>
+                                <div class="line"></div>
+                                <div class="value">5 спален</div>
+                                <div class="line"></div>
+                                <div class="value">4 с/у</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <img src="./images/sort_card_7.webp" width="565" height="450" alt="">
+                        </div>
+                        <div class="card_item__body">
+                            <div class="amount">
+                                <div class="card_title">Дом из клееного бруса "Медовое"</div>
+                                <div class="value price">2 320 000 ₽</div>
+                            </div>
+                            <div class="data">
+                                <div class="value">58 м²</div>
+                                <div class="line"></div>
+                                <div class="value">1 этажа</div>
+                                <div class="line"></div>
+                                <div class="value">2 спальни</div>
+                                <div class="line"></div>
+                                <div class="value">1 с/у</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <img src="./images/sort_card_8.webp" width="565" height="450" alt="">
+                        </div>
+                        <div class="card_item__body">
+                            <div class="amount">
+                                <div class="card_title">Дом из клееного бруса "Рохминские дачи"</div>
+                                <div class="value price">5 360 000 ₽</div>
+                            </div>
+                            <div class="data">
+                                <div class="value">134 м²</div>
+                                <div class="line"></div>
+                                <div class="value">1 этажа</div>
+                                <div class="line"></div>
+                                <div class="value">0 спален</div>
+                                <div class="line"></div>
+                                <div class="value">1 с/у</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <img src="./images/sort_card_9.webp" width="565" height="450" alt="">
+                        </div>
+                        <div class="card_item__body">
+                            <div class="amount">
+                                <div class="card_title">Дом из клееного бруса "Перово"</div>
+                                <div class="value price">4 240 000 ₽</div>
+                            </div>
+                            <div class="data">
+                                <div class="value">106 м²</div>
+                                <div class="line"></div>
+                                <div class="value">2 этажа</div>
+                                <div class="line"></div>
+                                <div class="value">6 спален</div>
+                                <div class="line"></div>
+                                <div class="value">4 с/у</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <img src="./images/sort_card_10.webp" width="565" height="450" alt="">
+                        </div>
+                        <div class="card_item__body">
+                            <div class="amount">
+                                <div class="card_title">Домокомплект  "Проект 1"</div>
+                                <div class="value price">4 520 000 ₽</div>
+                            </div>
+                            <div class="data">
+                                <div class="value">113 м²</div>
+                                <div class="line"></div>
+                                <div class="value">2 этажа</div>
+                                <div class="line"></div>
+                                <div class="value">2 спальни</div>
+                                <div class="line"></div>
+                                <div class="value">1 санузел</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show_more">
+                    <a href="#">Показать больше</a>
                 </div>
             </div>
         </section>
         <!-- Sort card end -->
 
         <!-- Consultation -->
-        <section class="consultation">
+        <section class="consultation projects_consultation">
             <div class="main_container">
                 <div class="consultation_card">
                     <img src="./images/consultation_card_bg.webp" alt="" class="card_bg">
