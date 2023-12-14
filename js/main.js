@@ -197,3 +197,30 @@ if (project_filter_btn) {
         filter_card.style.maxHeight = filter_card.style.maxHeight ? null : filter_card.scrollHeight + 'px';
     }
 }
+
+let award_img = document.querySelectorAll('#sort_card .sort_cards .card_item__head img');
+if (award_img.length) {
+    award_img.forEach((img, idx) => {
+        img.onclick = () => {
+            let src = [];
+            award_img.forEach(item => {
+                src.push({
+                    'src': item.getAttribute('src'),
+                    'thumb': item.getAttribute('src'),
+                    'subHtml': ''
+                });
+            })
+            if (document.querySelector('#lightgallery')) {
+                document.querySelector('#lightgallery').remove();
+            }
+            const galleryContainer = document.createElement('div');
+            galleryContainer.id = 'lightgallery';
+            document.body.appendChild(galleryContainer);
+            lightGallery(galleryContainer, {
+                dynamic: true,
+                dynamicEl: src,
+                index: idx
+            });
+        }
+    })
+}
