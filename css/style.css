@@ -5069,6 +5069,9 @@ footer .foot_bottom {
   #sort_card .sort_cards .card_item__body .amount {
     gap: 7px;
   }
+  #sort_card .sort_cards .card_item__body .card_title {
+    min-height: auto;
+  }
   #sort_card .show_more {
     margin-top: 1.25rem;
   }
