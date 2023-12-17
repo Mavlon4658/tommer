@@ -11,6 +11,7 @@ button {
     background: transparent;
     outline: none;
     display: inline-block;
+    cursor: pointer;
 }
 
 a {
@@ -1055,6 +1056,7 @@ header {
         .swiper-slide {
             height: 5.6875rem;
             border-radius: 0.3125rem;
+            cursor: pointer;
 
             img {
                 border-radius: 0.3125rem;
@@ -1519,6 +1521,7 @@ header {
             border-radius: 0.625rem;
             overflow: hidden;
             position: relative;
+            cursor: pointer;
 
             img {
                 width: 100%;

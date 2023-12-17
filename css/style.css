@@ -10,6 +10,7 @@ button {
   background: transparent;
   outline: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 a {
@@ -1027,6 +1028,7 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
 .card_project_home .mini_slider .swiper-slide {
   height: 5.6875rem;
   border-radius: 0.3125rem;
+  cursor: pointer;
 }
 .card_project_home .mini_slider .swiper-slide img {
   border-radius: 0.3125rem;
@@ -1421,6 +1423,7 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
   border-radius: 0.625rem;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 .built .mini_slide .swiper-slide img {
   width: 100%;
