@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button {
@@ -351,7 +352,8 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
   display: flex;
   align-items: center;
   margin: 1.87rem 0 2.06rem;
-  gap: 4px;
+  gap: 0 4px;
+  flex-wrap: wrap;
 }
 .breadcrumbs li, .breadcrumbs a, .breadcrumbs span {
   color: var(--Dark-green, #242A1F);
@@ -1087,6 +1089,7 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
   font-size: 1.5625rem;
   font-weight: 400;
   line-height: 120%;
+  white-space: nowrap;
 }
 .card_project_home .calculate .prices_wrap h4 a {
   font-weight: 500;
@@ -1120,6 +1123,9 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
   font-weight: 600;
   padding-bottom: 8px;
   border-bottom: 2px solid #4C9C2E;
+}
+.card_project_home .calculate_foot {
+  display: none;
 }
 .card_project_home .first_checkbox {
   font-size: 1.25rem;
@@ -1424,12 +1430,17 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  border: 1px solid var(--Dark-green, #242A1F);
 }
 .built .mini_slide .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.625rem;
+}
+.built .mini_slide .swiper-slide:not(.swiper-slide-thumb-active) {
+  border-color: transparent;
 }
 .built .mini_slide .swiper-slide:not(.swiper-slide-thumb-active)::after {
   content: "";
@@ -1733,7 +1744,7 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
   align-items: stretch;
 }
 .main__cards.project .main__cards-wrap .main__card {
-  height: auto;
+  min-height: auto;
 }
 
 .similar_project {
@@ -1823,6 +1834,7 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
   height: 1.875rem;
   width: 1px;
   background: #CDDDC3;
+  flex-shrink: 0;
 }
 .similar_project__slider .similar_card .body_bottom .amount {
   font-weight: 600;
@@ -3373,6 +3385,10 @@ footer .foot_bottom {
   }
 }
 @media only screen and (max-width: 1250px) {
+  .checkbox {
+    gap: 0.625rem;
+    font-size: 1rem;
+  }
   .success-link {
     padding: 1.25rem 1.88rem;
     height: 3.875rem;
@@ -3675,6 +3691,241 @@ footer .foot_bottom {
   #projects_home .project_home_card .filter_right .dark-button {
     border-color: #242A1F;
   }
+  .card_project_home {
+    margin-bottom: 11.63rem;
+  }
+  .card_project_home .home_top {
+    padding: 2.19rem 1.25rem 2.69rem;
+  }
+  .card_project_home .home_top .main_title {
+    max-width: 43.20144rem;
+  }
+  .card_project_home .home_top .success-link {
+    margin-top: 1.875rem;
+  }
+  .card_project_home .home_content {
+    padding: 1.25rem;
+  }
+  .card_project_home .home_content .content_item {
+    gap: 1.37rem;
+  }
+  .card_project_home .home_slider .slide_btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 16.56rem;
+  }
+  .card_project_home .home_slider .slide_btn svg {
+    height: 1.15563rem;
+    width: auto;
+  }
+  .card_project_home .main_slider_content .panel {
+    right: 1.125rem;
+    top: 1.125rem;
+  }
+  .card_project_home .main_slider_content .main_img {
+    height: 35.625rem;
+  }
+  .card_project_home .mini_slider_wrap {
+    width: 22.50076rem;
+    left: 1.25rem;
+    bottom: 1.25rem;
+  }
+  .card_project_home .mini_slider .swiper-slide {
+    height: 4.38769rem;
+  }
+  .card_project_home .calculate {
+    padding: 1.25rem;
+  }
+  .card_project_home .calculate_top {
+    align-items: flex-start;
+    gap: 1.875rem;
+    padding-bottom: 1.875rem;
+    margin-bottom: 1.25rem;
+  }
+  .card_project_home .calculate_top .description .sec-title {
+    margin-bottom: 1.25rem;
+  }
+  .card_project_home .calculate_top .description p {
+    font-size: 1rem;
+    max-width: 19.41969rem;
+  }
+  .card_project_home .calculate .prices_wrap {
+    gap: 2.83rem;
+  }
+  .card_project_home .calculate .prices_wrap h4 {
+    font-size: 1.25rem;
+  }
+  .card_project_home .calculate .tab_head button {
+    font-size: 1.25rem;
+  }
+  .card_project_home .first_checkbox {
+    font-size: 1.125rem;
+  }
+  .card_project_home .category_item {
+    width: 18.5rem;
+  }
+  .card_project_home .category_item_title {
+    font-size: 1.125rem;
+  }
+  .card_project_home .category_item:last-child {
+    width: 13.5rem;
+  }
+  .stages .tab_head button {
+    font-size: 1.125rem;
+    padding-bottom: 7px;
+    border-bottom: 3px solid transparent;
+  }
+  .stages .content {
+    padding: 1.25rem;
+    margin: 2.5rem 0 7.5rem;
+  }
+  .stages .content_head img {
+    width: auto;
+    height: 19rem;
+  }
+  .stages .content_head ul {
+    gap: 0.875rem;
+    margin-left: 30px;
+  }
+  .stages .content_head ul li {
+    font-size: 1.375rem;
+  }
+  .stages .content_foot_item .title {
+    font-size: 1rem;
+  }
+  .stages .content_foot_item img {
+    height: 15.93794rem;
+  }
+  .layouts {
+    margin-bottom: 7.5rem;
+  }
+  .layouts .tab_head {
+    gap: 1.875rem;
+    margin-bottom: 1.25rem;
+  }
+  .layouts .tab_head button {
+    font-size: 1.75rem;
+  }
+  .layouts .tab h3 {
+    font-size: 1rem;
+    margin-bottom: 1.875rem;
+  }
+  .layouts .tab .images {
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+  .layouts .tab .images img {
+    width: calc(50% - 0.625rem);
+    height: 19.9375rem;
+  }
+  .example {
+    margin-bottom: 7.5rem;
+  }
+  .example .btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 14.37rem;
+  }
+  .example .btn svg {
+    width: 0.66125rem;
+    height: auto;
+  }
+  .example .example_prev_btn {
+    left: 2.5rem;
+  }
+  .example .example_next_btn {
+    right: 2.5rem;
+  }
+  .example .swiper-slide img {
+    height: 31.25rem;
+  }
+  .built .sec-title {
+    margin-bottom: 2.5rem;
+  }
+  .built .btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 15.94rem;
+  }
+  .built .btn svg {
+    width: 0.66125rem;
+    height: auto;
+  }
+  .built .main_slide .content {
+    height: 34.375rem;
+  }
+  .built .main_slide .panel {
+    top: 1.25rem;
+    left: 1.25rem;
+    width: 13.4375rem;
+  }
+  .built .main_slide .dark-alert {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.625rem;
+  }
+  .built .main_slide .location {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .built .main_slide .amount {
+    font-size: 1rem;
+  }
+  .built .main_slide .title {
+    right: 1.25rem;
+    bottom: 1.25rem;
+    font-size: 1.125rem;
+    width: 16.17334rem;
+    padding: 1.25rem;
+  }
+  .built .mini_slide .swiper-slide {
+    height: 5.57694rem;
+    border-radius: 0.3125rem;
+  }
+  .built .mini_slide .swiper-slide img {
+    border-radius: 0.3125rem;
+  }
+  .technology {
+    margin-bottom: 7.5rem;
+  }
+  .technology .main_container {
+    gap: 1.25rem;
+  }
+  .technology .card_item {
+    width: calc(50% - 0.625rem);
+  }
+  .technology .card_item:not(.img) {
+    padding: 1.25rem;
+  }
+  .technology .sec-title {
+    margin-bottom: 1.875rem;
+  }
+  .technology img.icon {
+    margin-bottom: 1.6875rem;
+  }
+  .features_technology {
+    margin-bottom: 7.5rem;
+  }
+  .features_technology .sec-title {
+    margin-bottom: 2.5rem;
+  }
+  .features_technology .cards {
+    gap: 1.25rem 1.1875rem;
+  }
+  .features_technology .card_item {
+    width: calc(33.3333333333% - 0.7916666667rem);
+    padding: 1.25rem;
+  }
+  .features_technology .card_item:not(.last) h3 {
+    font-size: 1.125rem;
+    min-height: 4.125rem;
+  }
+  .features_technology .card_item:not(.last) p {
+    font-size: 1rem;
+  }
+  .features_technology .card_item.last a {
+    font-size: 1.0625rem;
+  }
   #sort_card .sort_card_head {
     gap: 0.875rem;
   }
@@ -3739,6 +3990,68 @@ footer .foot_bottom {
   }
   .main__cards .main__cards-wrap .main__card .main__card-text {
     font-size: 1.0625rem;
+  }
+  .similar_project {
+    margin-bottom: 7.5rem;
+  }
+  .similar_project__head {
+    margin-bottom: 2.5rem;
+  }
+  .similar_project__head a {
+    font-size: 1rem;
+  }
+  .similar_project .btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 10.5rem;
+  }
+  .similar_project .btn svg {
+    width: 0.66125rem;
+    height: auto;
+  }
+  .similar_project .similar_slider_prev {
+    left: 0;
+  }
+  .similar_project .similar_slider_next {
+    right: 0;
+  }
+  .similar_project__slider {
+    overflow: hidden;
+  }
+  .similar_project__slider .similar_card__head {
+    height: 21.875rem;
+  }
+  .similar_project__slider .similar_card__body {
+    padding: 1.25rem;
+  }
+  .similar_project__slider .similar_card .body_top {
+    gap: 20px;
+  }
+  .similar_project__slider .similar_card .title {
+    font-size: 1.125rem;
+  }
+  .similar_project__slider .similar_card .amount {
+    font-size: 1.25rem;
+  }
+  .download {
+    margin-bottom: 7.5rem;
+  }
+  .download .card {
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  .download .card_item {
+    width: calc(50% - 0.625rem);
+  }
+  .download .card_item__head {
+    gap: 3.145rem;
+  }
+  .download .card_item .title {
+    font-size: 1.125rem;
+    margin-bottom: 1.875rem;
+  }
+  .download .card_item a {
+    font-size: 1.125rem;
   }
   .selections {
     padding-bottom: 7.5rem;
@@ -4190,6 +4503,11 @@ footer .foot_bottom {
   .consultation .sec-title {
     margin-bottom: 2.19rem;
   }
+  .consultation .description {
+    font-size: 1rem;
+    max-width: 22.86938rem;
+    margin-bottom: 3.125rem;
+  }
   .consultation ul {
     gap: 1.56rem;
     margin-bottom: 1.88rem;
@@ -4220,6 +4538,9 @@ footer .foot_bottom {
   }
   .consultation form .links {
     font-size: 0.875rem;
+  }
+  .consultation.card_project {
+    margin: 7.58rem 0 7.44rem;
   }
   .projects_consultation {
     margin: 7.5rem 0;
@@ -5368,6 +5689,11 @@ footer .foot_bottom {
   .consultation .sec-title {
     margin-bottom: 1.88rem;
   }
+  .consultation .description {
+    font-size: 0.875rem;
+    margin-bottom: 4.1875rem;
+    max-width: 20.9375rem;
+  }
   .consultation ul {
     gap: 1.5rem;
     margin-bottom: 1.88rem;
@@ -5671,6 +5997,299 @@ footer .foot_bottom {
   footer .foot_bottom {
     font-size: 0.875rem;
     margin-top: 3.25rem;
+  }
+  .card_project_home {
+    margin-bottom: 9.19rem;
+  }
+  .card_project_home .home_top {
+    padding: 1.87rem 0.94rem 2.06rem;
+  }
+  .card_project_home .home_top .main_title {
+    max-width: 37.375rem;
+  }
+  .card_project_home .home_top .success-link {
+    margin-top: 1.875rem;
+  }
+  .card_project_home .home_content .content_item {
+    gap: 1.56rem;
+    width: 10.875rem;
+  }
+  .card_project_home .home_content .content_item:last-child {
+    width: 15rem;
+  }
+  .card_project_home .home_content .value {
+    font-size: 1.0625rem;
+  }
+  .card_project_home .home_slider .slide_btn {
+    top: 13.44rem;
+  }
+  .card_project_home .main_slider_content .panel {
+    right: 1.25rem;
+    top: 1.25rem;
+  }
+  .card_project_home .main_slider_content .panel img, .card_project_home .main_slider_content .panel svg {
+    width: 1.5rem;
+    height: auto;
+  }
+  .card_project_home .main_slider_content .panel a {
+    height: 1.5rem;
+  }
+  .card_project_home .main_slider_content .main_img {
+    height: 29.375rem;
+  }
+  .card_project_home .mini_slider_wrap {
+    width: 17.625rem;
+  }
+  .card_project_home .mini_slider .swiper-slide {
+    height: 3.3125rem;
+  }
+  .card_project_home .calculate_top {
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+  }
+  .card_project_home .calculate_top .description .sec-title {
+    margin-bottom: 1.25rem;
+  }
+  .card_project_home .calculate_top .description p {
+    font-size: 1rem;
+    max-width: 38.1875rem;
+  }
+  .card_project_home .calculate .prices_wrap {
+    gap: 1.435rem;
+    align-items: center;
+    width: 100%;
+  }
+  .card_project_home .calculate .prices_wrap .prices, .card_project_home .calculate .prices_wrap .success-link {
+    width: calc(50% - 0.7175rem);
+  }
+  .card_project_home .calculate .prices_wrap .success-link {
+    justify-content: center;
+  }
+  .card_project_home .calculate .prices_wrap h4 {
+    font-size: 1.25rem;
+  }
+  .card_project_home .calculate .tab_head button {
+    font-size: 1.125rem;
+  }
+  .card_project_home .first_checkbox {
+    font-size: 1.0625rem;
+  }
+  .card_project_home .category_item {
+    width: 13.8125rem;
+  }
+  .card_project_home .category_item_title {
+    font-size: 1.0625rem;
+  }
+  .card_project_home .category_item:nth-child(2) {
+    width: 14rem;
+  }
+  .card_project_home .category_item:last-child {
+    width: 11rem;
+  }
+  .stages .tab_head {
+    width: 62.5rem;
+  }
+  .stages .tab_head button {
+    font-size: 1rem;
+    width: 12.5rem;
+  }
+  .stages .content {
+    margin: 1.875rem 0 5rem;
+  }
+  .stages .content_head {
+    margin-bottom: 0.7rem;
+    padding-bottom: 1.8rem;
+  }
+  .stages .content_head img {
+    width: auto;
+    height: 17.20744rem;
+  }
+  .stages .content_head .sec-title {
+    margin-bottom: 3.12rem;
+  }
+  .stages .content_head ul {
+    margin-left: 25px;
+  }
+  .stages .content_head ul li {
+    font-size: 1.125rem;
+  }
+  .stages .content_foot_item .title {
+    font-size: 0.875rem;
+  }
+  .stages .content_foot_item img {
+    height: 12.5625rem;
+  }
+  .layouts {
+    margin-bottom: 5rem;
+  }
+  .layouts .tab_head button {
+    font-size: 1.5625rem;
+  }
+  .layouts .tab h3 {
+    margin-bottom: 1.875rem;
+  }
+  .layouts .tab .images {
+    gap: 1.25rem;
+  }
+  .layouts .tab .images img {
+    width: calc(50% - 0.625rem);
+    height: 14.3125rem;
+  }
+  .example {
+    margin-bottom: 5rem;
+  }
+  .example .btn {
+    top: 14.38rem;
+  }
+  .example .example_prev_btn {
+    left: 2.8rem;
+  }
+  .example .example_next_btn {
+    right: 2.8rem;
+  }
+  .example .swiper-slide img {
+    height: 31.25rem;
+  }
+  .built .sec-title {
+    margin-bottom: 1.89rem;
+  }
+  .built .btn {
+    top: 13.4rem;
+  }
+  .built .main_slide .content {
+    height: 26.875rem;
+  }
+  .built .main_slide .panel {
+    top: 1.23rem;
+    left: 1.25rem;
+    width: 10.625rem;
+  }
+  .built .main_slide .dark-alert {
+    width: auto;
+  }
+  .built .main_slide .location {
+    font-size: 1.375rem;
+    margin-bottom: 0.875rem;
+  }
+  .built .main_slide .amount {
+    font-size: 0.9375rem;
+  }
+  .built .main_slide .title {
+    right: 0.94rem;
+    bottom: 0.94rem;
+    font-size: 1rem;
+    width: 14.66895rem;
+  }
+  .built .mini_slide .swiper-slide {
+    height: 4.81706rem;
+  }
+  .technology {
+    margin-bottom: 5rem;
+  }
+  .technology .main_container {
+    gap: 1.25rem;
+  }
+  .technology .card_item {
+    width: calc(50% - 0.625rem);
+  }
+  .technology .card_item:not(.img) {
+    padding: 1.25rem;
+  }
+  .technology .sec-title {
+    margin-bottom: 1.875rem;
+  }
+  .technology p {
+    font-size: 1rem;
+  }
+  .technology img.icon {
+    margin-bottom: 1.6875rem;
+  }
+  .features_technology {
+    margin-bottom: 5rem;
+  }
+  .features_technology .sec-title {
+    margin-bottom: 1.875rem;
+  }
+  .features_technology .cards {
+    gap: 1.25rem 1.1875rem;
+  }
+  .features_technology .card_item {
+    width: calc(33.3333333333% - 0.7916666667rem);
+    padding: 1.25rem;
+  }
+  .features_technology .card_item:not(.last) h3 {
+    min-height: 3.75rem;
+    font-size: 1.0625rem;
+  }
+  .features_technology .card_item.last a {
+    font-size: 1.0625rem;
+    text-align: center;
+    width: 10.09231rem;
+  }
+  .consultation.card_project {
+    margin: 5.02rem 0 5rem;
+  }
+  .similar_project {
+    margin-bottom: 5rem;
+  }
+  .similar_project__head {
+    margin-bottom: 1.875rem;
+  }
+  .similar_project .btn {
+    top: 6.94rem;
+  }
+  .similar_project .similar_slider_prev {
+    left: 0;
+  }
+  .similar_project .similar_slider_next {
+    right: 0.63rem;
+  }
+  .similar_project__slider .similar_card__head {
+    height: 16.375rem;
+  }
+  .similar_project__slider .similar_card__body {
+    padding: 0.9375rem;
+  }
+  .similar_project__slider .similar_card .body_top {
+    gap: 20px;
+  }
+  .similar_project__slider .similar_card .title {
+    font-size: 0.9375rem;
+  }
+  .similar_project__slider .similar_card .amount {
+    font-size: 1.125rem;
+  }
+  .similar_project__slider .similar_card .body_bottom .amount {
+    font-size: 1rem;
+  }
+  .similar_project__slider .similar_card .body_bottom .line {
+    height: 1.25rem;
+  }
+  .download {
+    margin-bottom: 5rem;
+  }
+  .download .card {
+    gap: 1.25rem;
+    margin-top: 1.875rem;
+  }
+  .download .card_item {
+    width: calc(50% - 0.625rem);
+  }
+  .download .card_item__head {
+    gap: 3.145rem;
+  }
+  .download .card_item__head img {
+    height: 2.5rem;
+    width: auto;
+  }
+  .download .card_item .title {
+    font-size: 1.0625rem;
+    min-height: 3.8125rem;
+    margin-bottom: 1.875rem;
+  }
+  .download .card_item a {
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -6513,6 +7132,284 @@ footer .foot_bottom {
     font-size: 0.875rem;
     margin-top: 3.25rem;
   }
+  .card_project_home {
+    margin-bottom: 8.94rem;
+  }
+  .card_project_home .home_top {
+    padding: 1.25rem 0.94rem;
+    border-radius: 0.625rem 6.25rem 0rem 0rem;
+  }
+  .card_project_home .home_top .main_title {
+    max-width: 22.87231rem;
+  }
+  .card_project_home .home_top .success-link {
+    margin-top: 1.875rem;
+  }
+  .card_project_home .home_content {
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 0.9375rem;
+  }
+  .card_project_home .home_content .content_item {
+    gap: 0.875rem;
+    width: 100% !important;
+  }
+  .card_project_home .home_content .value {
+    font-size: 1.0625rem;
+  }
+  .card_project_home .home_content .line {
+    width: 100%;
+    height: 0.0625rem;
+  }
+  .card_project_home .home_slider .slide_btn {
+    top: 7.86rem;
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  .card_project_home .main_slider_content .panel {
+    right: 0.9375rem;
+    top: 0.9375rem;
+    flex-direction: row;
+  }
+  .card_project_home .main_slider_content .panel img, .card_project_home .main_slider_content .panel svg {
+    width: 1.25rem;
+    height: auto;
+  }
+  .card_project_home .main_slider_content .panel a {
+    height: 1.25rem;
+  }
+  .card_project_home .main_slider_content .main_img {
+    height: 17.6rem;
+  }
+  .card_project_home .mini_slider_wrap {
+    width: 17.625rem;
+    position: static;
+    transform: translateY(-5px);
+    width: 100%;
+    border-radius: 0;
+  }
+  .card_project_home .mini_slider .swiper-slide {
+    height: 3.9605rem;
+  }
+  .card_project_home .calculate {
+    padding: 1.25rem 0.9375rem 0.9375rem 0.9375rem;
+  }
+  .card_project_home .calculate_top {
+    margin-bottom: 1.875rem;
+  }
+  .card_project_home .calculate_top .description p {
+    max-width: 25rem;
+  }
+  .card_project_home .calculate_top .prices_wrap {
+    display: none;
+  }
+  .card_project_home .calculate .prices_wrap {
+    margin-top: 1.875rem;
+    gap: 0.9375rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card_project_home .calculate .prices_wrap .prices, .card_project_home .calculate .prices_wrap .success-link {
+    width: 100%;
+  }
+  .card_project_home .calculate .prices_wrap .subtitle {
+    font-size: 0.875rem;
+  }
+  .card_project_home .calculate .prices_wrap .success-link {
+    justify-content: center;
+  }
+  .card_project_home .calculate .prices_wrap h4 {
+    font-size: 1rem;
+  }
+  .card_project_home .calculate .tab_head {
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .card_project_home .calculate .tab_head button {
+    font-size: 1.125rem;
+  }
+  .card_project_home .calculate_foot {
+    display: block;
+  }
+  .card_project_home .category {
+    flex-direction: column;
+    gap: 1.5625rem;
+  }
+  .card_project_home .category_item {
+    width: 13.8125rem;
+    width: 100% !important;
+  }
+  .stages .tab {
+    overflow: hidden;
+  }
+  .stages .tab_head {
+    width: 58.4375rem;
+  }
+  .stages .tab_head button {
+    font-size: 1rem;
+    width: 11.6875rem;
+  }
+  .stages .content {
+    margin: 1.875rem 0 5rem;
+  }
+  .stages .content_head {
+    margin-bottom: 1.875rem;
+    padding-bottom: 1.5625rem;
+    flex-direction: column;
+    gap: 2.375rem;
+  }
+  .stages .content_head img {
+    width: 100%;
+    height: auto;
+  }
+  .stages .content_head .sec-title {
+    margin-bottom: 1.875rem;
+  }
+  .stages .content_head ul {
+    margin-left: 25px;
+  }
+  .stages .content_foot {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .stages .content_foot_item {
+    width: 100%;
+  }
+  .stages .content_foot_item img {
+    height: 12.5625rem;
+  }
+  .layouts .tab_head button {
+    font-size: 1.375rem;
+  }
+  .layouts .tab h3 {
+    margin-bottom: 1.875rem;
+  }
+  .layouts .tab .images {
+    flex-direction: column;
+  }
+  .layouts .tab .images img {
+    width: 100%;
+  }
+  .example .btn {
+    top: 10rem;
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  .example .example_prev_btn {
+    left: 1.25rem;
+  }
+  .example .example_next_btn {
+    right: 1.25rem;
+  }
+  .example .swiper-slide img {
+    height: 22.5rem;
+  }
+  .built .sec-title {
+    margin-bottom: 1.875rem;
+  }
+  .built .btn {
+    top: 13.44rem;
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  .built .main_slide .content {
+    height: 33.75rem;
+  }
+  .built .main_slide .panel {
+    top: 0.94rem;
+    left: 0.94rem;
+    padding: 0.9375rem;
+    width: auto;
+  }
+  .built .main_slide .dark-alert {
+    width: auto;
+    font-size: 0.875rem;
+  }
+  .built .main_slide .location {
+    font-size: 1.375rem;
+    margin-bottom: 0.625rem;
+  }
+  .built .main_slide .amount {
+    font-size: 0.9375rem;
+  }
+  .built .main_slide .title {
+    font-size: 0.875rem;
+    width: 12.51611rem;
+    padding: 0.9375rem;
+  }
+  .built .mini_slide, .built .pagination {
+    display: none;
+  }
+  .technology .main_container {
+    gap: 0.875rem;
+  }
+  .technology .card_item {
+    width: 100%;
+  }
+  .technology .card_item:not(.img) {
+    padding: 0.94rem;
+  }
+  .features_technology {
+    margin-bottom: 5.03rem;
+  }
+  .features_technology .sec-title {
+    margin-bottom: 1.875rem;
+  }
+  .features_technology .cards {
+    gap: 1.25rem 1.1875rem;
+  }
+  .features_technology .card_item {
+    width: 100%;
+    padding: 0.9375rem;
+  }
+  .features_technology .card_item:not(.last) h3 {
+    min-height: auto;
+    margin-bottom: 2.0625rem;
+  }
+  .features_technology .card_item.last {
+    height: 6.53188rem;
+  }
+  .features_technology .card_item.last a {
+    font-size: 1.0625rem;
+    text-align: center;
+    width: auto;
+  }
+  .consultation.card_project {
+    margin: 5rem 0 5.06rem;
+  }
+  .similar_project__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .similar_project .btn {
+    display: none;
+  }
+  .similar_project__slider {
+    overflow: visible;
+  }
+  .similar_project__slider .similar_card__head {
+    height: 14.375rem;
+  }
+  .similar_project__slider .similar_card .body_top {
+    gap: 0.5625rem;
+    flex-direction: column;
+  }
+  .similar_project__slider .similar_card .amount {
+    font-size: 1rem;
+  }
+  .similar_project__slider .similar_card .body_bottom .amount {
+    font-size: 0.9375rem;
+  }
+  .download .card_item {
+    width: 100%;
+  }
+  .download .card_item__head {
+    gap: 3.145rem;
+  }
+  .download .card_item .title {
+    min-height: 3rem;
+  }
 }
 @media only screen and (max-width: 470px) {
   .sec-title {
@@ -7196,5 +8093,156 @@ footer .foot_bottom {
   }
   footer .nav_links .nav_links_bottom ul {
     width: 50%;
+  }
+  .card_project_home {
+    margin-bottom: 8.31rem;
+  }
+  .card_project_home .home_top {
+    padding: 1.22rem 1.05rem 1.17rem 0.94rem;
+  }
+  .card_project_home .home_top .main_title {
+    max-width: 17.30613rem;
+  }
+  .card_project_home .home_top .success-link {
+    margin-top: 1.25rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .card_project_home .home_content {
+    padding: 0.9375rem;
+  }
+  .card_project_home .home_content .content_item {
+    gap: 0.75rem;
+  }
+  .card_project_home .home_slider .slide_btn {
+    top: 5.46rem;
+  }
+  .card_project_home .main_slider_content .main_img {
+    height: 12.8rem;
+  }
+  .card_project_home .mini_slider .swiper-slide {
+    height: 3.74563rem;
+  }
+  .card_project_home .calculate_top {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .card_project_home .calculate .prices_wrap {
+    margin-top: 1.25rem;
+  }
+  .card_project_home .calculate .tab_head {
+    gap: 0.625rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card_project_home .first_checkbox {
+    justify-content: center;
+  }
+  .stages .content {
+    margin: 1.25rem 0 4.37rem;
+  }
+  .stages .content_head {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .stages .content_head .sec-title {
+    margin-bottom: 1.25rem;
+  }
+  .stages .content_foot_item img {
+    height: 9rem;
+  }
+  .layouts .tab_head button {
+    font-size: 1.25rem;
+  }
+  .layouts .tab h3 {
+    margin-bottom: 1.25rem;
+  }
+  .layouts .tab .images {
+    gap: 0.9375rem;
+    padding: 0.9375rem;
+  }
+  .layouts .tab .images img {
+    width: 100%;
+  }
+  .example {
+    margin-bottom: 4.38rem;
+  }
+  .example .btn {
+    top: 9.05rem;
+  }
+  .example .example_prev_btn {
+    left: 1.34rem;
+  }
+  .example .example_next_btn {
+    right: 1.34rem;
+  }
+  .example .swiper-slide img {
+    height: 19.96763rem;
+  }
+  .built .sec-title {
+    margin-bottom: 1.25rem;
+  }
+  .built .btn {
+    top: 12.15rem;
+  }
+  .built .main_slide .content {
+    height: 27.25rem;
+  }
+  .built .main_slide .panel {
+    padding: 0.625rem;
+  }
+  .built .main_slide .panel img {
+    width: 1.125rem;
+    height: auto;
+  }
+  .built .main_slide .dark-alert {
+    width: auto;
+    font-size: 0.8125rem;
+  }
+  .built .main_slide .location {
+    font-size: 1.25rem;
+  }
+  .built .main_slide .amount {
+    font-size: 0.875rem;
+  }
+  .technology .main_container {
+    gap: 1.25rem;
+  }
+  .technology .card_item {
+    width: 100%;
+  }
+  .features_technology {
+    margin-bottom: 5.69rem;
+  }
+  .features_technology .sec-title {
+    margin-bottom: 1.25rem;
+  }
+  .features_technology .cards {
+    gap: 0.875rem;
+  }
+  .consultation.card_project {
+    margin: 4.37rem 0;
+  }
+  .similar_project__slider .similar_card__head {
+    height: 13.75rem;
+  }
+  .similar_project__slider .similar_card .title {
+    font-size: 1rem;
+  }
+  .similar_project__slider .similar_card .body_bottom .amount {
+    font-size: 0.875rem;
+  }
+  .download {
+    margin-bottom: 4.38rem;
+  }
+  .download .card_item {
+    width: 100%;
+  }
+  .download .card_item__head {
+    gap: 20px;
+  }
+  .download .card_item .title {
+    margin-bottom: 1.25rem;
+    min-height: auto;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -280,10 +280,19 @@ if (award_img.length) {
 let project_home_slider = document.querySelector('.card_project_home .home_slider');
 if (project_home_slider) {
     let project_main_slider = new Swiper(".card_project_home .mini_slider", {
-        spaceBetween: 8,
+        spaceBetween: 5,
         slidesPerView: 3,
         freeMode: true,
         watchSlidesProgress: true,
+        breakpoints: {
+            750: {
+                spaceBetween: 8,
+                slidesPerView: 3,
+            },
+            470: {
+                slidesPerView: 4,
+            }
+        }
     });
 
     let project_mini_slider = new Swiper(".card_project_home .main_slider", {
@@ -341,12 +350,24 @@ if (built_slider) {
 let similar_card = document.querySelector('.similar_project__slider');
 if (similar_card) {
     let similar_slider = new Swiper('.similar_project__slider', {
-        slidesPerView: 2,
-        spaceBetween: 30,
+        slidesPerView: 1.1,
+        spaceBetween: 15,
         speed: 1400,
         navigation: {
             nextEl: '.similar_slider_next',
             prevEl: '.similar_slider_prev'
+        },
+        breakpoints: {
+            1250: {
+                spaceBetween: 30,
+            },
+            750: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            470: {
+                slidesPerView: 1.4
+            }
         }
     })
 }
