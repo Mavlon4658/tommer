@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- add style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header>
+            <div class="main_container">
+                <a href="#" class="logo">
+                    <img src="./images/head_logo.svg" width="133" height="92" alt="">
+                    <!-- <img src="./images/head_logo_mobile.svg" class="mobile" width="129" height="129" alt=""> -->
+                </a>
+                <div class="menues">
+                    <div class="menu_top">
+                        <div class="address">г. Санкт-Петербург, <br> Выборгское ш., дом 212</div>
+                        <ul class="texts">
+                            <li class="text text_1">
+                                <a href="#">3D-тур</a>
+                            </li>
+                            <li class="text">
+                                <a href="#">Заказать консультацию</a>
+                            </li>
+                        </ul>
+                        <div class="menu_top_right">
+                            <ul class="social_links">
+                                <li>
+                                    <a href="#">
+                                        <span class="notification"></span>
+                                        <img src="./images/whatsapp_icon.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/Telegram.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/Vkontakte.svg" width="43" height="43" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="phone">
+                                <a href="#">+7 (812) 921-07-07</a>
+                                <span>11.00-19.00 ежедневно</span>
+                            </div>
+                        </div>
+                        <button class="bars">
+                            <img src="./images/bars.svg" width="25" height="20" alt="">
+                        </button>
+                    </div>
+                    <div class="line"></div>
+                    <ul class="menu_bottom">
+                        <li class="nav_dropdown">
+                            <div class="nav_dropdown__head">
+                                <span>Проекты и цены</span>
+                                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                            </div>
+                            <ul class="nav_dropdown__body">
+                                <li>
+                                    <a href="#">Дома из клееного бруса</a>
+                                </li>
+                                <li>
+                                    <a href="#">Бани из клееного бруса</a>
+                                </li>
+                                <li>
+                                    <a href="#">Фахверк дома</a>
+                                </li>
+                                <li>
+                                    <a href="#">Фахверк бани</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_dropdown">
+                            <div class="nav_dropdown__head">
+                                <span>Услуги</span>
+                                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                            </div>
+                            <ul class="nav_dropdown__body">
+                                <li>
+                                    <a href="#">Проектирования</a>
+                                </li>
+                                <li>
+                                    <a href="#">Инженерные коммуникации</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ландшафт</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_dropdown">
+                            <div class="nav_dropdown__head">
+                                <span>Компания</span>
+                                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                            </div>
+                            <ul class="nav_dropdown__body">
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сертификаты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вакансии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Производство</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_dropdown">
+                            <div class="nav_dropdown__head">
+                                <span>Клиентам</span>
+                                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                            </div>
+                            <ul class="nav_dropdown__body">
+                                <li>
+                                    <a href="#">Расчет ипотеки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Калькулятор строительства</a>
+                                </li>
+                                <li>
+                                    <a href="#">Технологии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Гарантии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Частые-вопросы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_dropdown">
+                            <div class="nav_dropdown__head">
+                                <span>Построено</span>
+                                <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                            </div>
+                            <ul class="nav_dropdown__body">
+                                <li>
+                                    <a href="#">Все объекты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Поселок МОХ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="last">
+                                <img src="./images/heart_icon.svg" width="18" height="18" alt="">
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile menu -->
+        <div class="mobile_menu_wrapper">
+            <div class="mobile_menu_bg"></div>
+            <div class="mobile_menu">
+                <div class="mobile_menu_top">
+                    <a href="#" class="logo">
+                        <img src="./images/head_logo_mobile.svg" alt="">
+                    </a>
+                    <button class="close">&times;</button>
+                </div>
+                <ul class="mobile_menu_bottom">
+                    <li class="nav_dropdown">
+                        <div class="nav_dropdown__head">
+                            <span>Проекты и цены</span>
+                            <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                        </div>
+                        <ul class="nav_dropdown__body">
+                            <li>
+                                <a href="#">Дома из клееного бруса</a>
+                            </li>
+                            <li>
+                                <a href="#">Бани из клееного бруса</a>
+                            </li>
+                            <li>
+                                <a href="#">Фахверк дома</a>
+                            </li>
+                            <li>
+                                <a href="#">Фахверк бани</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_dropdown">
+                        <div class="nav_dropdown__head">
+                            <span>Услуги</span>
+                            <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                        </div>
+                        <ul class="nav_dropdown__body">
+                            <li>
+                                <a href="#">Проектирования</a>
+                            </li>
+                            <li>
+                                <a href="#">Инженерные коммуникации</a>
+                            </li>
+                            <li>
+                                <a href="#">Ландшафт</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_dropdown">
+                        <div class="nav_dropdown__head">
+                            <span>Компания</span>
+                            <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                        </div>
+                        <ul class="nav_dropdown__body">
+                            <li>
+                                <a href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">Сертификаты</a>
+                            </li>
+                            <li>
+                                <a href="#">Вакансии</a>
+                            </li>
+                            <li>
+                                <a href="#">Производство</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_dropdown">
+                        <div class="nav_dropdown__head">
+                            <span>Клиентам</span>
+                            <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                        </div>
+                        <ul class="nav_dropdown__body">
+                            <li>
+                                <a href="#">Расчет ипотеки</a>
+                            </li>
+                            <li>
+                                <a href="#">Калькулятор строительства</a>
+                            </li>
+                            <li>
+                                <a href="#">Технологии</a>
+                            </li>
+                            <li>
+                                <a href="#">Гарантии</a>
+                            </li>
+                            <li>
+                                <a href="#">Частые-вопросы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_dropdown">
+                        <div class="nav_dropdown__head">
+                            <span>Построено</span>
+                            <img src="./images/chevron_bottom.svg" width="19" height="19" alt="">
+                        </div>
+                        <ul class="nav_dropdown__body">
+                            <li>
+                                <a href="#">Все объекты</a>
+                            </li>
+                            <li>
+                                <a href="#">Поселок МОХ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="last">
+                            <img src="./images/heart_icon.svg" width="18" height="18" alt="">
+                            <span>Избранное</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Mobile menu end -->
+        <!-- Header end -->
+
+        <!-- Breadcrumb -->
+        <div class="main_container">
+            <ul class="breadcrumbs">
+                <li>
+                    <a href="/">Главная</a>
+                </li>
+                <li>/</li>
+                <li>
+                    <a href="#">Проекты</a>
+                </li>
+                <li>/</li>
+                <li>
+                    <a href="#">Клееный брус</a>
+                </li>
+                <li>/</li>
+                <li>
+                    <span>Дом из клееного бруса "Северная Жемчужина"</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Breadcrumb end -->
+
+        <!-- Card Project Home -->
+        <section class="card_project_home">
+            <div class="main_container">
+                <div class="home_top">
+                    <h1 class="main_title">Дом из клееного бруса "Северная Жемчужина"</h1>
+                    <a href="#" class="success-link">
+                        <span>получить презентацию</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M11.9892 1.00498C11.9892 0.452691 11.5414 0.00497599 10.9892 0.00497641L1.98916 0.00497653C1.43688 0.0049762 0.989165 0.452691 0.989165 1.00498C0.989165 1.55726 1.43688 2.00498 1.98916 2.00498L9.98916 2.00498L9.98916 10.005C9.98916 10.5573 10.4369 11.005 10.9892 11.005C11.5414 11.005 11.9892 10.5573 11.9892 10.005L11.9892 1.00498ZM1.70711 11.7012L11.6963 1.71208L10.2821 0.297869L0.292893 10.287L1.70711 11.7012Z" fill="#242A1F"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="home_content">
+                    <div class="content_item">
+                        <div class="data">
+                            <div class="key">Площадь</div>
+                            <div class="value">486 м²</div>
+                        </div>
+                        <div class="data">
+                            <div class="key">Число комнат</div>
+                            <div class="value">7</div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="content_item">
+                        <div class="data">
+                            <div class="key">Размер дома</div>
+                            <div class="value">10х12</div>
+                        </div>
+                        <div class="data">
+                            <div class="key">Этажность</div>
+                            <div class="value">2</div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="content_item">
+                        <div class="data">
+                            <div class="key">Крыша</div>
+                            <div class="value">Двускатная</div>
+                        </div>
+                        <div class="data">
+                            <div class="key">Артикул</div>
+                            <div class="value">51248227524</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home_slider">
+                    <button class="slide_btn main_slider_prev_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="37" viewBox="0 0 18 37" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.237589 19.1536C-0.0933105 18.7548 -0.0757024 18.1544 0.290413 17.7771C0.328775 17.7376 0.369514 17.702 0.412156 17.6703L16.316 1.28127C16.7006 0.884918 17.3242 0.884918 17.7088 1.28127C18.0934 1.67761 18.0934 2.32022 17.7088 2.71657L2.38869 18.5041L17.7005 34.2831C18.0851 34.6794 18.0851 35.322 17.7005 35.7184C17.3159 36.1147 16.6923 36.1147 16.3077 35.7184L0.332463 19.2557C0.321024 19.245 0.30977 19.2339 0.298714 19.2225C0.277128 19.2003 0.256751 19.1773 0.237589 19.1536Z" fill="#242A1F"/>
+                        </svg>
+                    </button>
+                    <button class="slide_btn main_slider_next_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="35" viewBox="0 0 18 35" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5693 17.4998L0.481754 1.87875C0.0980721 1.4815 0.0980721 0.837429 0.481754 0.440182C0.865435 0.0429306 1.4875 0.0429306 1.87119 0.440182L17.5189 16.6412C17.745 16.8754 17.8379 17.1953 17.7974 17.4998C17.8379 17.8044 17.745 18.1243 17.5189 18.3584L1.87119 34.5595C1.4875 34.9567 0.865435 34.9567 0.481754 34.5595C0.0980721 34.1622 0.0980721 33.5182 0.481754 33.1209L15.5693 17.4998Z" fill="#242A1F"/>
+                        </svg>
+                    </button>
+                    <div class="swiper main_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="main_slider_content">
+                                    <div class="panel">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                                <path d="M24.966 6.8728C23.8047 5.73864 22.2315 5.10094 20.5909 5.09932C18.9503 5.0977 17.3759 5.73228 16.2123 6.86414L14.6102 8.32369L13.0082 6.86414C11.8454 5.72769 10.269 5.08981 8.62574 5.09082C6.98245 5.09184 5.40687 5.73167 4.24561 6.86955C3.08436 8.00744 2.43256 9.55018 2.43359 11.1584C2.43463 12.7666 3.08842 14.3085 4.25114 15.445L14.1378 25.2612C14.1995 25.3224 14.2731 25.371 14.3542 25.4042C14.4353 25.4374 14.5223 25.4545 14.6102 25.4545C14.6981 25.4545 14.7851 25.4374 14.8662 25.4042C14.9473 25.371 15.0209 25.3224 15.0826 25.2612L24.966 15.4493C25.5415 14.8862 25.9981 14.2177 26.3096 13.4819C26.6211 12.7461 26.7814 11.9575 26.7814 11.161C26.7814 10.3646 26.6211 9.57597 26.3096 8.84018C25.9981 8.10439 25.5415 7.43587 24.966 6.8728ZM24.0233 14.5333L14.6102 23.8796L5.19378 14.53C4.28615 13.6356 3.77776 12.4255 3.77995 11.1649C3.78215 9.90438 4.29476 8.69604 5.2055 7.8046C6.11624 6.91317 7.35087 6.41132 8.63895 6.40897C9.92703 6.40661 11.1636 6.90396 12.0777 7.79206C12.0831 7.79767 12.089 7.80275 12.0954 7.80722L14.1577 9.68688C14.2806 9.79891 14.4423 9.8612 14.6102 9.8612C14.7781 9.8612 14.9398 9.79891 15.0627 9.68688L17.125 7.80613C17.1314 7.80167 17.1373 7.79659 17.1427 7.79098C17.5944 7.34628 18.1314 6.99322 18.7229 6.75205C19.3143 6.51089 19.9486 6.38636 20.5893 6.3856C21.23 6.38485 21.8646 6.50789 22.4567 6.74766C23.0487 6.98744 23.5865 7.33923 24.0394 7.78287C24.4922 8.22651 24.851 8.75326 25.0954 9.33292C25.3397 9.91258 25.4647 10.5337 25.4632 11.1608C25.4617 11.7878 25.3338 12.4084 25.0867 12.987C24.8396 13.5655 24.4782 14.0906 24.0233 14.5322V14.5333Z" fill="#242A1F"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/share_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/print_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/like_icon.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <img src="./images/project_main_slide_1.webp" class="main_img" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_slider_content">
+                                    <div class="panel">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                                <path d="M24.966 6.8728C23.8047 5.73864 22.2315 5.10094 20.5909 5.09932C18.9503 5.0977 17.3759 5.73228 16.2123 6.86414L14.6102 8.32369L13.0082 6.86414C11.8454 5.72769 10.269 5.08981 8.62574 5.09082C6.98245 5.09184 5.40687 5.73167 4.24561 6.86955C3.08436 8.00744 2.43256 9.55018 2.43359 11.1584C2.43463 12.7666 3.08842 14.3085 4.25114 15.445L14.1378 25.2612C14.1995 25.3224 14.2731 25.371 14.3542 25.4042C14.4353 25.4374 14.5223 25.4545 14.6102 25.4545C14.6981 25.4545 14.7851 25.4374 14.8662 25.4042C14.9473 25.371 15.0209 25.3224 15.0826 25.2612L24.966 15.4493C25.5415 14.8862 25.9981 14.2177 26.3096 13.4819C26.6211 12.7461 26.7814 11.9575 26.7814 11.161C26.7814 10.3646 26.6211 9.57597 26.3096 8.84018C25.9981 8.10439 25.5415 7.43587 24.966 6.8728ZM24.0233 14.5333L14.6102 23.8796L5.19378 14.53C4.28615 13.6356 3.77776 12.4255 3.77995 11.1649C3.78215 9.90438 4.29476 8.69604 5.2055 7.8046C6.11624 6.91317 7.35087 6.41132 8.63895 6.40897C9.92703 6.40661 11.1636 6.90396 12.0777 7.79206C12.0831 7.79767 12.089 7.80275 12.0954 7.80722L14.1577 9.68688C14.2806 9.79891 14.4423 9.8612 14.6102 9.8612C14.7781 9.8612 14.9398 9.79891 15.0627 9.68688L17.125 7.80613C17.1314 7.80167 17.1373 7.79659 17.1427 7.79098C17.5944 7.34628 18.1314 6.99322 18.7229 6.75205C19.3143 6.51089 19.9486 6.38636 20.5893 6.3856C21.23 6.38485 21.8646 6.50789 22.4567 6.74766C23.0487 6.98744 23.5865 7.33923 24.0394 7.78287C24.4922 8.22651 24.851 8.75326 25.0954 9.33292C25.3397 9.91258 25.4647 10.5337 25.4632 11.1608C25.4617 11.7878 25.3338 12.4084 25.0867 12.987C24.8396 13.5655 24.4782 14.0906 24.0233 14.5322V14.5333Z" fill="#242A1F"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/share_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/print_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/like_icon.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <img src="./images/project_main_slide_2.webp" class="main_img" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_slider_content">
+                                    <div class="panel">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                                <path d="M24.966 6.8728C23.8047 5.73864 22.2315 5.10094 20.5909 5.09932C18.9503 5.0977 17.3759 5.73228 16.2123 6.86414L14.6102 8.32369L13.0082 6.86414C11.8454 5.72769 10.269 5.08981 8.62574 5.09082C6.98245 5.09184 5.40687 5.73167 4.24561 6.86955C3.08436 8.00744 2.43256 9.55018 2.43359 11.1584C2.43463 12.7666 3.08842 14.3085 4.25114 15.445L14.1378 25.2612C14.1995 25.3224 14.2731 25.371 14.3542 25.4042C14.4353 25.4374 14.5223 25.4545 14.6102 25.4545C14.6981 25.4545 14.7851 25.4374 14.8662 25.4042C14.9473 25.371 15.0209 25.3224 15.0826 25.2612L24.966 15.4493C25.5415 14.8862 25.9981 14.2177 26.3096 13.4819C26.6211 12.7461 26.7814 11.9575 26.7814 11.161C26.7814 10.3646 26.6211 9.57597 26.3096 8.84018C25.9981 8.10439 25.5415 7.43587 24.966 6.8728ZM24.0233 14.5333L14.6102 23.8796L5.19378 14.53C4.28615 13.6356 3.77776 12.4255 3.77995 11.1649C3.78215 9.90438 4.29476 8.69604 5.2055 7.8046C6.11624 6.91317 7.35087 6.41132 8.63895 6.40897C9.92703 6.40661 11.1636 6.90396 12.0777 7.79206C12.0831 7.79767 12.089 7.80275 12.0954 7.80722L14.1577 9.68688C14.2806 9.79891 14.4423 9.8612 14.6102 9.8612C14.7781 9.8612 14.9398 9.79891 15.0627 9.68688L17.125 7.80613C17.1314 7.80167 17.1373 7.79659 17.1427 7.79098C17.5944 7.34628 18.1314 6.99322 18.7229 6.75205C19.3143 6.51089 19.9486 6.38636 20.5893 6.3856C21.23 6.38485 21.8646 6.50789 22.4567 6.74766C23.0487 6.98744 23.5865 7.33923 24.0394 7.78287C24.4922 8.22651 24.851 8.75326 25.0954 9.33292C25.3397 9.91258 25.4647 10.5337 25.4632 11.1608C25.4617 11.7878 25.3338 12.4084 25.0867 12.987C24.8396 13.5655 24.4782 14.0906 24.0233 14.5322V14.5333Z" fill="#242A1F"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/share_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/print_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/like_icon.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <img src="./images/project_main_slide_3.webp" class="main_img" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_slider_content">
+                                    <div class="panel">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                                <path d="M24.966 6.8728C23.8047 5.73864 22.2315 5.10094 20.5909 5.09932C18.9503 5.0977 17.3759 5.73228 16.2123 6.86414L14.6102 8.32369L13.0082 6.86414C11.8454 5.72769 10.269 5.08981 8.62574 5.09082C6.98245 5.09184 5.40687 5.73167 4.24561 6.86955C3.08436 8.00744 2.43256 9.55018 2.43359 11.1584C2.43463 12.7666 3.08842 14.3085 4.25114 15.445L14.1378 25.2612C14.1995 25.3224 14.2731 25.371 14.3542 25.4042C14.4353 25.4374 14.5223 25.4545 14.6102 25.4545C14.6981 25.4545 14.7851 25.4374 14.8662 25.4042C14.9473 25.371 15.0209 25.3224 15.0826 25.2612L24.966 15.4493C25.5415 14.8862 25.9981 14.2177 26.3096 13.4819C26.6211 12.7461 26.7814 11.9575 26.7814 11.161C26.7814 10.3646 26.6211 9.57597 26.3096 8.84018C25.9981 8.10439 25.5415 7.43587 24.966 6.8728ZM24.0233 14.5333L14.6102 23.8796L5.19378 14.53C4.28615 13.6356 3.77776 12.4255 3.77995 11.1649C3.78215 9.90438 4.29476 8.69604 5.2055 7.8046C6.11624 6.91317 7.35087 6.41132 8.63895 6.40897C9.92703 6.40661 11.1636 6.90396 12.0777 7.79206C12.0831 7.79767 12.089 7.80275 12.0954 7.80722L14.1577 9.68688C14.2806 9.79891 14.4423 9.8612 14.6102 9.8612C14.7781 9.8612 14.9398 9.79891 15.0627 9.68688L17.125 7.80613C17.1314 7.80167 17.1373 7.79659 17.1427 7.79098C17.5944 7.34628 18.1314 6.99322 18.7229 6.75205C19.3143 6.51089 19.9486 6.38636 20.5893 6.3856C21.23 6.38485 21.8646 6.50789 22.4567 6.74766C23.0487 6.98744 23.5865 7.33923 24.0394 7.78287C24.4922 8.22651 24.851 8.75326 25.0954 9.33292C25.3397 9.91258 25.4647 10.5337 25.4632 11.1608C25.4617 11.7878 25.3338 12.4084 25.0867 12.987C24.8396 13.5655 24.4782 14.0906 24.0233 14.5322V14.5333Z" fill="#242A1F"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/share_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/print_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/like_icon.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <img src="./images/project_main_slide_1.webp" class="main_img" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_slider_content">
+                                    <div class="panel">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                                <path d="M24.966 6.8728C23.8047 5.73864 22.2315 5.10094 20.5909 5.09932C18.9503 5.0977 17.3759 5.73228 16.2123 6.86414L14.6102 8.32369L13.0082 6.86414C11.8454 5.72769 10.269 5.08981 8.62574 5.09082C6.98245 5.09184 5.40687 5.73167 4.24561 6.86955C3.08436 8.00744 2.43256 9.55018 2.43359 11.1584C2.43463 12.7666 3.08842 14.3085 4.25114 15.445L14.1378 25.2612C14.1995 25.3224 14.2731 25.371 14.3542 25.4042C14.4353 25.4374 14.5223 25.4545 14.6102 25.4545C14.6981 25.4545 14.7851 25.4374 14.8662 25.4042C14.9473 25.371 15.0209 25.3224 15.0826 25.2612L24.966 15.4493C25.5415 14.8862 25.9981 14.2177 26.3096 13.4819C26.6211 12.7461 26.7814 11.9575 26.7814 11.161C26.7814 10.3646 26.6211 9.57597 26.3096 8.84018C25.9981 8.10439 25.5415 7.43587 24.966 6.8728ZM24.0233 14.5333L14.6102 23.8796L5.19378 14.53C4.28615 13.6356 3.77776 12.4255 3.77995 11.1649C3.78215 9.90438 4.29476 8.69604 5.2055 7.8046C6.11624 6.91317 7.35087 6.41132 8.63895 6.40897C9.92703 6.40661 11.1636 6.90396 12.0777 7.79206C12.0831 7.79767 12.089 7.80275 12.0954 7.80722L14.1577 9.68688C14.2806 9.79891 14.4423 9.8612 14.6102 9.8612C14.7781 9.8612 14.9398 9.79891 15.0627 9.68688L17.125 7.80613C17.1314 7.80167 17.1373 7.79659 17.1427 7.79098C17.5944 7.34628 18.1314 6.99322 18.7229 6.75205C19.3143 6.51089 19.9486 6.38636 20.5893 6.3856C21.23 6.38485 21.8646 6.50789 22.4567 6.74766C23.0487 6.98744 23.5865 7.33923 24.0394 7.78287C24.4922 8.22651 24.851 8.75326 25.0954 9.33292C25.3397 9.91258 25.4647 10.5337 25.4632 11.1608C25.4617 11.7878 25.3338 12.4084 25.0867 12.987C24.8396 13.5655 24.4782 14.0906 24.0233 14.5322V14.5333Z" fill="#242A1F"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/share_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/print_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/like_icon.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <img src="./images/project_main_slide_2.webp" class="main_img" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_slider_content">
+                                    <div class="panel">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                                <path d="M24.966 6.8728C23.8047 5.73864 22.2315 5.10094 20.5909 5.09932C18.9503 5.0977 17.3759 5.73228 16.2123 6.86414L14.6102 8.32369L13.0082 6.86414C11.8454 5.72769 10.269 5.08981 8.62574 5.09082C6.98245 5.09184 5.40687 5.73167 4.24561 6.86955C3.08436 8.00744 2.43256 9.55018 2.43359 11.1584C2.43463 12.7666 3.08842 14.3085 4.25114 15.445L14.1378 25.2612C14.1995 25.3224 14.2731 25.371 14.3542 25.4042C14.4353 25.4374 14.5223 25.4545 14.6102 25.4545C14.6981 25.4545 14.7851 25.4374 14.8662 25.4042C14.9473 25.371 15.0209 25.3224 15.0826 25.2612L24.966 15.4493C25.5415 14.8862 25.9981 14.2177 26.3096 13.4819C26.6211 12.7461 26.7814 11.9575 26.7814 11.161C26.7814 10.3646 26.6211 9.57597 26.3096 8.84018C25.9981 8.10439 25.5415 7.43587 24.966 6.8728ZM24.0233 14.5333L14.6102 23.8796L5.19378 14.53C4.28615 13.6356 3.77776 12.4255 3.77995 11.1649C3.78215 9.90438 4.29476 8.69604 5.2055 7.8046C6.11624 6.91317 7.35087 6.41132 8.63895 6.40897C9.92703 6.40661 11.1636 6.90396 12.0777 7.79206C12.0831 7.79767 12.089 7.80275 12.0954 7.80722L14.1577 9.68688C14.2806 9.79891 14.4423 9.8612 14.6102 9.8612C14.7781 9.8612 14.9398 9.79891 15.0627 9.68688L17.125 7.80613C17.1314 7.80167 17.1373 7.79659 17.1427 7.79098C17.5944 7.34628 18.1314 6.99322 18.7229 6.75205C19.3143 6.51089 19.9486 6.38636 20.5893 6.3856C21.23 6.38485 21.8646 6.50789 22.4567 6.74766C23.0487 6.98744 23.5865 7.33923 24.0394 7.78287C24.4922 8.22651 24.851 8.75326 25.0954 9.33292C25.3397 9.91258 25.4647 10.5337 25.4632 11.1608C25.4617 11.7878 25.3338 12.4084 25.0867 12.987C24.8396 13.5655 24.4782 14.0906 24.0233 14.5322V14.5333Z" fill="#242A1F"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/share_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/print_icon.svg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/like_icon.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <img src="./images/project_main_slide_3.webp" class="main_img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mini_slider_wrap">
+                        <div thumbsSlider="" class="swiper mini_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/project_main_slide_1.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/project_main_slide_2.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/project_main_slide_3.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/project_main_slide_1.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/project_main_slide_2.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/project_main_slide_3.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculate">
+                    <div class="calculate_top">
+                        <div class="description">
+                            <h2 class="sec-title">Калькулятор</h2>
+                            <p>Полная комплектация - дом полностью готов снаружи, под чистовую отделку внутри. Фундамент плита, коммуникации заведены.</p>
+                        </div>
+                        <div class="prices_wrap">
+                            <div class="prices">
+                                <span class="subtitle">Стоимость</span>
+                                <h3 class="sec-title">2 млн. ₽</h3>
+                                <h4>10 000 ₽/мес. в <a href="#">ипотеку</a></h4>
+                            </div>
+
+                            <a href="#" class="success-link">
+                                <span>детализация расчета</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+                                    <path d="M8.13605 0.752537C8.13605 0.398505 7.84905 0.111506 7.49502 0.111506L1.72574 0.111506C1.37171 0.111506 1.08471 0.398505 1.08471 0.752537C1.08471 1.10657 1.37171 1.39357 1.72574 1.39357L6.85399 1.39357L6.85399 6.52182C6.85399 6.87585 7.14099 7.16285 7.49502 7.16285C7.84905 7.16285 8.13605 6.87585 8.13605 6.52182L8.13605 0.752537ZM1.45328 7.70084L7.9483 1.20581L7.04174 0.299259L0.546722 6.79428L1.45328 7.70084Z" fill="#242A1F"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="tab_head">
+                            <button class="active">Самостоятельная сборка</button>
+                            <button>Монтаж Tommer</button>
+                        </div>
+                        <div class="tab_body">
+                            <div class="tab_item active">
+                                <div class="tab_content">
+                                    <div class="checkbox first_checkbox">
+                                        <input type="checkbox" checked>
+                                        <img src="./images/checkbox.svg" alt="">
+                                        <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                        <span>Полная комплектация</span>
+                                    </div>
+                                    <div class="category">
+                                        <div class="category_item">
+                                            <div class="category_item_title">Домокомплект</div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" checked>
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Силовой каркас</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Cтропильная система</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Лобовая доска</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Ограждающие конструкции каркас</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Внутренние перегородки каркас</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>clt перекрытие межэтажное</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Терраса</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Метизы</span>
+                                            </div>
+                                        </div>
+                                        <div class="category_item">
+                                            <div class="category_item_title">Теплый контур</div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" checked>
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Ограждающие конструкции заполнение</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Панорамное остекление</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Окна и двери</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Кровельный материал</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Водосточная система</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Лакокрасочные материалы</span>
+                                            </div>
+                                        </div>
+                                        <div class="category_item">
+                                            <div class="category_item_title">Домокомплект</div>
+                                            <div class="checkbox">
+                                                <input type="checkbox" checked>
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Фундамент плита</span>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="checkbox">
+                                                <img src="./images/checkbox.svg" alt="">
+                                                <img class="checkked" src="./images/checkbox_active.svg" alt="">
+                                                <span>Коммуникации</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_item">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus adipisci quia repellat quas laboriosam. Ex soluta quibusdam nisi cumque maiores iusto reiciendis, ipsum reprehenderit itaque impedit veniam nostrum consequuntur obcaecati quae repellat? Neque magnam incidunt ut, voluptatum id, quod molestiae dicta quo ratione ipsum tempora natus ea, praesentium accusantium quis!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Card Project Home end -->
+
+        <!-- Stages -->
+        <section class="stages">
+            <div class="main_container">
+                <div class="tab">
+                    <div class="tab_head_wrap">
+                        <div class="tab_head">
+                            <button class="active">Силовой каркас</button>
+                            <button>Стропильная система</button>
+                            <button>Лобовая доска</button>
+                            <button>СLT перекрытие межэтажное</button>
+                            <button>ограждающие конструкции</button>
+                        </div>
+                    </div>
+                    <div class="tab_body">
+                        <div class="tab_item active">
+                            <div class="content">
+                                <div class="content_head">
+                                    <div class="content_head_left">
+                                        <h2 class="sec-title">1 этап</h2>
+                                        <ul>
+                                            <li>Расчет нагрузок в SCAD Office</li>
+                                            <li>Проектирование в CadWork</li>
+                                            <li>Гарантия 10 лет</li>
+                                            <li>Не продувает не протекает</li>
+                                            <li>Ниша под шторы скрытый монтаж</li>
+                                        </ul>
+                                    </div>
+                                    <img src="./images/stap_1.webp" alt="">
+                                </div>
+                                <div class="content_foot">
+                                    <div class="content_foot_item">
+                                        <div class="title">ветро-влаго защищенные узлы</div>
+                                        <img src="./images/stap_1_1.webp" alt="">
+                                    </div>
+                                    <div class="content_foot_item">
+                                        <div class="title">класс точности +-1 мм</div>
+                                        <img src="./images/stap_1_2.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_item">
+                            <div class="content">
+                                <div class="content_head">
+                                    <div class="content_head_left">
+                                        <h2 class="sec-title">2 этап</h2>
+                                        <ul>
+                                            <li>Расчет нагрузок в SCAD Office</li>
+                                            <li>Проектирование в CadWork</li>
+                                            <li>Гарантия 10 лет</li>
+                                            <li>Не продувает не протекает</li>
+                                            <li>Ниша под шторы скрытый монтаж</li>
+                                        </ul>
+                                    </div>
+                                    <img src="./images/stap_1.webp" alt="">
+                                </div>
+                                <div class="content_foot">
+                                    <div class="content_foot_item">
+                                        <div class="title">ветро-влаго защищенные узлы</div>
+                                        <img src="./images/stap_1_1.webp" alt="">
+                                    </div>
+                                    <div class="content_foot_item">
+                                        <div class="title">класс точности +-1 мм</div>
+                                        <img src="./images/stap_1_2.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_item">
+                            <div class="content">
+                                <div class="content_head">
+                                    <div class="content_head_left">
+                                        <h2 class="sec-title">3 этап</h2>
+                                        <ul>
+                                            <li>Расчет нагрузок в SCAD Office</li>
+                                            <li>Проектирование в CadWork</li>
+                                            <li>Гарантия 10 лет</li>
+                                            <li>Не продувает не протекает</li>
+                                            <li>Ниша под шторы скрытый монтаж</li>
+                                        </ul>
+                                    </div>
+                                    <img src="./images/stap_1.webp" alt="">
+                                </div>
+                                <div class="content_foot">
+                                    <div class="content_foot_item">
+                                        <div class="title">ветро-влаго защищенные узлы</div>
+                                        <img src="./images/stap_1_1.webp" alt="">
+                                    </div>
+                                    <div class="content_foot_item">
+                                        <div class="title">класс точности +-1 мм</div>
+                                        <img src="./images/stap_1_2.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_item">
+                            <div class="content">
+                                <div class="content_head">
+                                    <div class="content_head_left">
+                                        <h2 class="sec-title">4 этап</h2>
+                                        <ul>
+                                            <li>Расчет нагрузок в SCAD Office</li>
+                                            <li>Проектирование в CadWork</li>
+                                            <li>Гарантия 10 лет</li>
+                                            <li>Не продувает не протекает</li>
+                                            <li>Ниша под шторы скрытый монтаж</li>
+                                        </ul>
+                                    </div>
+                                    <img src="./images/stap_1.webp" alt="">
+                                </div>
+                                <div class="content_foot">
+                                    <div class="content_foot_item">
+                                        <div class="title">ветро-влаго защищенные узлы</div>
+                                        <img src="./images/stap_1_1.webp" alt="">
+                                    </div>
+                                    <div class="content_foot_item">
+                                        <div class="title">класс точности +-1 мм</div>
+                                        <img src="./images/stap_1_2.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_item">
+                            <div class="content">
+                                <div class="content_head">
+                                    <div class="content_head_left">
+                                        <h2 class="sec-title">5 этап</h2>
+                                        <ul>
+                                            <li>Расчет нагрузок в SCAD Office</li>
+                                            <li>Проектирование в CadWork</li>
+                                            <li>Гарантия 10 лет</li>
+                                            <li>Не продувает не протекает</li>
+                                            <li>Ниша под шторы скрытый монтаж</li>
+                                        </ul>
+                                    </div>
+                                    <img src="./images/stap_1.webp" alt="">
+                                </div>
+                                <div class="content_foot">
+                                    <div class="content_foot_item">
+                                        <div class="title">ветро-влаго защищенные узлы</div>
+                                        <img src="./images/stap_1_1.webp" alt="">
+                                    </div>
+                                    <div class="content_foot_item">
+                                        <div class="title">класс точности +-1 мм</div>
+                                        <img src="./images/stap_1_2.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stages end -->
+
+        <!-- Layouts -->
+        <section class="layouts">
+            <div class="main_container">
+                <div class="tab">
+                    <div class="tab_head">
+                        <button class="active">Планировки</button>
+                        <button>Фасады</button>
+                    </div>
+                    <div class="tab_body">
+                        <div class="tab_item active">
+                            <h3>Возможно бесплатное изменение планировки</h3>
+                            <div class="images">
+                                <img src="./images/layouts_1.webp" alt="">
+                                <img src="./images/layouts_2.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="tab_item">
+                            <h3>Возможно бесплатное изменение планировки 2</h3>
+                            <div class="images">
+                                <img src="./images/layouts_1.webp" alt="">
+                                <img src="./images/layouts_2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Layouts end -->
+
+        <!-- Example -->
+        <section class="example">
+            <button class="btn example_prev_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="36" viewBox="0 0 18 36" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.237589 18.5354C-0.0933105 18.1366 -0.0757024 17.5362 0.290413 17.1589C0.328775 17.1194 0.369514 17.0838 0.412156 17.0522L16.316 0.663101C16.7006 0.266754 17.3242 0.266754 17.7088 0.663101C18.0934 1.05945 18.0934 1.70206 17.7088 2.0984L2.38869 17.8859L17.7005 33.6649C18.0851 34.0612 18.0851 34.7039 17.7005 35.1002C17.3159 35.4965 16.6923 35.4965 16.3077 35.1002L0.332463 18.6376C0.321024 18.6268 0.30977 18.6158 0.298714 18.6044C0.277128 18.5821 0.256751 18.5591 0.237589 18.5354Z" fill="#242A1F"/>
+                </svg>
+            </button>
+            <button class="btn example_next_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="36" viewBox="0 0 18 36" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5693 17.8817L0.481754 2.26059C0.0980721 1.86333 0.0980721 1.21926 0.481754 0.822018C0.865435 0.424767 1.4875 0.424767 1.87119 0.822018L17.5189 17.0231C17.745 17.2572 17.8379 17.5771 17.7974 17.8817C17.8379 18.1862 17.745 18.5061 17.5189 18.7403L1.87119 34.9413C1.4875 35.3386 0.865435 35.3386 0.481754 34.9413C0.0980721 34.5441 0.0980721 33.9 0.481754 33.5028L15.5693 17.8817Z" fill="#242A1F"/>
+                </svg>
+            </button>
+            <div class="swiper example_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/exmaple_slide_1.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/exmaple_slide_1.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/exmaple_slide_1.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Example end -->
+
+        <!-- Built -->
+        <section class="built">
+            <div class="main_container">
+                <h2 class="sec-title">Дома, которые мы уже <span>построили</span></h2>
+                <div class="slide_wrapper">
+                    <button class="btn built_prev_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="36" viewBox="0 0 18 36" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.237589 18.5354C-0.0933105 18.1366 -0.0757024 17.5362 0.290413 17.1589C0.328775 17.1194 0.369514 17.0838 0.412156 17.0522L16.316 0.663101C16.7006 0.266754 17.3242 0.266754 17.7088 0.663101C18.0934 1.05945 18.0934 1.70206 17.7088 2.0984L2.38869 17.8859L17.7005 33.6649C18.0851 34.0612 18.0851 34.7039 17.7005 35.1002C17.3159 35.4965 16.6923 35.4965 16.3077 35.1002L0.332463 18.6376C0.321024 18.6268 0.30977 18.6158 0.298714 18.6044C0.277128 18.5821 0.256751 18.5591 0.237589 18.5354Z" fill="#242A1F"/>
+                        </svg>
+                    </button>
+                    <button class="btn built_next_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="36" viewBox="0 0 18 36" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5693 17.8817L0.481754 2.26059C0.0980721 1.86333 0.0980721 1.21926 0.481754 0.822018C0.865435 0.424767 1.4875 0.424767 1.87119 0.822018L17.5189 17.0231C17.745 17.2572 17.8379 17.5771 17.7974 17.8817C17.8379 18.1862 17.745 18.5061 17.5189 18.7403L1.87119 34.9413C1.4875 35.3386 0.865435 35.3386 0.481754 34.9413C0.0980721 34.5441 0.0980721 33.9 0.481754 33.5028L15.5693 17.8817Z" fill="#242A1F"/>
+                        </svg>
+                    </button>
+                    <div class="swiper main_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <h3 class="title">Дом из клееного бруса "Северная Жемчужина"</h3>
+                                    <div class="panel">
+                                        <div class="dark-alert">Построено <br> 30.07.2023г.</div>
+                                        <div class="location">
+                                            <img src="./images/location_icon.svg" alt="">
+                                            <span>Симагино</span>
+                                        </div>
+                                        <div class="amount">
+                                            <span>250 м²</span> 10 000 000 ₽
+                                        </div>
+                                    </div>
+                                    <img class="main_img" src="./images/built_card_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <h3 class="title">Дом из клееного бруса "Северная Жемчужина"</h3>
+                                    <div class="panel">
+                                        <div class="dark-alert">Построено <br> 30.07.2023г.</div>
+                                        <div class="location">
+                                            <img src="./images/location_icon.svg" alt="">
+                                            <span>Симагино</span>
+                                        </div>
+                                        <div class="amount">
+                                            <span>250 м²</span> 10 000 000 ₽
+                                        </div>
+                                    </div>
+                                    <img class="main_img" src="./images/built_card_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <h3 class="title">Дом из клееного бруса "Северная Жемчужина"</h3>
+                                    <div class="panel">
+                                        <div class="dark-alert">Построено <br> 30.07.2023г.</div>
+                                        <div class="location">
+                                            <img src="./images/location_icon.svg" alt="">
+                                            <span>Симагино</span>
+                                        </div>
+                                        <div class="amount">
+                                            <span>250 м²</span> 10 000 000 ₽
+                                        </div>
+                                    </div>
+                                    <img class="main_img" src="./images/built_card_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <h3 class="title">Дом из клееного бруса "Северная Жемчужина"</h3>
+                                    <div class="panel">
+                                        <div class="dark-alert">Построено <br> 30.07.2023г.</div>
+                                        <div class="location">
+                                            <img src="./images/location_icon.svg" alt="">
+                                            <span>Симагино</span>
+                                        </div>
+                                        <div class="amount">
+                                            <span>250 м²</span> 10 000 000 ₽
+                                        </div>
+                                    </div>
+                                    <img class="main_img" src="./images/built_card_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <h3 class="title">Дом из клееного бруса "Северная Жемчужина"</h3>
+                                    <div class="panel">
+                                        <div class="dark-alert">Построено <br> 30.07.2023г.</div>
+                                        <div class="location">
+                                            <img src="./images/location_icon.svg" alt="">
+                                            <span>Симагино</span>
+                                        </div>
+                                        <div class="amount">
+                                            <span>250 м²</span> 10 000 000 ₽
+                                        </div>
+                                    </div>
+                                    <img class="main_img" src="./images/built_card_1.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <h3 class="title">Дом из клееного бруса "Северная Жемчужина"</h3>
+                                    <div class="panel">
+                                        <div class="dark-alert">Построено <br> 30.07.2023г.</div>
+                                        <div class="location">
+                                            <img src="./images/location_icon.svg" alt="">
+                                            <span>Симагино</span>
+                                        </div>
+                                        <div class="amount">
+                                            <span>250 м²</span> 10 000 000 ₽
+                                        </div>
+                                    </div>
+                                    <img class="main_img" src="./images/built_card_1.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mini_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/built_card_1.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/built_card_1.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/built_card_1.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/built_card_1.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/built_card_1.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/built_card_1.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Built end -->
+
+        
+        <!-- Consultation -->
+        <section class="consultation card_project">
+            <div class="main_container">
+                <div class="consultation_card">
+                    <img src="./images/consultation_card_bg.webp" alt="" class="card_bg">
+                    <h2 class="sec-title">Хотите увидеть готовый <br> дом <span>лично</span>?</h2>
+                    <div class="description">Мы покажем вам дом, в котором уже живут наши заказчики, чтобы вы могли объективно оценить наше качество. </div>
+                    <form>
+                        <label>А еще мы ответим на <span>все вопросы и дадим <br> рекомендации</span></label>
+                        <div class="inputs">
+                            <input type="text" placeholder="Введите имя">
+                            <input type="tel" placeholder="Введите телефон">
+                            <button type="submit" class="success-link">
+                                <span>Записаться на консультацию</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none">
+                                    <path
+                                        d="M11.9892 1.1666C11.9892 0.614312 11.5414 0.166597 10.9892 0.166598L1.98916 0.166598C1.43688 0.166597 0.989165 0.614312 0.989165 1.1666C0.989165 1.71888 1.43688 2.1666 1.98916 2.1666L9.98916 2.1666L9.98916 10.1666C9.98916 10.7189 10.4369 11.1666 10.9892 11.1666C11.5414 11.1666 11.9892 10.7189 11.9892 10.1666L11.9892 1.1666ZM1.70711 11.8629L11.6963 1.8737L10.2821 0.459491L0.292893 10.4487L1.70711 11.8629Z"
+                                        fill="#242A1F" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="links">
+                            Нажимая на кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Consultation end -->
+
+        <!-- Technology card -->
+        <section class="technology">
+            <div class="main_container">
+                <img src="./images/technology_card.webp" alt="" class="card_item img">
+                <div class="card_item">
+                    <h2 class="sec-title">Технология строительства домов из <span>клееного бруса</span></h2>
+                    <p>Строительство домов из клееного бруса - это технология, при которой используется клееный брус, изготовленный из сращенных по длине досок, соединенных между собой на клее. Такой брус обладает высокой прочностью и устойчивостью к деформациям, а также позволяет создавать прочные и долговечные конструкции.</p>
+                </div>
+                <div class="card_item">
+                    <img src="./images/technology_icon_1.svg" alt="" class="icon">
+                    <p>Для строительства домов из клееного бруса применяются различные технологии, включая классическую нарезку и многопрофильную нарезку. При классической нарезке брус обрабатывается на четырех сторонах и имеет прямоугольное сечение. При многопрофильной нарезке брус имеет более сложное сечение с пазами и выступами, что позволяет улучшить его механические свойства и снизить теплопотери.</p>
+                </div>
+                <div class="card_item">
+                    <img src="./images/technology_icon_2.svg" alt="" class="icon">
+                    <p>Строительство домов из клееного бруса имеет ряд преимуществ, таких как высокая прочность и устойчивость к деформациям, экологичность, возможность создания уютной и теплой атмосферы внутри дома, а также быстрота и простота монтажа конструкции.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Technology card end -->
+
+        <!-- Feauter technology -->
+        <section class="features_technology">
+            <div class="main_container">
+                <h2 class="sec-title">Особенности <span>технологии</span></h2>
+                <div class="cards">
+                    <div class="card_item">
+                        <h3>Cпециальные соединительные элементы</h3>
+                        <p>Обеспечивают надежное крепление элементов и позволяет избежать проблем с усадкой и деформацией, которые могут возникнуть при использовании бревен естественной влажности.</p>
+                    </div>
+                    <div class="card_item">
+                        <h3>Применение специальных клеев</h3>
+                        <p>Клееный брус изготавливается из отдельных пластин древесины, склеенных между собой с помощью специального клея. Это обеспечивает высокую прочность и долговечность конструкции.</p>
+                    </div>
+                    <div class="card_item">
+                        <h3>Скорость строительства</h3>
+                        <p>Строительство дома из клееного бруса обычно происходит быстрее, чем из обычного бруса, так как не требуется дополнительной обработки материала.</p>
+                    </div>
+                    <div class="card_item">
+                        <h3>Монтаж каркаса</h3>
+                        <p>Каркас дома собирается из клееного бруса на основе проекта. Сначала монтируются на фундамент брусовые колонны, затем устанавливаются горизонтальные бруски</p>
+                    </div>
+                    <div class="card_item">
+                        <h3>Утепление и обшивка</h3>
+                        <p>Клееный брус обладает хорошей теплоизоляцией, но для дополнительного утепления и защиты от внешних воздействий наружная поверхность каркаса обшивается доп. материалами</p>
+                    </div>
+                    <div class="card_item last">
+                        <a href="#">Проекты из Клееного бруса</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feauter technology end -->
+
+        <!-- Main cards start -->
+        <section class="main__cards project">
+            <div class="main_container">
+                <h2 class="main__cards-title sec-title">Почему <span>клееный брус</span>?</h2>
+                <div class="main__cards-wrap">
+                    <div class="main__card">
+                        <div class="main__card-img">
+                            <img src="images/main-card-icon1.svg" alt="">
+                        </div>
+                        <h3 class="main__card-title">Прочность и устойчивость</h3>
+                        <p class="main__card-text">Прочный и устойчивый к деформации, благодаря специальной технологии склейки из нескольких слоев древесины</p>
+                    </div>
+                    <div class="main__card">
+                        <div class="main__card-img">
+                            <img src="images/main-card-icon2.svg" alt="">
+                        </div>
+                        <h3 class="main__card-title">Долговечность</h3>
+                        <p class="main__card-text">Не имеет щелей и трещин, устойчив к воздействию влаги и грибковым поражениям</div>
+                    <div class="main__card">
+                        <div class="main__card-img">
+                            <img src="images/main-card-icon3.svg" alt="">
+                        </div>
+                        <h3 class="main__card-title">Высокое качество</h3>
+                        <p class="main__card-text">Процесс склейки позволяет удалять из древесины дефекты и использовать только качественный материал</p>
+                    </div>
+                    <div class="main__card">
+                        <div class="main__card-img">
+                            <img src="images/main-card-icon4.svg" alt="">
+                        </div>
+                        <h3 class="main__card-title">Минимальная усадка</h3>
+                        <p class="main__card-text">Проходит тщательную сушку и имеет низкую влажность от 8% до 12%. Благодаря этому, дома имеют минимальную усадку – до 1%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main cards end -->
+
+        <!-- Similar project -->
+        <section class="similar_project">
+            <div class="main_container">
+                <div class="similar_project__head">
+                    <h2 class="sec-title">Похожие <span>проекты</span></h2>
+                    <a href="#">Смотреть все проекты</a>
+                </div>
+
+                <div class="similar_project__slider_wrap">
+                    <button class="btn similar_slider_prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="36" viewBox="0 0 19 36" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.565714 18.353C0.234815 17.9542 0.252423 17.3538 0.618538 16.9765C0.6569 16.937 0.697639 16.9014 0.740281 16.8697L16.6441 0.480667C17.0287 0.0843201 17.6523 0.0843201 18.0369 0.480667C18.4215 0.877014 18.4215 1.51962 18.0369 1.91597L2.71682 17.7035L18.0286 33.4825C18.4132 33.8788 18.4132 34.5214 18.0286 34.9178C17.644 35.3141 17.0204 35.3141 16.6358 34.9178L0.660588 18.4551C0.649149 18.4444 0.637895 18.4333 0.626839 18.4219C0.605253 18.3997 0.584876 18.3767 0.565714 18.353Z" fill="#242A1F"/>
+                        </svg>
+                    </button>
+                    <button class="btn similar_slider_next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="36" viewBox="0 0 19 36" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8974 17.6992L0.809879 2.07814C0.426197 1.68089 0.426197 1.03682 0.809879 0.639568C1.19356 0.242317 1.81563 0.242317 2.19931 0.639568L17.847 16.8406C18.0732 17.0748 18.166 17.3947 18.1256 17.6992C18.166 18.0038 18.0732 18.3237 17.847 18.5578L2.19931 34.7589C1.81563 35.1561 1.19356 35.1561 0.809879 34.7589C0.426197 34.3616 0.426197 33.7176 0.809879 33.3203L15.8974 17.6992Z" fill="#242A1F"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="swiper similar_project__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="similar_card">
+                                    <div class="similar_card__head">
+                                        <img src="./images/sort_card_1.webp" alt="">
+                                    </div>
+                                    <div class="similar_card__body">
+                                        <div class="body_top">
+                                            <div class="title">Дом из клееного бруса "Репинская усадьба"</div>
+                                            <div class="amount">12 853 785 ₽</div>
+                                        </div>
+                                        <div class="body_bottom">
+                                            <div class="amount">379 м²</div>
+                                            <div class="line"></div>
+                                            <div class="amount">2 этажа</div>
+                                            <div class="line"></div>
+                                            <div class="amount">4 спальни</div>
+                                            <div class="line"></div>
+                                            <div class="amount">6 с/у</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="similar_card">
+                                    <div class="similar_card__head">
+                                        <img src="./images/sort_card_3.webp" alt="">
+                                    </div>
+                                    <div class="similar_card__body">
+                                        <div class="body_top">
+                                            <div class="title">Дом из клееного бруса "Репинская усадьба"</div>
+                                            <div class="amount">12 853 785 ₽</div>
+                                        </div>
+                                        <div class="body_bottom">
+                                            <div class="amount">379 м²</div>
+                                            <div class="line"></div>
+                                            <div class="amount">2 этажа</div>
+                                            <div class="line"></div>
+                                            <div class="amount">4 спальни</div>
+                                            <div class="line"></div>
+                                            <div class="amount">6 с/у</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="similar_card">
+                                    <div class="similar_card__head">
+                                        <img src="./images/sort_card_2.webp" alt="">
+                                    </div>
+                                    <div class="similar_card__body">
+                                        <div class="body_top">
+                                            <div class="title">Дом из клееного бруса "Репинская усадьба"</div>
+                                            <div class="amount">12 853 785 ₽</div>
+                                        </div>
+                                        <div class="body_bottom">
+                                            <div class="amount">379 м²</div>
+                                            <div class="line"></div>
+                                            <div class="amount">2 этажа</div>
+                                            <div class="line"></div>
+                                            <div class="amount">4 спальни</div>
+                                            <div class="line"></div>
+                                            <div class="amount">6 с/у</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Similar project end -->
+
+        <!-- Document download -->
+        <section class="download">
+            <div class="main_container">
+                <h2 class="sec-title">Документы для <span>скачивания</span></h2>
+                <div class="card">
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <div class="title">коммерческое предложение общее</div>
+                            <img src="./images/pdf_icon.svg" alt="">
+                        </div>
+                        <a href="#">Скачать</a>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <div class="title">коммерческое предложение на каждый вариант</div>
+                            <img src="./images/pdf_icon.svg" alt="">
+                        </div>
+                        <a href="#">Скачать</a>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <div class="title">спецификации</div>
+                            <img src="./images/pdf_icon.svg" alt="">
+                        </div>
+                        <a href="#">Скачать</a>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_item__head">
+                            <div class="title">иные документы</div>
+                            <img src="./images/pdf_icon.svg" alt="">
+                        </div>
+                        <a href="#">Скачать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Document download end -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="main_container">
+                <div class="foot_top">
+                    <div class="social_links">
+                        <a href="#" class="logo">
+                            <img src="./images/footer_logo.svg" width="260" height="73" alt="">
+                        </a>
+                        <div class="location_wrapper">
+                            <ul class="socials_wrapper">
+                                <li class="link">
+                                    <a href="#">+7 (812) 921-07-07</a>
+                                </li>
+                                <li class="link email">
+                                    <a href="#">spb@domtommer.ru</a>
+                                </li>
+                                <li class="answer">
+                                    <a href="#">Пишите, звоните и задавайте вопросы</a>
+                                </li>
+                                <li class="socials">
+                                    <div>
+                                        <a href="#">
+                                            <img src="./images/whatsapp_icon.svg" width="44" height="44" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/Telegram.svg" width="44" height="44" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/Vkontakte.svg" width="44" height="44" alt="">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="address">
+                                    <a href="#">г. Санкт-Петербург, Выборгское ш., дом 212, строение 5</a>
+                                </li>
+                            </ul>
+                            <div class="location">
+                                <a href="#">г. Санкт-Петербург, Выборгское ш., дом 212, строение 5</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="nav_links">
+                        <div class="nav_links_top">
+                            <ul class="company">
+                                <li class="nav_link_title">Компания</li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Реквизиты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Лицензии и свидетельства</a>
+                                </li>
+                                <li>
+                                    <a href="#">Партнеры</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вакансии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <ul class="services">
+                                <li class="nav_link_title">Услуги</li>
+                                <li>
+                                    <a href="#">Проектирование</a>
+                                </li>
+                                <li>
+                                    <a href="#">Производство домокомплектов</a>
+                                </li>
+                                <li>
+                                    <a href="#">Инженерия</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ландшафт</a>
+                                </li>
+                            </ul>
+                            <ul class="client mobile">
+                                <li class="nav_link_title">Клиентам</li>
+                                <li>
+                                    <a href="#">Ипотека</a>
+                                </li>
+                                <li>
+                                    <a href="#">Технологии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Гарантии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вопросы и ответы</a>
+                                </li>
+                            </ul>
+                            <ul class="prices">
+                                <li class="nav_link_title">Проекты и цены</li>
+                                <li>
+                                    <a href="#">Фахверк</a>
+                                </li>
+                                <li>
+                                    <a href="#">Клееный брус</a>
+                                </li>
+                                <li>
+                                    <a href="#">Домокомплекты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Индивидуальные проекты</a>
+                                </li>
+                                <li>
+                                    <a class="politika" href="#">Политика конфиденциальности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Карта сайта</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav_links_bottom">
+                            <ul class="client">
+                                <li class="nav_link_title">Клиентам</li>
+                                <li>
+                                    <a href="#">Ипотека</a>
+                                </li>
+                                <li>
+                                    <a href="#">Технологии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Гарантии</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вопросы и ответы</a>
+                                </li>
+                            </ul>
+                            <ul class="portfolio">
+                                <li class="nav_link_title">Портфолио</li>
+                                <li>
+                                    <a href="#">Фото </a>
+                                </li>
+                                <li>
+                                    <a href="#">Видео</a>
+                                </li>
+                                <li>
+                                    <a href="#">Поселок МОХ</a>
+                                </li>
+                            </ul>
+                            <div class="qr_code">
+                                <img src="./images/qr_code.svg" width="160" height="161" alt="">
+                                <span>Наведите на QR-код для перехода в WhatsApp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot_bottom">
+                    Все права защищены. ООО "Томмер" 2023
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

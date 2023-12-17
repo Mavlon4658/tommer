@@ -24,6 +24,58 @@ mobile_menu_bg.onclick = () => {
     mobile_menu.classList.remove('active')
 }
 
+
+let tabs = document.querySelectorAll('.tab');
+if (tabs.length) {
+    tabs.forEach(tab => {
+        let tab_btns = tab.querySelectorAll('button');
+        let tab_items = tab.querySelectorAll('.tab_item');
+        tab_btns.forEach((tab_btn, btn_idx) => {
+            tab_btn.onclick = () => {
+                if (!tab_items[btn_idx].classList.contains('active')) {
+                    tab_items.forEach((tab_item, item_idx) => {
+                        if (tab_item.classList.contains('active')) {
+                            tab_item.classList.remove('active');
+                            tab_item.classList.add('end-active')
+                            setTimeout(() => {
+                                tab_item.classList.remove('end-active')
+                            }, 300);
+                        }
+                    })
+                    setTimeout(() => {
+                        tab_items[btn_idx].classList.add('active')
+                    }, 300);
+                }
+                tab_btns.forEach(item => {
+                    item.classList.remove('active')
+                })
+                tab_btn.classList.add('active')
+            }
+        })
+    })
+}
+
+let checkboxs = document.querySelectorAll('.checkbox');
+if (checkboxs.length) {
+    checkboxs.forEach(checkbox => {
+        handleCheckbox(checkbox)
+        let input = checkbox.querySelector('input[type="checkbox"]');
+        checkbox.onclick = () => {
+            input.click();
+            handleCheckbox(checkbox)
+        }
+    })
+}
+
+function handleCheckbox(el) {
+    let input = el.querySelector('input[type="checkbox"]')
+    if (input.checked) {
+        el.classList.add('active')
+    } else {
+        el.classList.remove('active')
+    }
+}
+
 let slide_1 = document.querySelector('#index_home .card_right_slider');
 
 if (slide_1) {
@@ -82,7 +134,7 @@ try {
     console.log(err);
 }
 
-let customer_slider = document.querySelector('.customers .customer_slider') 
+let customer_slider = document.querySelector('.customers .customer_slider')
 if (customer_slider) {
     let custom_slide = new Swiper(customer_slider, {
         slidesPerView: 1,
@@ -159,7 +211,7 @@ if (accordions.length) {
     accordions.forEach((item) => {
         const header = item.querySelector('.accordion_head');
         const content = item.querySelector('.accordion_body');
-        
+
         header.addEventListener('click', () => {
             header.classList.toggle('active')
             content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
@@ -221,6 +273,80 @@ if (award_img.length) {
                 dynamicEl: src,
                 index: idx
             });
+        }
+    })
+}
+
+let project_home_slider = document.querySelector('.card_project_home .home_slider');
+if (project_home_slider) {
+    let project_main_slider = new Swiper(".card_project_home .mini_slider", {
+        spaceBetween: 8,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    let project_mini_slider = new Swiper(".card_project_home .main_slider", {
+        spaceBetween: 10,
+        effect: "fade",
+        navigation: {
+            nextEl: ".main_slider_next_btn",
+            prevEl: ".main_slider_prev_btn",
+        },
+        thumbs: {
+            swiper: project_main_slider,
+        },
+    });
+}
+
+let example_slide = document.querySelector('.example .example_slider')
+if (example_slide) {
+    let example_slider = new Swiper(example_slide, {
+        spaceBetween: 1,
+        spaceBetween: 0,
+        speed: 1400,
+        navigation: {
+            nextEl: ".example_next_btn",
+            prevEl: ".example_prev_btn",
+        },
+    })
+}
+
+let built_slider = document.querySelector('.built .main_slide');
+if (built_slider) {
+    let built_main_slider = new Swiper(".built .mini_slide", {
+        spaceBetween: 10,
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    let built_mini_slider = new Swiper(".built .main_slide", {
+        spaceBetween: 0,
+        speed: 1400,
+        navigation: {
+            nextEl: ".built_next_btn",
+            prevEl: ".built_prev_btn",
+        },
+        pagination: {
+            el: ".built .pagination",
+            clickable: true,
+        },
+        thumbs: {
+            swiper: built_main_slider,
+        },
+    });
+}
+
+let similar_card = document.querySelector('.similar_project__slider');
+if (similar_card) {
+    let similar_slider = new Swiper('.similar_project__slider', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        speed: 1400,
+        navigation: {
+            nextEl: '.similar_slider_next',
+            prevEl: '.similar_slider_prev'
         }
     })
 }
