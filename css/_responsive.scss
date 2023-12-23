@@ -619,7 +619,6 @@
         }
     }
 
-
     .example {
         margin-bottom: 7.5rem;
     
@@ -1933,6 +1932,175 @@
         .foot_bottom {
             font-size: 0.875rem;
             margin-top: 3.36rem;
+        }
+    }
+
+    .range {
+        .value {
+            font-size: 1.75rem;
+            margin-bottom: 5px;
+        }
+    
+        &_foot {
+            font-size: 1.25rem;
+        }
+    }
+
+    .mortgage_home {
+        margin-bottom: 7.5rem;
+    
+        &__top {
+            height: 34.375rem;
+            padding: 2.5rem 1.25rem;
+            
+            .main_title {
+                max-width: 43.83763rem;
+            }
+
+            p {
+                font-size: 1rem;
+                max-width: 39.66775rem;
+            }
+        }
+    
+        &_content {
+            padding: 1.25rem;
+    
+            .sec-title {
+                margin-bottom: 1.88rem;
+            }
+    
+            .range_wrap {
+                flex-direction: column;
+                gap: 1.875rem;
+                margin: 2.5rem 0 1.875rem;
+
+                .range {
+                    width: 100%;
+                }
+            }
+    
+            &__foot {
+                .amount {
+                    gap: 1.875rem;
+                    margin-bottom: 0.38rem;
+    
+                    &_line {
+                        height: 4.125rem
+                    }
+    
+                    &_name {
+                        font-size: 1rem;
+                    }
+    
+                    &_value {
+                        font-size: 1.75rem;
+                    }
+                }
+    
+                .description {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+    
+                    p {
+                        font-size: 1rem;
+                        max-width: 30.59694rem;
+                    }
+
+                    .success-link {
+                        width: 20.3125rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .mortgage_card {
+        .sec-title {
+            margin-bottom: 2.5rem;
+        }
+    
+        .card_top {
+            gap: 1.31rem;
+            margin-bottom: 7.5rem;
+    
+            .card_left {
+                width: 22.8125rem;
+                height: auto;
+                padding: 1.25rem;
+                padding-right: 2.44rem;
+                font-size: 1.75rem;
+            }
+    
+            .card_right {
+                width: 100%;
+                padding: 1.38rem 1.63rem 1.44rem 1.25rem;
+    
+                h3 {
+                    font-size: 1.0625rem;
+    
+                    &:first-child {
+                        min-height: auto;
+                        margin-bottom: 1.25rem;
+                    }
+                }
+            }
+        }
+    
+        .card_bottom {
+            gap: 1.1875rem;
+    
+            .card_item {
+                border-radius: 0.625rem;
+                padding: 1.25rem;
+                width: calc(100% / 3 - 1.1875rem * 2 / 3);
+    
+                h3 {
+                    font-size: 1.125rem;
+                    margin: 2.0625rem 0;
+                    min-height: 2.75rem;
+                }
+    
+                p {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+    }
+    
+    .our_partners {
+        margin-top: 7.5rem;
+    
+        .sec-title {
+            margin-bottom: 2.5rem;
+        }
+    
+        .cards_wrap {
+            .btn {
+                width: 2.5rem;
+                height: 2.5rem;
+                top: 2.87rem;
+
+                svg {
+                    height: 1.22969rem;
+                    width: auto;
+                }
+            }
+    
+            .prev_btn {
+                left: 0;
+            }
+    
+            .next_btn {
+                right: 0;
+            }
+        }
+    
+        .our_partners_card {
+            .card_item {
+                height: 8.25rem;
+            }
         }
     }
 }
@@ -3922,6 +4090,161 @@
             }
         }
     }
+
+    .range {
+        &_subtitle {
+            font-size: 0.9375rem;
+        }
+
+        .value {
+            font-size: 1.5625rem;
+        }
+    
+        &_foot {
+            font-size: 1.125rem;
+        }
+    }
+
+    .mortgage_home {
+        margin-bottom: 7.5rem;
+    
+        &__top {
+            padding: 2.5rem 0.94rem;
+            
+            .main_title {
+                max-width: 34.77319rem;
+            }
+
+            p {
+                max-width: 28.58975rem;
+            }
+        }
+    
+        &_content {
+            .sec-title {
+                margin-bottom: 1.25rem;
+            }
+    
+            .range_wrap {
+                gap: 1.875rem;
+                margin: 2.5rem 0 1.875rem;
+            }
+    
+            &__foot {
+                padding-top: 1.875rem;
+                
+                .amount {
+                    gap: 1.875rem;
+                    margin-bottom: 0.625rem;
+    
+                    &_line {
+                        height: 3.75rem;
+                    }
+    
+                    &_name {
+                        font-size: 0.9375rem;
+                    }
+    
+                    &_value {
+                        font-size: 1.5625rem;
+                    }
+                }
+    
+                .description {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.625rem;
+    
+                    p {
+                        max-width: 100%;
+                    }
+
+                    .success-link {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .mortgage_card {
+        .sec-title {
+            margin-bottom: 1.87rem;
+        }
+
+        .card_top {
+            gap: 1.25rem;
+            margin-bottom: 5rem;
+    
+            .card_left {
+                width: 16.25rem;
+                height: auto;
+                padding-right: 1.81rem;
+                font-size: 1.5625rem;
+            }
+    
+            .card_right {
+                width: 100%;
+                padding: 1.25rem 1.19rem 1.42rem 1.25rem;
+    
+                h3 {
+                    font-size: 1rem;
+    
+                    &:first-child {
+                        margin-bottom: 1.25rem;
+                    }
+                }
+            }
+        }
+    
+        .card_bottom {
+            gap: 1.25rem;
+    
+            .card_item {
+                padding: 0.9375rem;
+                width: calc(100% / 3 - 1.25rem * 2 / 3);
+    
+                h3 {
+                    font-size: 1.0625rem;
+                    margin: 1.5625rem 0;
+                    min-height: 2.5rem;
+                }
+    
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    
+    .our_partners {
+        margin-top: 5rem;
+    
+        .sec-title {
+            margin-bottom: 1.875rem;
+        }
+    
+        .cards_wrap {
+            .btn {
+                width: 2.5rem;
+                height: 2.5rem;
+                top: 2.04rem;
+            }
+        }
+    
+        .our_partners_card {
+            .card_item {
+                height:6.625rem;
+                padding: 5px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -5457,6 +5780,133 @@
             }
         }
     }
+
+    .range {
+        .value {
+            font-size: 1.25rem;
+        }
+    
+        &_foot {
+            font-size: 1rem;
+        }
+    }
+
+    .mortgage_home {
+        margin-bottom: 5rem;
+    
+        &__top {
+            padding: 1.87rem 0.94rem;
+            border-radius: 0.625rem 6.25rem 0rem 0rem;
+            height: 25.75rem;
+            
+            .main_title {
+                max-width: 23.42919rem;
+            }
+
+            p {
+                max-width: 21.98425rem;
+                margin-top: 1.25rem;
+            }
+        }
+    
+        &_content {
+            padding: 0.9375rem;
+    
+            .range_wrap {
+                margin: 1.875rem 0 1.875rem;
+            }
+    
+            &__foot {
+                .amount {
+                    gap: 1.25rem;
+
+                    &_name {
+                        font-size: 0.9375rem;
+                        white-space: nowrap;
+                    }
+
+                    &_line {
+                        flex-shrink: 0;
+                    }
+    
+                    &_value {
+                        font-size: 1.5625rem;
+                        white-space: nowrap;
+                    }
+                }
+    
+                .description {
+                    p {
+                        max-width: 100%;
+                    }
+
+                    .success-link {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .mortgage_card {
+        .sec-title {
+            margin-bottom: 1.25rem;
+        }
+
+        .card_top {
+            gap: 0.875rem;
+            margin-bottom: 4.39rem;
+            flex-direction: column;
+    
+            .card_left {
+                width: 100%;
+                padding: 1.25rem;
+                padding-bottom: 2.25rem;
+                font-size: 1.75rem;
+            }
+    
+            .card_right {
+                width: 100%;
+                padding: 0.92rem 0.94rem;
+            }
+        }
+    
+        .card_bottom {
+            gap: 0.875rem;
+            flex-direction: column;
+    
+            .card_item {
+                padding: 0.9375rem;
+                width: 100%;
+    
+                h3 {
+                    min-height: auto;
+                }
+    
+                p {
+                    max-width: 21.85719rem;
+                }
+            }
+        }
+    }
+    
+    .our_partners {
+        .sec-title {
+            margin-bottom: 1.25rem;
+        }
+    
+        .cards_wrap {
+            .btn {
+                display: none;
+            }
+        }
+    
+        .our_partners_card {
+            .card_item {
+                height: 6.375rem;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -6639,6 +7089,73 @@
                 .title {
                     margin-bottom: 1.25rem;
                     min-height: auto;
+                }
+            }
+        }
+    }
+
+    .range {
+        .value {
+            font-size: 1.25rem;
+        }
+
+        &_subtitle {
+            font-size: 0.875rem;
+        }
+    
+        &_foot {
+            font-size: 0.875rem;
+        }
+    }
+
+    .mortgage_home {
+        &__top {
+            height: 23.75rem;
+            
+            .main_title {
+                max-width: 23.42919rem;
+                font-size: 1.375rem;
+            }
+        }
+    
+        &_content {
+            .range_wrap .value_wrap .value_part {
+                font-size: 1.25rem;
+            }
+
+            &__foot {
+                .amount {
+                    gap: 0.9375rem;
+                    flex-wrap: wrap;
+                    margin-bottom: 1.25rem;
+
+                    &_item:first-child {
+                        width: 100%;
+                    }
+
+                    &_name {
+                        font-size: 0.875rem;
+                        white-space: nowrap;
+                    }
+
+                    &_line {
+                        display: none;
+                    }
+    
+                    &_value {
+                        font-size: 1.25rem;
+                        white-space: nowrap;
+                    }
+                }
+    
+                .description {
+                    p {
+                        max-width: 100%;
+                    }
+
+                    .success-link {
+                        width: 100%;
+                    }
                 }
             }
         }

@@ -108,6 +108,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     padding: 1.25rem 2.1875rem;
     align-items: center;
+    justify-content: center;
     gap: 1.25rem;
     height: 4rem;
     border: 2px solid var(--Dark-green, #242A1F);
@@ -205,6 +206,87 @@ input::-webkit-inner-spin-button {
 	.checkked {
 		display: block;
 	}
+}
+
+.range {
+    max-width: 100%;
+
+    &_subtitle {
+        color: #5B5B59;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    .value {
+        color: var(--Dark-green, #242A1F);
+        font-family: "Roboto Slab", serif;
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    &_foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5px;
+        color: var(--Dark-green, #242A1F);
+        font-family: "Roboto Slab", sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    .range_input {
+        width: 100%;
+        background: #D3D3D3;
+        height: 5px;
+        position: relative;
+    }
+
+    .range_line {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: #4C9C2E;
+    }
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        outline: none;
+        height: 5px;
+        background: transparent;
+        transform: translateY(-12px);
+        position: relative;
+    }
+    
+    /* Thumb: webkit */
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        width: 15px;
+        background: #FFF;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        border: none;
+        cursor: ew-resize;
+    }
+    
+    /* Thumb: Firefox */
+    input[type="range"]::-moz-range-thumb {
+        height: 15px;
+        width: 15px;
+        background: #FFF;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        border: none;
+        cursor: ew-resize;
+    }
 }
 
 header {
@@ -3774,6 +3856,267 @@ footer {
         padding-top: 0.87rem;
         border-top: 1px solid #5B5B59;
         margin-top: 3.52rem;
+    }
+}
+
+.mortgage_home {
+    margin-bottom: 9.37rem;
+
+    &__top {
+        background-image: url('../images/mortgage_home.webp');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 40.78125rem;
+        border-radius: 0.625rem 10.9375rem 0rem 0rem;
+        padding: 4.5rem 1.89rem;
+        
+        .main_title {
+            max-width: 54.52856rem;
+            margin-bottom: 1.25rem;
+        }
+
+        p {
+            color: var(--White, #FFF);
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 120%;
+            max-width: 39.66775rem;
+        }
+    }
+
+    &_content {
+        border-radius: 0rem 0rem 0.625rem 0.625rem;
+        background: #FFF;
+        padding: 1.875rem;
+
+        .sec-title {
+            margin-bottom: 3.125rem;
+        }
+
+        .range_wrap {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.875rem;
+            margin: 2.5rem 0 3.125rem;
+
+            .value_wrap {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .value_part {
+                    color: #4C9C2E;
+                    font-family: "Roboto Slab", sans-serif;
+                    font-size: 1.5625rem;
+                    font-weight: 400;
+                    line-height: 120%;
+                }
+            }
+
+            .range {
+                width: calc(50% - 1.875rem / 2);
+            }
+        }
+
+        &__foot {
+            padding-top: 1.875rem;
+            border-top: 1px solid #CDDDC3;
+
+            .amount {
+                display: flex;
+                align-items: flex-start;
+                gap: 2.37rem;
+                margin-bottom: 0.81rem;
+
+                &_line {
+                    background: #CDDDC3;
+                    width: 0.0625rem;
+                    height: 4.6875rem;
+                }
+
+                &_name {
+                    color: #5B5B59;
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                    line-height: 140%;
+                }
+
+                &_value {
+                    color: #242A1F;
+                    font-family: "Roboto Slab", sans-serif;
+                    font-size: 2.375rem;
+                    font-weight: 400;
+                    line-height: 120%;
+                }
+
+                &_item {
+                    &:first-child {
+                        .amount_value {
+                            color: #4C9C2E;
+                        }
+                    }
+                }
+            }
+
+            .description {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+
+                p {
+                    color: #5B5B59;
+                    font-size: 1.0625rem;
+                    font-weight: 500;
+                    line-height: 140%;
+                    max-width: 39.6875rem;
+                }
+
+                .success-link {
+                    height: 3.125rem;
+                    width: 27.25rem;
+
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mortgage_card {
+    .sec-title {
+        margin-bottom: 3.125rem;
+    }
+
+    .card_top {
+        display: flex;
+        align-items: stretch;
+        gap: 1.94rem;
+        margin-bottom: 5.04rem;
+
+        .card_left {
+            width: 22.8125rem;
+            height: 17.5rem;
+            flex-shrink: 0;
+            padding: 1.91rem 1.88rem;
+            border-radius: 0.625rem;
+            border: 1px solid #B2B2B2;
+            background: var(--Dark-green, #242A1F);
+            color: var(--White, #FFF);
+            font-family: "Roboto Slab", serif;
+            font-size: 2.375rem;
+            font-weight: 300;
+            line-height: 120%;
+
+            span {
+                color: #82C853;
+                font-weight: 600;
+            }
+        }
+
+        .card_right {
+            width: 100%;
+            border-radius: 0.625rem;
+            border: 1px solid #B2B2B2;
+            background: var(--White, #FFF);
+            padding: 1.97rem 1.87rem;
+
+            h3 {
+                color: var(--Dark-green, #242A1F);
+                font-size: 1.25rem;
+                font-weight: 600;
+                line-height: 120%;
+                text-transform: uppercase;
+
+                span {
+                    color: #4C9C2E;
+                }
+
+                &:first-child {
+                    min-height: 4.40394rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .card_bottom {
+        display: flex;
+        align-items: stretch;
+        gap: 1.875rem;
+
+        .card_item {
+            border-radius: 0.625rem;
+            border: 1px solid #B2B2B2;
+            background: var(--White, #FFF);
+            padding: 1.875rem;
+            width: calc(100% / 3 - 1.875rem * 2 / 3);
+
+            h3 {
+                color: var(--Dark-green, #242A1F);
+                font-size: 1.25rem;
+                font-weight: 600;
+                line-height: 120%;
+                text-transform: uppercase;
+                margin: 1.88rem 0 3.12rem;
+                min-height: 3rem;
+            }
+
+            p {
+                color: var(--Dark-green, #242A1F);
+                font-size: 1.25rem;
+                font-weight: 400;
+                line-height: 120%;
+            }
+        }
+    }
+}
+
+.our_partners {
+    margin-top: 9.37rem;
+
+    .sec-title {
+        margin-bottom: 3.125rem;
+    }
+
+    .cards_wrap {
+        position: relative;
+
+        .btn {
+            width: 3.125rem;
+            height: 3.125rem;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            z-index: 2;
+            top: 4.06rem;
+        }
+
+        .prev_btn {
+            left: -2.44rem;
+        }
+
+        .next_btn {
+            right: -2.06rem;
+        }
+    }
+
+    .our_partners_card {
+        overflow: visible;
+
+        .card_item {
+            height: 10.9104rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.625rem;
+            border: 1px solid #B2B2B2;
+            background: var(--White, #FFF);
+        }
     }
 }
 

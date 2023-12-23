@@ -371,3 +371,49 @@ if (similar_card) {
         }
     })
 }
+
+let ranges = document.querySelectorAll('.range');
+if (ranges.length) {
+    ranges.forEach(range => {
+        const sliderEl = range.querySelector("input[type='range']")
+        const sliderValue = range.querySelector(".value")
+        const line = range.querySelector('.range_line');
+
+        sliderEl.addEventListener("input", (event) => {
+            handleInputRange(sliderEl, sliderValue, line);
+        })
+
+        handleInputRange(sliderEl, sliderValue, line);
+    })
+}
+
+function handleInputRange(el, sliderValue, line) {
+    sliderValue.textContent = el.value.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+    line.style.width = (100 * (el.value - el.min)) / (el.max - el.min) + '%';
+}
+
+let our_partners_card = document.querySelector('.our_partners .our_partners_card');
+if (our_partners_card) {
+    let partners_slider = new Swiper(our_partners_card, {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        speed: 1400,
+        navigation: {
+            nextEl: ".our_partners .next_btn",
+            prevEl: ".our_partners .prev_btn",
+        },
+        breakpoints: {
+            1250: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 3.13,
+            },
+            750: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            }
+        }
+    })
+}
