@@ -3487,6 +3487,7 @@ footer .foot_bottom {
 .mortgage_home_content .mortgage_programs__item_in {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .mortgage_home_content .mortgage_programs__item .select_icon {
   position: absolute;
