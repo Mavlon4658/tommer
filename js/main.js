@@ -417,3 +417,58 @@ if (our_partners_card) {
         }
     })
 }
+
+let mortgage_show_more_btn = document.querySelector('.mortgage_home .show_more');
+if (mortgage_show_more_btn) {
+    let mortgage_programs = document.querySelector('.mortgage_home .mortgage_programs');
+
+    mortgage_show_more_btn.onclick = () => {
+        let text = mortgage_show_more_btn.querySelector('span');
+        if (text.textContent === "Скрыть") {
+            text.textContent = 'Показать ещё программы (2)';
+        } else {
+            text.textContent = 'Скрыть'
+        }
+        mortgage_show_more_btn.classList.toggle('active');
+        mortgage_programs.classList.toggle('active');
+    }
+
+    let mortgage_radios = document.querySelectorAll('.mortgage_programs .mortgage_programs__item');
+    checkMortgageRadio(mortgage_radios);
+    mortgage_radios.forEach(radio => {
+        let inp = radio.querySelector('input[type="radio"]');
+        radio.onclick = () => {
+            inp.click();
+            checkMortgageRadio(mortgage_radios);
+        }
+    })
+}
+
+function checkMortgageRadio (mortgage_radios) {
+    mortgage_radios.forEach((radio, idx) => {
+        let inp = radio.querySelector('input[type="radio"]');
+
+        if (inp.checked) {
+            radio.classList.add('active');
+            
+            // if (idx >= 3 && radio.classList) {
+
+            // }
+        } else {
+            radio.classList.remove('active')
+        }
+        let mortgage_radio_shows = document.querySelectorAll('.mortgage_programs .mortgage_programs__item.show');
+        
+        if (idx >=3 && radio.classList.contains('active')) {
+            mortgage_radio_shows[2].classList.remove('show');
+            radio.classList.add('show');
+            // console.log('ishladi');
+        }
+
+        if (idx < 3 && radio.classList.contains('active') && !radio.classList.contains('show')) {
+            mortgage_radio_shows[2].classList.remove('show');
+            radio.classList.add('show');
+        }
+
+    })
+}

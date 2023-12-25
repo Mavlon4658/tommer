@@ -5816,6 +5816,61 @@
                 margin: 1.875rem 0 1.875rem;
             }
     
+            .mortgage_programs {
+                &__item {
+                    flex-direction: column;
+                    gap: 10px;
+
+                    &_in {
+                        align-items: flex-start;
+                        width: 100%;
+                    }
+
+                    .select_icon {
+                        width: 25px;
+                    }
+
+                    .left_block {
+                        width: 100%;
+
+                        img {
+                            width: 40px;
+                        }
+
+                        .name_wrap {
+                            flex-direction: column;
+                            gap: 0;
+                            align-items: flex-start;
+                        }
+
+                        p {
+                            display: none;
+                        }
+
+                        h3 {
+                            font-size: 14px;
+                        }
+
+                        .price {
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                    }
+
+                    p.mobile {
+                        font-size: 14px;
+                        font-weight: 400;
+                        width: 100%;
+                    }
+                }
+
+                &__item.active {
+                    p.mobile {
+                        display: block;
+                    }
+                }
+            }
+
             &__foot {
                 .amount {
                     gap: 1.25rem;

@@ -3890,8 +3890,145 @@ footer {
         background: #FFF;
         padding: 1.875rem;
 
+        input[type="radio"] {
+            display: none;
+        }
+
         .sec-title {
             margin-bottom: 3.125rem;
+        }
+
+        .mortgage_programs {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            &__item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border: 1px solid #e5e5e5;
+                border-radius: 5px;
+                padding: 12px;
+                gap: 20px;
+                cursor: pointer;
+                user-select: none;
+                position: relative;
+
+                &_in {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .select_icon {
+                    position: absolute;
+                    right: -10px;
+                    top: -10px;
+                    display: none;
+                }
+
+                .left_block {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+
+                    img {
+                        flex-shrink: 0;
+                        width: 50px;
+                    }
+
+                    .name_wrap {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        gap: 10px;
+                    }
+
+                    h3 {
+                        color: black;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 140%;
+                        margin-bottom: 4px;
+                    }
+
+                    p {
+                        color: var(--Gray, #5B5B59);
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 140%;
+                    }
+
+                    .price {
+                        font-size: 16px;
+                        font-weight: 600;
+                        white-space: nowrap;
+                    }
+                }
+
+                .percentage {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    background-color: #ddf0e3;
+                    color: #355944;
+                    border-radius: 12px;
+                    padding: 2px 12px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    flex-shrink: 0;
+                }
+
+                p.mobile {
+                    display: none;
+                }
+            }
+
+            &__item.active {
+                .select_icon {
+                    display: block;
+                }
+
+                border: 1px solid #53b375;
+            }
+        }
+
+        .mortgage_programs:not(.active) {
+            .mortgage_programs__item:not(.show) {
+                display: none;
+            }
+        }
+
+        .show_more {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0 30px;
+            
+            span {
+                font-size: 16px;
+                font-weight: 600;
+                white-space: nowrap;
+                color: #4C9C2E;
+            }
+
+            svg {
+                width: 20px;
+                height: auto;
+                transition: .2s ease all;
+
+                path {
+                    fill: #4C9C2E;
+                }
+            }
+        }
+
+        .show_more.active {
+            svg {
+                transform: rotateZ(180deg);
+            }
         }
 
         .range_wrap {
