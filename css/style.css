@@ -24,7 +24,7 @@ span {
   display: inline-block;
 }
 
-ul, li {
+ul {
   list-style-type: none;
 }
 
@@ -887,6 +887,7 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
 }
 #projects_home .project_home_card__top h2 span {
   font-weight: 600;
+  display: inline;
 }
 #projects_home .project_home_card__top a {
   color: var(--Dark-green, #242A1F);
@@ -996,6 +997,37 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
 }
 #projects_home .project_home_card .filter_right .dark-button svg {
   transform: translateY(2px);
+}
+
+#projects_home.vacancies {
+  margin-top: 3.12rem;
+}
+#projects_home.vacancies .project_home_card__top {
+  background-image: url("../images/vacancies_home.webp");
+}
+#projects_home.vacancies .project_home_card__top .main_title {
+  margin-bottom: 10.91rem;
+  max-width: 59.47556rem;
+}
+#projects_home.vacancies .project_home_card__top h2 {
+  margin-bottom: 0 !important;
+}
+
+#projects_home.technologies {
+  margin-top: 3.12rem;
+  margin-bottom: 0;
+}
+#projects_home.technologies .project_home_card__top {
+  background-image: url("../images/technologies_home.webp");
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+#projects_home.technologies .project_home_card__top .main_title {
+  margin-bottom: 10.91rem;
+  max-width: 59.47556rem;
+}
+#projects_home.technologies .project_home_card__top h2 {
+  margin-bottom: 0 !important;
 }
 
 .card_project_home {
@@ -2791,7 +2823,6 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
   font-weight: 400;
   line-height: 120%;
   max-width: 31.15856rem;
-  margin-bottom: 1.9rem;
 }
 .consultation ul {
   display: flex;
@@ -3762,6 +3793,173 @@ footer .foot_bottom {
   border-radius: 0.625rem;
   border: 1px solid #B2B2B2;
   background: var(--White, #FFF);
+}
+
+.vacancies_card .cards {
+  margin-top: 3.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem 1.9375rem;
+}
+.vacancies_card .cards_item {
+  width: calc(33.3333333333% - 1.2916666667rem);
+  border-radius: 0.625rem;
+  border: 1px solid #B2B2B2;
+  background: var(--White, #FFF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.875rem;
+  height: 18.5rem;
+}
+.vacancies_card .cards_item p {
+  color: var(--Dark-green, #242A1F);
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.vacancies_card .cards_item.dark {
+  background: #242A1F;
+}
+.vacancies_card .cards_item.dark p {
+  color: white;
+}
+.vacancies_card .bottom_card {
+  margin-top: 9.37rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.88rem 1.75rem;
+  align-items: stretch;
+}
+.vacancies_card .bottom_card .card_item {
+  border-radius: 0.625rem;
+  border: 1px solid #B2B2B2;
+  background: var(--White, #FFF);
+  padding: 1.88rem;
+  width: calc(50% - 0.875rem);
+  min-height: 21.875rem;
+}
+.vacancies_card .bottom_card .card_item .title {
+  color: var(--Dark-green, #242A1F);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 2.19rem;
+  min-height: 3rem;
+}
+.vacancies_card .bottom_card .card_item ul {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+.vacancies_card .bottom_card .card_item ul li {
+  color: #242A1F;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.vacancies_card .bottom_card .card_item.img {
+  padding: 0;
+  border: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.offer {
+  margin-top: 9.37rem;
+}
+.offer_content {
+  background: url("../images/offer_bg.webp") center/cover no-repeat;
+  height: 37.5rem;
+  padding: 1.88rem 4.53rem;
+  border-radius: 0.625rem;
+}
+.offer_content ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.56rem 1.88rem;
+}
+.offer_content ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.56rem;
+}
+.offer_content ul li img {
+  flex-shrink: 0;
+}
+.offer_content ul li span {
+  color: var(--White, #FFF);
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.offer_content ul li:nth-child(1) {
+  width: 21.75rem;
+}
+.offer_content ul li:nth-child(2) {
+  width: 28.5rem;
+}
+.offer_content ul li:nth-child(3) {
+  width: 16rem;
+}
+.offer_content ul li:nth-child(4) {
+  width: 23.5rem;
+}
+.offer_content ul li:nth-child(5) {
+  width: 20rem;
+}
+.offer_title {
+  color: var(--White, #FFF);
+  font-family: "Roboto Slab", serif;
+  font-size: 2.375rem;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 1.58rem;
+}
+
+.consultation.vacancee {
+  margin-bottom: 9.38rem;
+}
+
+.technology_home_card {
+  margin: 9.38rem 0;
+}
+.technology_home_card .main_container {
+  display: flex;
+  align-items: stretch;
+  gap: 1.875rem;
+}
+.technology_home_card .card_item_left {
+  padding: 1.87rem 3.69rem 1.63rem 1.88rem;
+  border-radius: 0.625rem;
+  border: 1px solid #B2B2B2;
+  background: var(--White, #FFF);
+  width: calc(50% - 0.9375rem);
+}
+.technology_home_card .card_item_left h2 {
+  margin-bottom: 1.6875rem;
+}
+.technology_home_card .card_item_left p {
+  color: var(--Dark-green, #242A1F);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+.technology_home_card .card_item_right {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: calc(50% - 0.9375rem);
+  border-radius: 0.625rem;
+}
+
+.technology_question {
+  margin-bottom: 9.37rem;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -4914,7 +5112,6 @@ footer .foot_bottom {
   .consultation .description {
     font-size: 1rem;
     max-width: 22.86938rem;
-    margin-bottom: 3.125rem;
   }
   .consultation ul {
     gap: 1.56rem;
@@ -5345,6 +5542,99 @@ footer .foot_bottom {
   }
   .our_partners .our_partners_card .card_item {
     height: 8.25rem;
+  }
+  .vacancies_card .cards {
+    margin-top: 2.5rem;
+    gap: 1.25rem 1.1875rem;
+  }
+  .vacancies_card .cards_item {
+    width: calc(33.3333333333% - 0.7916666667rem);
+    padding: 1.25rem;
+    height: 16.75rem;
+  }
+  .vacancies_card .cards_item p {
+    font-size: 1.125rem;
+  }
+  .vacancies_card .bottom_card {
+    margin-top: 7.5rem;
+    gap: 1.25rem;
+    align-items: stretch;
+  }
+  .vacancies_card .bottom_card .card_item {
+    padding: 1.25rem;
+    width: calc(50% - 0.625rem);
+    min-height: 19.875rem;
+  }
+  .vacancies_card .bottom_card .card_item .title {
+    font-size: 1.125rem;
+    margin-bottom: 2.1875rem;
+    min-height: 2.75rem;
+  }
+  .offer {
+    margin-top: 7.5rem;
+  }
+  .offer_content {
+    height: 34.375rem;
+    padding: 1.25rem 0.88rem 0 1.25rem;
+  }
+  .offer_content ul {
+    gap: 1.56rem 1.25rem;
+  }
+  .offer_content ul li {
+    gap: 1.25rem;
+  }
+  .offer_content ul li img {
+    width: 2.75rem;
+    height: 2.75rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .offer_content ul li span {
+    font-size: 1.0625rem;
+  }
+  .offer_content ul li:nth-child(1) {
+    width: 21.75rem;
+  }
+  .offer_content ul li:nth-child(2) {
+    width: 30rem;
+  }
+  .offer_content ul li:nth-child(3) {
+    width: 14.2rem;
+  }
+  .offer_content ul li:nth-child(4) {
+    width: 21.0625rem;
+  }
+  .offer_content ul li:nth-child(5) {
+    width: 17.4375rem;
+  }
+  .offer_title {
+    font-size: 1.75rem;
+    margin-bottom: 1.72rem;
+  }
+  .consultation.vacancee {
+    margin-bottom: 7.56rem;
+  }
+  .technology_home_card {
+    margin: 7.5rem 0;
+  }
+  .technology_home_card .main_container {
+    gap: 1.25rem;
+  }
+  .technology_home_card .card_item_left {
+    padding: 1.25rem;
+    width: calc(50% - 0.625rem);
+  }
+  .technology_home_card .card_item_left h2 {
+    margin-bottom: 1.6875rem;
+  }
+  .technology_home_card .card_item_left p {
+    font-size: 1.125rem;
+  }
+  .technology_home_card .card_item_right {
+    width: calc(50% - 0.625rem);
+  }
+  .technology_question {
+    margin-bottom: 7.5rem;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -6224,7 +6514,6 @@ footer .foot_bottom {
   }
   .consultation .description {
     font-size: 0.875rem;
-    margin-bottom: 4.1875rem;
     max-width: 20.9375rem;
   }
   .consultation ul {
@@ -6937,6 +7226,90 @@ footer .foot_bottom {
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .vacancies_card {
+    margin-top: 5rem;
+  }
+  .vacancies_card .cards {
+    margin-top: 2.5rem;
+    gap: 1.25rem;
+  }
+  .vacancies_card .cards_item {
+    width: calc(33.3333333333% - 0.8333333333rem);
+    padding: 1.25rem;
+    height: 18.375rem;
+  }
+  .vacancies_card .cards_item p {
+    font-size: 1rem;
+  }
+  .vacancies_card .bottom_card {
+    margin-top: 4.37rem;
+    gap: 1.25rem;
+  }
+  .vacancies_card .bottom_card .card_item {
+    min-height: 19.5rem;
+  }
+  .vacancies_card .bottom_card .card_item .title {
+    font-size: 1.0625rem;
+    margin-bottom: 1.25rem;
+    min-height: 3.75rem;
+  }
+  .vacancies_card .bottom_card .card_item ul li {
+    font-size: 1.0625rem;
+  }
+  .offer {
+    margin-top: 5rem;
+  }
+  .offer_content {
+    height: 27.5rem;
+    padding: 1.25rem 1.44rem 0 1.25rem;
+  }
+  .offer_content ul li {
+    gap: 0.875rem;
+  }
+  .offer_content ul li img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .offer_content ul li span {
+    font-size: 0.9375rem;
+  }
+  .offer_content ul li:nth-child(1) {
+    width: 17.125rem;
+  }
+  .offer_content ul li:nth-child(2) {
+    width: 22.5625rem;
+  }
+  .offer_content ul li:nth-child(3) {
+    width: 9.6875rem;
+  }
+  .offer_content ul li:nth-child(4) {
+    width: 13.9375rem;
+  }
+  .offer_content ul li:nth-child(5) {
+    width: 15.25rem;
+  }
+  .offer_title {
+    font-size: 1.75rem;
+    margin-bottom: 1.56rem;
+  }
+  .consultation.vacancee {
+    margin-bottom: 5.07rem;
+  }
+  .technology_home_card {
+    margin: 5rem 0;
+  }
+  .technology_home_card .main_container {
+    gap: 1.25rem;
+  }
+  .technology_home_card .card_item_left {
+    padding: 1.25rem;
+  }
+  .technology_home_card .card_item_left p {
+    font-size: 1rem;
+  }
+  .technology_question {
+    margin-bottom: 5rem;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -8185,6 +8558,86 @@ footer .foot_bottom {
   .our_partners .our_partners_card .card_item {
     height: 6.375rem;
   }
+  .vacancies_card .cards {
+    margin-top: 1.25rem;
+    gap: 1.25rem;
+    flex-direction: column;
+  }
+  .vacancies_card .cards_item {
+    width: 100%;
+    padding: 3.47rem 0.9375rem 3.41rem;
+    height: auto;
+  }
+  .vacancies_card .cards_item p {
+    max-width: 21.875rem;
+  }
+  .vacancies_card .cards_item.dark {
+    padding: 2.47rem 0.9375rem;
+  }
+  .vacancies_card .cards_item.dark p {
+    max-width: 18.772rem;
+  }
+  .vacancies_card .bottom_card {
+    margin-top: 4.91rem;
+    gap: 1.25rem;
+    flex-direction: column;
+  }
+  .vacancies_card .bottom_card .card_item {
+    min-height: auto;
+    width: 100%;
+  }
+  .vacancies_card .bottom_card .card_item .title {
+    min-height: 2.5rem;
+  }
+  .offer_content {
+    height: 38.50881rem;
+    padding: 0.94rem;
+  }
+  .offer_content ul {
+    flex-direction: column;
+    display: block;
+  }
+  .offer_content ul li {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .offer_content ul li:nth-child(1) {
+    width: auto;
+    max-width: 17.125rem;
+  }
+  .offer_content ul li:nth-child(2) {
+    width: auto;
+    max-width: 22.5625rem;
+  }
+  .offer_content ul li:nth-child(3) {
+    width: auto;
+    max-width: 14rem;
+  }
+  .offer_content ul li:nth-child(4) {
+    width: auto;
+    max-width: 25rem;
+  }
+  .offer_content ul li:nth-child(5) {
+    width: auto;
+    max-width: 25rem;
+  }
+  .offer_title {
+    font-size: 1.375rem;
+    margin-bottom: 1.5625rem;
+    text-align: left;
+  }
+  .consultation.vacancee {
+    margin-bottom: 5.07rem;
+  }
+  .technology_home_card .main_container {
+    flex-direction: column;
+  }
+  .technology_home_card .card_item_left {
+    width: 100%;
+  }
+  .technology_home_card .card_item_right {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 470px) {
   .sec-title {
@@ -9063,5 +9516,17 @@ footer .foot_bottom {
   }
   .mortgage_home_content__foot .description .success-link {
     width: 100%;
+  }
+  .technology_home_card {
+    margin: 4.43rem 0;
+  }
+  .technology_home_card .main_container {
+    gap: 0.875rem;
+  }
+  .technology_home_card .card_item_left {
+    padding: 0.9375rem;
+  }
+  .technology_question {
+    margin-bottom: 4.38rem;
   }
 }/*# sourceMappingURL=style.css.map */
