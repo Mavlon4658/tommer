@@ -2273,6 +2273,21 @@
             }
         }
     }
+
+    .landscape_home {
+        .content {
+            border-radius: 0.625rem 10.9375rem 0rem 0rem;
+            padding: 2.5rem 1.25rem;
+            height: 34.375rem;
+            margin-top: 1.875rem;
+    
+            p {
+                font-size: 1rem;
+                margin-top: 1.25rem;
+                max-width: 28.6875rem;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -4569,6 +4584,17 @@
             }
         }
     }
+
+    .landscape_home {
+        .content {
+            padding: 2.5rem 0.96rem;
+            margin-top: 1.25rem;
+    
+            p {
+                max-width: 28.58975rem;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -6423,6 +6449,18 @@
             }
         }
     }
+
+    .landscape_home {
+        .content {
+            padding: 1.88rem 0.94rem;
+            height: 25.75rem;
+            border-radius: 0.625rem 6.25rem 0rem 0rem;
+    
+            p {
+                max-width: 21.98425rem;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -7716,6 +7754,18 @@
                 img {
                     margin-bottom: 1.25rem;
                 }
+            }
+        }
+    }
+
+    .landscape_home {
+        .content {
+            padding: 1.86rem 0.94rem;
+            height: 23.75rem;
+    
+            p {
+                margin-top: 0.88rem;
+                max-width: 16rem;
             }
         }
     }
