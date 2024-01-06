@@ -1057,6 +1057,28 @@ header {
     }
 }
 
+#projects_home.engineering {
+    margin-top: 3.12rem;
+    margin-bottom: 0;
+    
+    .project_home_card {
+        &__top {
+            background-image: url('../images/engineering_home_card.webp');
+            border-bottom-left-radius: 0.625rem;
+            border-bottom-right-radius: 0.625rem;
+
+            .main_title {
+                margin-bottom: 10.91rem;
+                max-width: 59.47556rem;
+            }
+
+            h2 {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
 .card_project_home {
     margin-bottom: 12.88rem;
 
@@ -4489,6 +4511,82 @@ footer {
 
 .technology_question {
     margin-bottom: 9.37rem;
+}
+
+.visit.engineering {
+    margin-bottom: 9.38rem;
+}
+
+.work_cards {
+    margin-top: 9.38rem;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.875rem;
+        margin-top: 3.125rem;
+    }
+
+    .card_item {
+        position: relative;
+        width: calc(50% - 1.875rem / 2);
+
+        img {
+            border-radius: 0.625rem;
+            width: 100%;
+            height: 26.375rem;
+            object-fit: cover;
+        }
+
+        h3 {
+            width: calc(100% - 1.88rem * 2);
+            position: absolute;
+            top: 1.88rem;
+            left: 1.88rem;
+            padding: 0.625rem;
+            border-radius: 0.3125rem;
+            background: #FFF;
+            color: var(--Dark-green, #242A1F);
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.service_card {
+    margin-top: 9.37rem;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.875rem 1.9375rem;
+        align-items: stretch;
+        margin-top: 3.125rem;
+
+        &_item {
+            width: calc(100% / 3 - 1.9375rem * 2 / 3);
+            border-radius: 0.625rem;
+            border: 1px solid #B2B2B2;
+            background: var(--White, #FFF);
+            padding: 1.875rem;
+
+            img {
+                width: 2.9375rem;
+                height: 2.9375rem;
+                object-fit: cover;
+                margin-bottom: 2.0625rem;
+            }
+
+            p {
+                color: var(--Dark-green, #242A1F);
+                font-size: 1.25rem;
+                font-weight: 400;
+                line-height: 120%;
+            }
+        }
+    }
 }
 
 @import "responsive"

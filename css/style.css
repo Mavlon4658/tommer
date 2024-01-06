@@ -1030,6 +1030,23 @@ header .menu_bottom .nav_dropdown:hover .nav_dropdown__body {
   margin-bottom: 0 !important;
 }
 
+#projects_home.engineering {
+  margin-top: 3.12rem;
+  margin-bottom: 0;
+}
+#projects_home.engineering .project_home_card__top {
+  background-image: url("../images/engineering_home_card.webp");
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+#projects_home.engineering .project_home_card__top .main_title {
+  margin-bottom: 10.91rem;
+  max-width: 59.47556rem;
+}
+#projects_home.engineering .project_home_card__top h2 {
+  margin-bottom: 0 !important;
+}
+
 .card_project_home {
   margin-bottom: 12.88rem;
 }
@@ -3962,6 +3979,76 @@ footer .foot_bottom {
   margin-bottom: 9.37rem;
 }
 
+.visit.engineering {
+  margin-bottom: 9.38rem;
+}
+
+.work_cards {
+  margin-top: 9.38rem;
+}
+.work_cards .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+  margin-top: 3.125rem;
+}
+.work_cards .card_item {
+  position: relative;
+  width: calc(50% - 0.9375rem);
+}
+.work_cards .card_item img {
+  border-radius: 0.625rem;
+  width: 100%;
+  height: 26.375rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.work_cards .card_item h3 {
+  width: calc(100% - 3.76rem);
+  position: absolute;
+  top: 1.88rem;
+  left: 1.88rem;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  background: #FFF;
+  color: var(--Dark-green, #242A1F);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.service_card {
+  margin-top: 9.37rem;
+}
+.service_card .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem 1.9375rem;
+  align-items: stretch;
+  margin-top: 3.125rem;
+}
+.service_card .cards_item {
+  width: calc(33.3333333333% - 1.2916666667rem);
+  border-radius: 0.625rem;
+  border: 1px solid #B2B2B2;
+  background: var(--White, #FFF);
+  padding: 1.875rem;
+}
+.service_card .cards_item img {
+  width: 2.9375rem;
+  height: 2.9375rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 2.0625rem;
+}
+.service_card .cards_item p {
+  color: var(--Dark-green, #242A1F);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
 @media only screen and (max-width: 1600px) {
   #index_home .home_bg {
     width: 600px;
@@ -5635,6 +5722,46 @@ footer .foot_bottom {
   }
   .technology_question {
     margin-bottom: 7.5rem;
+  }
+  .visit.engineering {
+    margin-bottom: 7.5rem;
+  }
+  .work_cards {
+    margin-top: 7.5rem;
+  }
+  .work_cards .cards {
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  .work_cards .card_item {
+    width: calc(50% - 0.625rem);
+  }
+  .work_cards .card_item img {
+    height: 21.875rem;
+  }
+  .work_cards .card_item h3 {
+    width: calc(100% - 1.88rem);
+    top: 0.94rem;
+    left: 0.94rem;
+    font-size: 1.0625rem;
+  }
+  .service_card {
+    margin-top: 7.5rem;
+  }
+  .service_card .cards {
+    gap: 1.25rem 1.1875rem;
+    margin-top: 2.5rem;
+  }
+  .service_card .cards_item {
+    width: calc(33.3333333333% - 0.7916666667rem);
+    padding: 1.25rem;
+  }
+  .service_card .cards_item img {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  .service_card .cards_item p {
+    font-size: 1.125rem;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -7311,6 +7438,38 @@ footer .foot_bottom {
   .technology_question {
     margin-bottom: 5rem;
   }
+  .visit.engineering {
+    margin-bottom: 5rem;
+  }
+  .work_cards {
+    margin-top: 5rem;
+  }
+  .work_cards .cards {
+    margin-top: 1.875rem;
+  }
+  .work_cards .card_item img {
+    height: 19.125rem;
+  }
+  .work_cards .card_item h3 {
+    font-size: 1rem;
+  }
+  .service_card {
+    margin-top: 5rem;
+  }
+  .service_card .cards {
+    gap: 1.25rem;
+    margin-top: 1.875rem;
+  }
+  .service_card .cards_item {
+    width: calc(33.3333333333% - 0.8333333333rem);
+    padding: 0.9375rem;
+  }
+  .service_card .cards_item img {
+    margin-bottom: 1.5625rem;
+  }
+  .service_card .cards_item p {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 750px) {
   .main_container {
@@ -8638,6 +8797,25 @@ footer .foot_bottom {
   .technology_home_card .card_item_right {
     width: 100%;
   }
+  .work_cards .cards {
+    flex-direction: column;
+  }
+  .work_cards .card_item {
+    width: 100%;
+  }
+  .work_cards .card_item img {
+    height: 15.625rem;
+  }
+  .work_cards .card_item h3 {
+    font-size: 1rem;
+    width: 16.875rem;
+  }
+  .service_card .cards {
+    flex-direction: column;
+  }
+  .service_card .cards_item {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 470px) {
   .sec-title {
@@ -9528,5 +9706,24 @@ footer .foot_bottom {
   }
   .technology_question {
     margin-bottom: 4.38rem;
+  }
+  .visit.engineering {
+    margin-bottom: 4.37rem;
+  }
+  .work_cards {
+    margin-top: 4.37rem;
+  }
+  .work_cards .cards {
+    gap: 0.875rem;
+  }
+  .service_card {
+    margin-top: 4.37rem;
+  }
+  .service_card .cards {
+    margin-top: 1.25rem;
+    gap: 0.875rem;
+  }
+  .service_card .cards_item img {
+    margin-bottom: 1.25rem;
   }
 }/*# sourceMappingURL=style.css.map */
