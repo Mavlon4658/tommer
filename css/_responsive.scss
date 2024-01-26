@@ -2310,6 +2310,123 @@
             }
         }
     }
+
+    .fabric_home {
+        margin-bottom: 7.5rem;
+
+        &_card {
+            padding: 2.5rem 1.25rem 1.25rem;
+            height: 34.375rem;
+
+            p {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .certificates {
+        margin-bottom: 7.5rem;
+
+        .sec-title {
+            margin-bottom: 2.5rem;
+        }
+
+        .slide_wrap {
+            button {
+                img {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    object-fit: cover;
+                }
+            }
+
+            .slide_next {
+                right: 0;
+                transform: translateY(-50%);
+            }
+
+            .swiper-slide {
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    .ready_house {
+        margin-bottom: 7.5rem;
+
+        &__head {
+            p {
+                font-size: 1.0625rem;
+                width: 31.625rem;
+            }
+        }
+
+        &__top_card {
+            padding: 1.25rem;
+            margin-bottom: 2.5rem;
+
+            .content {
+                border-radius: 0.625rem;
+                padding: 1.25rem;
+
+                .title {
+                    font-size: 1.75rem;
+                }
+
+                ul {
+                    li {
+                        gap: 0.875rem;
+
+                        img {
+                            width: 2.75rem;
+                            height: 2.75rem;
+                            object-fit: cover;
+                        }
+                    }
+
+                    span {
+                        font-size: 1.0625rem;
+                    }
+                }
+            }
+        }
+
+        &__bottom_card {
+            gap: 1.25rem 1.1875rem;
+
+            .card_item {
+                width: calc(100% / 3 - 1.1875rem * 2 / 3);
+                height: 19.5625rem;
+                padding: 1.25rem;
+
+                .title {
+                    padding: 0.625rem;
+                    font-size: 1.0625rem;
+                }
+            }
+
+            .card_item:not(.dark) {
+                padding-right: 0.88rem;
+            }
+
+            .card_item.dark {
+                h2 {
+                    font-size: 1.125rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .card_item.link {
+                a {
+                    font-size: 1.125rem;
+                    border-bottom-width: 2px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -4640,6 +4757,122 @@
             }
         }
     }
+
+    .fabric_home {
+        margin-bottom: 5rem;
+
+        &_card {
+            border-radius: 0.625rem 10.9375rem 0rem 0rem;
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .certificates {
+        margin-bottom: 5rem;
+
+        .slide_wrap {
+            .swiper-slide {
+                padding: 1.12rem;
+                border-radius: 0.48644rem;
+
+                img {
+                    border-radius: 0.48644rem;
+                }
+            }
+        }
+    }
+
+    .ready_house {
+        margin-bottom: 5.66rem;
+
+        &__head {
+            flex-direction: column;
+            gap: 1.875rem;
+            margin-bottom: 2.5rem;
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        &__top_card {
+            padding: 0.94rem;
+            height: 32.34375rem;
+
+            .content {
+                border-radius: 0.625rem;
+                padding: 0.9375rem;
+
+                .title {
+                    font-size: 1.5625rem;
+                    margin-bottom: 1.5625rem;
+                }
+
+                ul {
+                    li {
+                        img {
+                            width: 2.5rem;
+                            height: 2.5rem;
+                        }
+
+                        &:nth-child(1) {
+                            span {
+                                width: 5.625rem;
+                            }
+                        }
+                    }
+
+                    span {
+                        font-size: 0.9375rem;
+                    }
+                }
+            }
+        }
+
+        &__bottom_card {
+            gap: 1.25rem;
+
+            .card_item {
+                width: calc(100% / 3 - 1.25rem * 2 / 3);
+                height: 16.75rem;
+                padding: 0.9375rem;
+
+                .title {
+                    font-size: 0.9375rem;
+                }
+            }
+
+            .card_item:not(.dark) {
+                padding-right: 0.88rem;
+            }
+
+            .card_item.dark {
+                padding: 0.9375rem 0.59rem 0.9375rem 0.9375rem;
+                
+                h2 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 0.9375rem;
+                }
+            }
+
+            .card_item.link {
+                justify-content: center;
+
+                a {
+                    width: 7.444rem;
+                    text-align: center;
+                    font-size: 1rem;
+                    border-bottom-width: 2px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -6528,6 +6761,100 @@
             }
         }
     }
+
+    .fabric_home {
+        margin-bottom: 5rem;
+
+        &_card {
+            border-radius: 0.625rem 6.25rem 0rem 0rem;
+            padding: 1.88rem 0.94rem 0.94rem;
+            height: auto;
+            gap: 3.44rem;
+
+            p {
+                padding: 0.9375rem;
+            }
+        }
+    }
+
+    .certificates {
+        margin-bottom: 5.41rem;
+
+        .slide_wrap {
+            .swiper-slide {
+                padding: 1.44rem 1.36rem 1.51rem 1.44rem;
+            }
+        }
+    }
+
+    .ready_house {
+        margin-bottom: 5.04rem;
+
+        &__head {
+            margin-bottom: 1.875rem;
+
+            p {
+                width: 100%;
+            }
+        }
+
+        &__top_card {
+            height: 38.50881rem;
+
+            .content {
+                .title {
+                    font-size: 1.375rem;
+                    text-align: left;
+                }
+
+                ul {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1rem;
+
+                    li {
+                        &:nth-child(1) {
+                            span {
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__bottom_card {
+            flex-direction: column;
+            gap: 1.25rem;
+
+            .card_item {
+                width: 100%;
+                height: 15.625rem;
+                padding: 0.63rem;
+            }
+
+            .card_item:not(.dark) {
+                padding-right: 0.88rem;
+            }
+
+            .card_item.dark {
+                padding: 0.9375rem;
+                height: auto;
+                gap: 1.25rem;
+            }
+
+            .card_item.link {
+                height: 7.6875rem;
+
+                a {
+                    width: auto;
+                    text-align: center;
+                    font-size: 1rem;
+                    border-bottom-width: 2px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -7855,6 +8182,29 @@
                 max-width: 18.29469rem;
                 margin-top: 0.87rem;
             }
+        }
+    }
+
+    .fabric_home {
+        margin-bottom: 4.37rem;
+
+        &_card {
+            padding: 2.04rem 0.94rem 0.94rem;
+            height: auto;
+            gap: 3.44rem;
+
+            p {
+                padding: 0.9375rem 0.37rem 0.9375rem 0.9375rem;
+                font-size: 0.9375rem;
+            }
+        }
+    }
+
+    .certificates {
+        margin-bottom: 4.35rem;
+
+        .sec-title {
+            margin-bottom: 1.25rem;
         }
     }
 }

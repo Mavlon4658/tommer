@@ -4649,4 +4649,224 @@ footer {
     }
 }
 
+.fabric_home {
+    margin-bottom: 9.37rem;
+
+    &_card {
+        background: url('../images/fabric_home.webp') center/cover no-repeat;
+        border-radius: 0.625rem 10.9375rem 0.625rem 0.625rem;
+        padding: 4.5rem 1.88rem 1.87rem 1.87rem;
+        display: flex;
+        flex-direction: column;
+        height: 40.78125rem;
+        justify-content: space-between;
+
+        p {
+            border-radius: 0.625rem;
+            background: #FFF;
+            box-shadow: 0px 0px 30px 0px rgba(36, 42, 31, 0.12);
+            padding: 1.25rem;
+            color: #242A1F;
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 120%;
+
+            span {
+                display: inline;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.main__cards.fabric {
+    .main__cards-wrap {
+        .main__card.img {
+            padding: 0;
+            object-fit: cover;
+        }
+    }
+}
+
+.certificates {
+    margin-bottom: 9.38rem;
+
+    .sec-title {
+        margin-bottom: 3.12rem;
+    }
+
+    .slide_wrap {
+        position: relative;
+
+        .sertificat_slider {
+            overflow: visible;
+        }
+
+        button {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .slide_next {
+            right: -0.19rem;
+            transform: translate(100%, -50%);
+        }
+
+        .swiper-slide {
+            border-radius: 0.625rem;
+            background: #FFF;
+            padding: 1.87rem 1.87rem 1.91rem;
+
+            img {
+                width: 100%;
+                border-radius: 0.625rem;
+            }
+        }
+    }
+}
+
+.ready_house {
+    margin-bottom: 9.38rem;
+
+    &__head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 3.125rem;
+
+        p {
+            color: #242A1F;
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 120%;
+            width: 33.39363rem;
+        }
+    }
+
+    &__top_card {
+        background: url('../images/ready_house_top_card.webp') center/cover no-repeat;
+        border-radius: 0.625rem;
+        height: 40.625rem;
+        padding: 1.87rem;
+        margin-bottom: 4.38rem;
+
+        .content {
+            border-radius: 0.3125rem;
+            background: #FFF;
+            padding: 1.88rem 1.88rem 1.91rem;
+
+            .title {
+                color: #4C9C2E;
+                font-family: "Roboto Slab", serif;
+                font-size: 2.375rem;
+                font-weight: 300;
+                line-height: 120%;
+                text-align: center;
+                margin-bottom: 1.56rem;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5625rem;
+                }
+
+                span {
+                    color: #242A1F;
+                    font-size: 1.1875rem;
+                    font-weight: 400;
+                    line-height: 120%;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    &__bottom_card {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 1.88rem 1.9375rem;
+
+        .card_item {
+            width: calc(100% / 3 - 1.9375rem * 2 / 3);
+            height: 19.5625rem;
+            border-radius: 0.625rem;
+            border: 1px solid #B2B2B2;
+            background: #242A1F;
+            position: relative;
+            overflow: hidden;
+            padding: 1.875rem;
+
+            .title {
+                position: relative;
+                border-radius: 0.3125rem;
+                background: #FFF;
+                padding: 0.625rem;
+                color: #242A1F;
+                font-size: 1.25rem;
+                font-weight: 600;
+                line-height: 120%;
+                text-transform: uppercase;
+                display: inline-flex;
+            }
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .card_item.dark {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1.875rem;
+
+            h2 {
+                color: #FFF;
+                font-size: 1.25rem;
+                font-weight: 600;
+                line-height: 120%;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: #FFF;
+                font-size: 1.125rem;
+                font-weight: 400;
+                line-height: 120%;
+            }
+        }
+
+        .card_item.link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+            a {
+                color: #FFF;
+                font-size: 1.25rem;
+                font-weight: 700;
+                line-height: normal;
+                padding-bottom: 3px;
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+}
+
 @import "responsive"

@@ -359,6 +359,7 @@ if (similar_card) {
         },
         breakpoints: {
             1250: {
+                slidesPerView: 2,
                 spaceBetween: 30,
             },
             750: {
@@ -470,5 +471,28 @@ function checkMortgageRadio (mortgage_radios) {
             radio.classList.add('show');
         }
 
+    })
+}
+
+let certificates = document.querySelector('.certificates .sertificat_slider');
+if (certificates) {
+    let certificates_slider = new Swiper(certificates, {
+        slidesPerView: 1,
+        speed: 1400,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.certificates .slide_next',
+            prevEl: '.certificates .slide_prev'
+        },
+        breakpoints: {
+            1250: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            
+            750: {
+                slidesPerView: 2,
+            }
+        }
     })
 }
