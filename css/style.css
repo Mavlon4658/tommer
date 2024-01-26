@@ -4066,6 +4066,43 @@ footer .foot_bottom {
   max-width: 46.14819rem;
 }
 
+.technology.company {
+  margin-bottom: 0 !important;
+}
+
+.production.company {
+  margin-bottom: 0 !important;
+}
+
+.customers.company {
+  margin-bottom: 9.37rem;
+}
+
+.company_home {
+  margin-bottom: 9.37rem;
+}
+.company_home .content {
+  border-radius: 0.625rem 10.9375rem 0rem 0rem;
+  background: url("../images/company_home_card.webp") center/cover no-repeat;
+  height: 40.78125rem;
+  padding: 4.5rem 12.6rem 0 1.87rem;
+}
+.company_home .content p:not(.description) {
+  color: #FFF;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 2.375rem;
+  font-weight: 300;
+  line-height: 120%;
+}
+.company_home .content .description {
+  color: #FFF;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 120%;
+  margin-top: 1.25rem;
+  max-width: 46.14819rem;
+}
+
 @media only screen and (max-width: 1600px) {
   #index_home .home_bg {
     width: 600px;
@@ -5791,6 +5828,23 @@ footer .foot_bottom {
     margin-top: 1.25rem;
     max-width: 28.6875rem;
   }
+  .customers.company {
+    margin-bottom: 7.56rem;
+  }
+  .company_home {
+    margin-bottom: 7.75rem;
+  }
+  .company_home .content {
+    height: 34.375rem;
+    padding: 2.5rem 5.05rem 0 1.25rem;
+  }
+  .company_home .content p:not(.description) {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .company_home .content .description {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 992px) {
   .main_container {
@@ -7505,6 +7559,24 @@ footer .foot_bottom {
   .landscape_home .content p {
     max-width: 28.58975rem;
   }
+  .customers.company {
+    margin-bottom: 5.13rem;
+  }
+  .company_home {
+    margin-bottom: 5.03rem;
+  }
+  .company_home .content {
+    height: 34.375rem;
+    padding: 2.5rem 4.86rem 0 0.94rem;
+  }
+  .company_home .content p:not(.description) {
+    font-size: 1.875rem;
+    font-weight: 400;
+    max-width: 35rem;
+  }
+  .company_home .content .description {
+    max-width: 28.58975rem;
+  }
 }
 @media only screen and (max-width: 750px) {
   .main_container {
@@ -8859,6 +8931,23 @@ footer .foot_bottom {
   .landscape_home .content p {
     max-width: 21.98425rem;
   }
+  .customers.company {
+    margin-bottom: 5rem;
+  }
+  .company_home {
+    margin-bottom: 5.06rem;
+  }
+  .company_home .content {
+    border-radius: 0.625rem 6.25rem 0rem 0rem;
+    height: auto;
+    padding: 1.88rem 3.13rem 2.13rem 0.94rem;
+  }
+  .company_home .content p:not(.description) {
+    font-size: 1.5625rem;
+  }
+  .company_home .content .description {
+    max-width: 21.98425rem;
+  }
 }
 @media only screen and (max-width: 470px) {
   .sec-title {
@@ -9776,5 +9865,21 @@ footer .foot_bottom {
   .landscape_home .content p {
     margin-top: 0.88rem;
     max-width: 16rem;
+  }
+  .customers.company {
+    margin-bottom: 4.38rem;
+  }
+  .company_home {
+    margin-bottom: 4.44rem;
+  }
+  .company_home .content {
+    padding: 1.88rem 0.55rem 4.89rem 0.94rem;
+  }
+  .company_home .content p:not(.description) {
+    font-size: 1.125rem;
+  }
+  .company_home .content .description {
+    max-width: 18.29469rem;
+    margin-top: 0.87rem;
   }
 }/*# sourceMappingURL=style.css.map */

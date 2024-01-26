@@ -4609,4 +4609,44 @@ footer {
     }
 }
 
+.technology.company {
+    margin-bottom: 0 !important;
+}
+
+.production.company {
+    margin-bottom: 0 !important;
+}
+
+.customers.company {
+    margin-bottom: 9.37rem;
+}
+
+.company_home {
+    margin-bottom: 9.37rem;
+
+    .content {
+        border-radius: 0.625rem 10.9375rem 0rem 0rem;
+        background: url('../images/company_home_card.webp') center / cover no-repeat;
+        height: 40.78125rem;
+        padding: 4.5rem 12.6rem 0 1.87rem;
+
+        p:not(.description) {
+            color: #FFF;
+            font-family: "Roboto Slab", sans-serif;
+            font-size: 2.375rem;
+            font-weight: 300;
+            line-height: 120%;
+
+        }
+        .description {
+            color: #FFF;
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 120%;
+            margin-top: 1.25rem;
+            max-width: 46.14819rem;
+        }
+    }
+}
+
 @import "responsive"

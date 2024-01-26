@@ -2288,6 +2288,28 @@
             }
         }
     }
+
+    .customers.company {
+        margin-bottom: 7.56rem;
+    }
+
+    .company_home {
+        margin-bottom: 7.75rem;
+
+        .content {
+            height: 34.375rem;
+            padding: 2.5rem 5.05rem 0 1.25rem;
+
+            p:not(.description) {
+                font-size: 2.5rem;
+                font-weight: 400;
+            }
+
+            .description {
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -4595,6 +4617,29 @@
             }
         }
     }
+
+    .customers.company {
+        margin-bottom: 5.13rem;
+    }
+
+    .company_home {
+        margin-bottom: 5.03rem;
+
+        .content {
+            height: 34.375rem;
+            padding: 2.5rem 4.86rem 0 0.94rem;
+
+            p:not(.description) {
+                font-size: 1.875rem;
+                font-weight: 400;
+                max-width: 35rem;
+            }
+
+            .description {
+                max-width: 28.58975rem;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -6461,6 +6506,28 @@
             }
         }
     }
+
+    .customers.company {
+        margin-bottom: 5rem;
+    }
+
+    .company_home {
+        margin-bottom: 5.06rem;
+
+        .content {
+            border-radius: 0.625rem 6.25rem 0rem 0rem;
+            height: auto;
+            padding: 1.88rem 3.13rem 2.13rem 0.94rem;
+
+            p:not(.description) {
+                font-size: 1.5625rem;
+            }
+
+            .description {
+                max-width: 21.98425rem;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -7766,6 +7833,27 @@
             p {
                 margin-top: 0.88rem;
                 max-width: 16rem;
+            }
+        }
+    }
+
+    .customers.company {
+        margin-bottom: 4.38rem;
+    }
+
+    .company_home {
+        margin-bottom: 4.44rem;
+
+        .content {
+            padding: 1.88rem .55rem 4.89rem .94rem;
+
+            p:not(.description) {
+                font-size: 1.125rem;
+            }
+
+            .description {
+                max-width: 18.29469rem;
+                margin-top: 0.87rem;
             }
         }
     }
