@@ -2427,6 +2427,28 @@
             }
         }
     }
+
+    .panarama {
+        margin: 7.5rem 0;
+
+        .main_container {
+            iframe {
+                height: 33.35844rem;
+            }
+        }
+    }
+
+    .details {
+        .content {
+            padding: 1.25rem;
+
+            ul {
+                .text {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -4873,6 +4895,40 @@
             }
         }
     }
+
+    .panarama {
+        margin: 5rem 0;
+
+        .sec-title {
+            margin-bottom: 1.875rem;
+        }
+
+        .main_container {
+            iframe {
+                height: 24.375rem;
+            }
+        }
+    }
+
+    .details {
+        .content {
+            padding: 0.9375rem;
+
+            .title {
+                font-size: 1.125rem;
+            }
+
+            ul {
+                .text {
+                    font-size: 1.0625rem;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -6855,6 +6911,35 @@
             }
         }
     }
+
+    .panarama {
+        .sec-title {
+            margin-bottom: 1.875rem;
+        }
+
+        .main_container {
+            iframe {
+                height: 24.375rem;
+            }
+        }
+    }
+
+    .details {
+        .content {
+            .title {
+                font-size: 1.0625rem;
+                margin-bottom: 1.25rem;
+            }
+
+            ul {
+                gap: 1.25rem;
+
+                .text {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -8205,6 +8290,26 @@
 
         .sec-title {
             margin-bottom: 1.25rem;
+        }
+    }
+
+    .panarama {
+        margin: 4.38rem 0;
+        
+        .sec-title {
+            margin-bottom: 1.25rem;
+        }
+
+        .main_container {
+            iframe {
+                height: 19.98963rem;
+            }
+        }
+    }
+
+    .details {
+        .content {
+            margin-top: 1.25rem;
         }
     }
 }

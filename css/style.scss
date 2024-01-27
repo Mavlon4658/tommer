@@ -4869,4 +4869,64 @@ footer {
     }
 }
 
+.panarama {
+    margin: 9.38rem 0 9.38rem;
+
+    .sec-title {
+        margin-bottom: 2.5rem;
+    }
+
+    .main_container {
+        .panarama__view {
+            border-radius: 0.625rem;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 42.5rem;
+        }
+    }
+}
+
+.details {
+    .content {
+        border-radius: 0.625rem;
+        background: #FFF;
+        padding: 1.87rem 1.81rem 2.62rem 1.94rem;
+        margin-top: 3.12rem;
+
+        .title {
+            color: #FFF;
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 120%;
+            text-transform: uppercase;
+            border-radius: 0.3125rem;
+            background: var(--Dark-green, #242A1F);
+            padding: 0.625rem;
+            display: inline-block;
+            margin-bottom: 1.875rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6875rem;
+
+            .line {
+                border-bottom: 1px dashed #242A1F;
+            }
+
+            .text {
+                color: #242A1F;
+                font-size: 1.25rem;
+                font-weight: 600;
+                line-height: 120%;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
 @import "responsive"
